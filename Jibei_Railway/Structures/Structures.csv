@@ -1,0 +1,370 @@
+BveTs Structure List 1.00
+
+# Tracks(铁轨1435mm)(Author: Mackoy)
+RailL0, Tracks/RailL0.x
+RailL1, Tracks/RailL1.x
+RailL2, Tracks/RailL2.x
+RailL3, Tracks/RailL3.x
+RailL4, Tracks/RailL4.x
+RailR0, Tracks/RailR0.x
+RailR1, Tracks/RailR1.x
+RailR2, Tracks/RailR2.x
+RailR3, Tracks/RailR3.x
+RailR4, Tracks/RailR4.x
+Ballast0, Tracks/Ballast0.x
+Ballast1, Tracks/Ballast1.x
+Ballast2, Tracks/Ballast2.x
+Ballast3, Tracks/Ballast3.x
+Ballast4, Tracks/Ballast4.x
+
+# Tracks(普通铁轨1435mm)(Author: Nagoya_Common)
+PTRail,..\..\Nagoya_Common\Railway_Obj\Rail\Han_Line\Ballast.x
+
+# Tracks(高架铁轨1435mm)
+GJRail,..\..\Nagoya_Common\Railway_Obj\Rail\Han_Line\Slab.x
+WallL,../../Nagoya_Common/Railway_Obj/Wall/Wall_L.x,
+WallR,../../Nagoya_Common/Railway_Obj/Wall/Wall_R.x,
+WallLPole,../../Nagoya_Common/Railway_Obj/Wall/Wall_L_Pole.x,
+WallRPole,../../Nagoya_Common/Railway_Obj/Wall/Wall_R_Pole.x,
+pier,..\..\Nagoya_Common\railway_obj\dike\pier.x
+
+# Tracks(桥梁铁轨1435mm)
+QLRail,..\..\Nagoya_Common\Railway_Obj\Rail\Han_Line\Bridge1.x
+
+# 铁轨大堤
+DikeL1,Nature\Ground\DikeGrs5mL1.x
+DikeL2,Nature\Ground\DikeGrs5mL2.x
+DikeL3,Nature\Ground\DikeGrs5mL3.x
+DikeR1,Nature\Ground\DikeGrs5mR1.x
+DikeR2,Nature\Ground\DikeGrs5mR2.x
+DikeR3,Nature\Ground\DikeGrs5mR3.x
+DikeFace,Nature\Ground\DikeFace.x
+
+# 横跨桥
+HKQ1,..\..\Nagoya_Common\Build\Over\Mei\JRC.x
+HKQ2,..\..\Nagoya_Common\Build\Over\Mei\R21.x
+
+# Nature
+   # 背景
+      Bg, Nature\BG\Bg_fine_summer_mt2.x
+      Bg1,..\..\Nagoya_Common\Nature\Sky\Back_1.x
+   # 山
+      Mt_L,..\..\Nagoya_Common\Nature\Mt\Mt_L.x
+      Mt_LT,..\..\Nagoya_Common\Nature\Mt\Mt_LT.x
+      Mt_R,..\..\Nagoya_Common\Nature\Mt\Mt_R.x
+      Mt_RT,..\..\Nagoya_Common\Nature\Mt\Mt_RT.x
+      Mt_wall_11b,..\..\Nagoya_Common\Nature\Mt\Mt_wall_11b.x
+      Mt_wall_11a,..\..\Nagoya_Common\Nature\Mt\Mt_wall_11a.x
+      Mt_wall_10a,..\..\Nagoya_Common\Nature\Mt\Mt_wall_10a.x
+      Mt_wall_10b,..\..\Nagoya_Common\Nature\Mt\Mt_wall_10b.x
+   # 河水
+      river,..\..\Nagoya_Common\Nature\Ground\River.x
+      river_25,..\..\Nagoya_Common\Nature\Ground\River_25.x
+# Ground
+GroundGrass,Nature\Ground\Grass.x
+Ground1a,Nature\Ground\Ground1a.x
+Ground1b,Nature\Ground\Ground1b.x
+Ground1c,Nature\Ground\Ground1c.x
+Ground1d,Nature\Ground\Ground1d.x
+Ground1e,Nature\Ground\Ground1e.x
+GroundRiver,Nature\Ground\River.x
+GroundLevee,Nature\Ground\Levee.x
+GroundDitch,Nature\Ground\Ditch.x
+Grass,..\..\Nagoya_Common\Nature\Ground\Grass_50.x
+
+# 雨
+rain,Nature\rain\rain.x
+
+# 公路
+Road4,..\..\Nagoya_Common\Build\Road\Road4.x
+Cross_5m,..\..\Nagoya_Common\Build\Road\Cross_5m.x
+Road1,..\..\Nagoya_Common\Build\Road\Road1.x  #单行道
+Road2,..\..\Nagoya_Common\Build\Road\Road2_nonblock.x  #双行道
+
+#建筑物
+   #仓库
+   Ob_B,..\..\Nagoya_Common\Build\Kensya\Ooyodo\Ob_B.x
+   #楼房
+   Lou00,..\..\Nagoya_Common\Build\mansion\00.x
+   Lou01,..\..\Nagoya_Common\Build\mansion\01.x
+   Lou02,..\..\Nagoya_Common\Build\mansion\02.x
+   Lou03,..\..\Nagoya_Common\Build\mansion\03.x
+   Lou04,..\..\Nagoya_Common\Build\mansion\04.x
+   Lou05,..\..\Nagoya_Common\Build\mansion\05.x
+   Lou06,..\..\Nagoya_Common\Build\mansion\06.x
+   Lou07,..\..\Nagoya_Common\Build\mansion\07.x
+   Lou08,..\..\Nagoya_Common\Build\mansion\08.x
+   Lou09,..\..\Nagoya_Common\Build\mansion\09.x
+   Lou10,..\..\Nagoya_Common\Build\mansion\10.x
+   Lou11,..\..\Nagoya_Common\Build\mansion\11.x
+   LouSign,..\..\Nagoya_Common\Build\mansion\Sign.x
+   #学校
+   School,..\..\Nagoya_Common\Build\School\School.x
+   SchoolFence,..\..\Nagoya_Common\Build\School\Fence.x
+
+##普通小站房
+stnobj0,..\..\Nagoya_Common\Build\Station\Ekisya\Obj0.x
+stnobj0long,..\..\Nagoya_Common\Build\Station\Ekisya\Obj0Long.x
+stnobj1,..\..\Nagoya_Common\Build\Station\Ekisya\Obj1.x
+stnobj1long,..\..\Nagoya_Common\Build\Station\Ekisya\Obj1Long.x
+
+# 站台用台阶
+stnkdl,..\..\Nagoya_Common\Build\Station\Mc223\kokesuiyama\kdl.x
+stnkdr,..\..\Nagoya_Common\Build\Station\Mc223\kokesuiyama\kdr.x
+
+# 站台楼梯
+Step_D,..\..\Nagoya_Common\Build\Form\Step\Down\Step_D.x
+Step,..\..\Nagoya_Common\Build\Form\Step\Down\Step.x
+# Stations （车站构造）
+station_side_l_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5L.x
+station_floor_l_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5CL.x
+station_wall_l_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5WallL.x
+station_roof_l_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5RoofCL.x
+station_eaves_l_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5RoofL.x
+station_side_r_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5R.x
+station_floor_r_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5CR.x
+station_wall_r_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5WallR.x
+station_roof_r_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5RoofCR.x
+station_eaves_r_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5RoofR.x
+WallSLEnd1,../../Nagoya_Common/Build/Form/Plat_Form/WallSLEnd.x,
+WallSREnd1,../../Nagoya_Common/Build/Form/Plat_Form/WallSREnd.x,
+WallSL1,../../Nagoya_Common/Build/Form/Old_Form/WallSL.x,
+WallSR2,../../Nagoya_Common/Build/Form/Old_Form/WallSR.x,
+
+# 铁道路口
+D_L,../../Nagoya_Common/Railway_Obj/Cross/Meiden/D_L.x,
+D_R,../../Nagoya_Common/Railway_Obj/Cross/Meiden/D_R.x,
+# DC,../../Nagoya_Common/Railway_Obj/Cross/Meiden/DC.x,
+S_L,../../Nagoya_Common/Railway_Obj/Cross/Meiden/S_L.x,
+S_R,../../Nagoya_Common/Railway_Obj/Cross/Meiden/S_R.x,
+# SC,../../Nagoya_Common/Railway_Obj/Cross/Meiden/SC.x,
+
+# LED车站电子显示屏
+gyyjy,Sta_Str\gyyjy.x
+cxdd_led_2r,Sta_Str\cxdd2r.x
+cxdd_led_1l,Sta_Str\cxdd1l.x
+
+strled1,..\..\Nagoya_Common\Build\Form\Next\Next.x
+strled2,..\..\Nagoya_Common\Build\Form\Next\Next1.x
+
+# 站名标
+gyyjy_sta,StationName\Gongyeyanjiuyuan.x
+cxdd_sta,StationName\Chuangxindadao.x
+sby_sta,StationName\Shiboyuan.x
+
+# 车站内标志
+exit0,Sta_Str\Exit_0.x
+ev_sign,..\..\Nagoya_Common\Build\Form\EV\Ev_Sign.x
+ev,..\..\Nagoya_Common\Build\Form\EV\Ev.x
+
+# 站台用时刻表
+Daia,..\..\Nagoya_Common\Build\Form\Thing\Daia.x
+
+# 架线单线
+Kasen40A,../../Nagoya_Common/Railway_Obj/Torory/Sigle/Torory(40A).x,
+Kasen40B,../../Nagoya_Common/Railway_Obj/Torory/Sigle/Torory(40B).x,
+Kasen25A,../../Nagoya_Common/Railway_Obj/Torory/Sigle/Torory(25A).x,
+Kasen25B,../../Nagoya_Common/Railway_Obj/Torory/Sigle/Torory(25B).x,
+
+# 架线双线
+Twin40A,../../Nagoya_Common/Railway_Obj/Torory/negi_maguro/Twin(40A).x,
+Twin40B,../../Nagoya_Common/Railway_Obj/Torory/negi_maguro/Twin(40B).x,
+Twin25A,../../Nagoya_Common/Railway_Obj/Torory/negi_maguro/Twin(25A).x,
+Twin25B,../../Nagoya_Common/Railway_Obj/Torory/negi_maguro/Twin(25B).x,
+
+# 架线柱
+poleA,..\..\Nagoya_Common\railway_obj\pole\pole0_8.x,
+poleB,..\..\Nagoya_Common\railway_obj\pole\pole0_9.x,
+poleA2,..\..\Nagoya_Common\railway_obj\pole\pole0_0.x,
+poleB2,..\..\Nagoya_Common\railway_obj\pole\pole0_1.x,
+pole2,..\..\Nagoya_Common\railway_obj\pole\pole1_3.x,
+pole3,..\..\Nagoya_Common\railway_obj\pole\pole2_3.x,
+pole4,..\..\Nagoya_Common\railway_obj\pole\pole3_3.x,
+pole5,..\..\Nagoya_Common\railway_obj\pole\pole4_3.x,
+pole6,..\..\Nagoya_Common\railway_obj\pole\pole5_3.x,
+
+# 柵
+fence_5,..\..\Nagoya_Common\Build\EnsenSet\Fence.x,
+
+# 沿線セット
+railsideset_l_1_50,..\..\Nagoya_Common\Build\EnsenSet\0L.x,
+railsideset_l_2_50,..\..\Nagoya_Common\Build\EnsenSet\1L.x,
+railsideset_r_1_50,..\..\Nagoya_Common\Build\EnsenSet\0R.x,
+railsideset_r_2_50,..\..\Nagoya_Common\Build\EnsenSet\1R.x,
+railsideset_r_3_50,..\..\Nagoya_Common\Build\EnsenSet\10R.x,
+railsideset_r_4_50,..\..\Nagoya_Common\Build\EnsenSet\11R.x,
+
+# 家
+house_a,..\..\Nagoya_Common\Build\house\Model\House0_R_00.x,
+house_b,..\..\Nagoya_Common\Build\house\Model\House0_L_11.x,
+house_c,..\..\Nagoya_Common\Build\house\Model\House0_R_22.x,
+house_d,..\..\Nagoya_Common\Build\house\Model\House0_L_33.x,
+house_e,..\..\Nagoya_Common\Build\house\Model\House0_R_44.x,
+house_f,..\..\Nagoya_Common\Build\house\Model\House0_L_01.x,
+house_g,..\..\Nagoya_Common\Build\house\Model\House0_R_12.x,
+house_h,..\..\Nagoya_Common\Build\house\Model\House0_L_23.x,
+house_i,..\..\Nagoya_Common\Build\house\Model\House0_R_34.x,
+house_j,..\..\Nagoya_Common\Build\house\Model\House0_L_45.x,
+house_k,..\..\Nagoya_Common\Build\house\Model\House0_R_02.x,
+house_l,..\..\Nagoya_Common\Build\house\Model\House0_L_13.x,
+house_m,..\..\Nagoya_Common\Build\house\Model\House0_R_24.x,
+house_n,..\..\Nagoya_Common\Build\house\Model\House0_L_35.x,
+house_o,..\..\Nagoya_Common\Build\house\Model\House0_R_46.x,
+house_p,..\..\Nagoya_Common\Build\house\Model\House0_L_03.x,
+house_q,..\..\Nagoya_Common\Build\house\Model\House0_R_14.x,
+house_r,..\..\Nagoya_Common\Build\house\Model\House0_L_25.x,
+house_s,..\..\Nagoya_Common\Build\house\Model\House0_R_36.x,
+house_t,..\..\Nagoya_Common\Build\house\Model\House0_L_47.x,
+
+# 停车标
+stop_1,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\1.x,
+stop_2,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\2.x,
+stop_3,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\3.x,
+stop_4,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\4.x,
+stop_5,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\5.x,
+stop_6,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\6.x,
+stop_7,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\7.x,
+stop_8,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\8.x,
+stop_9,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\9.x,
+stop_10,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\10.x,
+stop_11,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\11.x,
+stop_12,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\12.x,
+stop_13,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\13.x,
+stop_14,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\14.x,
+stop_15,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\15.x,
+stop_all,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\Zen.x,
+
+# 尽头标志
+end1,..\..\Nagoya_Common\Railway_Obj\End\1_End.x,
+end2,..\..\Nagoya_Common\Railway_Obj\End\2_End.x,
+end4,..\..\Nagoya_Common\Railway_Obj\End\4_End.x,
+end4c,..\..\Nagoya_Common\Railway_Obj\End\4c_End.x,
+
+# 限速标志
+L0,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\0.x,
+L00,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\00.x,
+L1,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\1.x,
+L2,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\2.x,
+L3,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\3.x,
+L4,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\4.x,
+L5,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\5.x,
+L6,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\6.x,
+L7,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\7.x,
+L8,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\8.x,
+L9,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\9.x,
+L10,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\10.x,
+L20,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\20.x,
+L30,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\30.x,
+L40,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\40.x,
+L50,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\50.x,
+L60,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\60.x,
+L70,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\70.x,
+L80,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\80.x,
+L90,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\90.x,
+L100,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\100.x,
+L105,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\105.x,
+L110,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\110.x,
+L115,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\115.x,
+L120,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\120.x,
+Lend,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\End.x,
+LimitPole,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\Pole.x,
+LfxL,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\L.x
+LfxR,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\R.x
+
+# AI车
+#他列車
+600_1,Trains\khk600\600_1.x
+600_1b,Trains\khk600\600_1b.x
+600_2,Trains\khk600\600_2.x
+600_2b,Trains\khk600\600_2b.x
+600_3,Trains\khk600\600_3.x
+
+1500_1a,Trains\khk1500\1500_1a.x
+1500_1b,Trains\khk1500\1500_1b.x
+1500_2a,Trains\khk1500\1500_2a.x
+1500_2b,Trains\khk1500\1500_2b.x
+1500_2Pa,Trains\khk1500\1500_2Pa.x
+1500_2Pb,Trains\khk1500\1500_2Pb.x
+1500_3a,Trains\khk1500\1500_3a.x
+1500_3b,Trains\khk1500\1500_3b.x
+
+2000_1,Trains\khk1500\2000_1.x
+2000_2a,Trains\khk1500\2000_2a.x
+2000_2b,Trains\khk1500\2000_2b.x
+2000_2Pa,Trains\khk1500\2000_2Pa.x
+2000_2Pb,Trains\khk1500\2000_2Pb.x
+2000_3,Trains\khk1500\2000_3.x
+
+3400_1,Trains\ks3400\3400_1.x
+3400_1b,Trains\ks3400\3400_1b.x
+3400_2,Trains\ks3400\3400_2.x
+3400_2b,Trains\ks3400\3400_2b.x
+3400_3,Trains\ks3400\3400_3.x
+
+3300_1b,Trains\ks3300\3300_1b.x
+3300_2b,Trains\ks3300\3300_2b.x
+3300_2a,Trains\ks3300\3300_2a.x
+3300_1,Trains\ks3300\3300_1.x
+
+3700_1,Trains\ks3700\3700_1.x
+3700_1b,Trains\ks3700\3700_1b.x
+3700_2,Trains\ks3700\3700_2.x
+3700_2b,Trains\ks3700\3700_2b.x
+3700_3,Trains\ks3700\3700_3.x
+
+7800_1,Trains\ks3700\7800_1.x
+7800_1b,Trains\ks3700\7800_1b.x
+7800_2,Trains\ks3700\7800_2.x
+7800_2b,Trains\ks3700\7800_2b.x
+7800_3,Trains\ks3700\7800_3.x
+
+ks20_1b,Trains\ks20\ks20b.x
+tk20,Trains\ks20\tk20.x
+ks20_1,Trains\ks20\ks20.x
+
+7260_1b,Trains\ks3300\7260_1b.x
+7260_2b,Trains\ks3300\7260_2b.x
+7260_2a,Trains\ks3300\7260_2a.x
+7260_1,Trains\ks3300\7260_1.x
+
+##信号柱
+#梯子なし
+Pole,..\..\Nagoya_Common\Railway_Obj\SigPole\Pole.x
+#梯子付き
+Pole_B,..\..\Nagoya_Common\Railway_Obj\SigPole\Pole_B.x
+SignPost,SigPost.x
+
+Diaoche_R,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Switch\R_R.x
+Diaoche_Y1,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Switch\Y.x
+Diaoche_Y2,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Switch\R_Y.x
+Diaoche_Unsafe,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Switch\Off.x
+Diaoche_Safe,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Switch\On.x
+
+Signal1L0,..\..\Nagoya_Common\Railway_Obj\Signal\Normal\Signal1L0.x
+Signal1L2,..\..\Nagoya_Common\Railway_Obj\Signal\Normal\Signal1L2.x
+Signal1L3,..\..\Nagoya_Common\Railway_Obj\Signal\Normal\Signal1L3.x
+Signal1L4,..\..\Nagoya_Common\Railway_Obj\Signal\Normal\Signal1L4.x
+
+Yugao_G,..\..\Nagoya_Common\Railway_Obj\Signal\Rep\G.x
+Yugao_Off,..\..\Nagoya_Common\Railway_Obj\Signal\Rep\N.x
+Yugao_R,..\..\Nagoya_Common\Railway_Obj\Signal\Rep\R.x
+Yugao_Y,..\..\Nagoya_Common\Railway_Obj\Signal\Rep\Y.x
+
+Signal0L2,..\..\Nagoya_Common\Railway_Obj\Signal\Normal\Signal0L2.x
+Signal0L0,..\..\Nagoya_Common\Railway_Obj\Signal\Normal\Signal0L0.x
+
+Youdao_On,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Guidance\On_Led.x
+Youdao_Off,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Guidance\Off_LED.x
+Daishou_Off,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\HandSig\Off_Led.x
+
+#ad(小)
+AD1,Build\Signbord\XHShouHu.x
+AD2,Build\Signbord\XHsjdhr.x
+AD3,..\..\Nagoya_Common\Build\Signbord\Nichi.x
+AD4,..\..\Nagoya_Common\Build\Signbord\NichiS.x
+AD5,Build\Signbord\XHShouHu2.x
+AD6,Build\Signbord\sdxhxy.x
+AD7,Build\Signbord\fkcny.x
+
+#ad(大)
+AD2-1,Panel/XHShouhu.x

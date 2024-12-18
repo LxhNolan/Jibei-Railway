@@ -1,0 +1,20 @@
+BveTs Sound List 2.00
+
+at_station,Sounds/Station_Broadcast.wav
+LFJtoXYZ1,Sounds/Lifujing_to_Xiaoyangzhuang_1.wav
+LFJtoXYZ2,Sounds/Lifujing_to_Xiaoyangzhuang_2.wav
+XYZtoXJB1,Sounds/XYZ_to_XJB_1.wav
+XYZtoXJB2,Sounds/XYZ_to_XJB_2.wav
+XJBtoDFT1,Sounds/XJB_to_DFT_1.wav
+XJBtoDFT2,Sounds/XJB_to_DFT_2.wav
+passing,Sounds/pass.wav
+Dep1,Sounds/Departsound.wav,1
+Dep2,Sounds/Departsound_2.wav,1
+Dep3,Sounds/Departsound_3.wav,1
+Dep4,Sounds/Dep_Music+Text_0.wav
+Dep5,Sounds/Dep_Music+Text_1.wav
+Dep6,Sounds/Dep_Music+Text_2.wav
+Dep7,Sounds/Dep_Music+Text_3.wav
+Dep9,Sounds/Dep_Music+Text_4.wav
+Dep10,Sounds/Dep_Music+Text_5.wav
+Dep11,Sounds/Dep_Music+Text_6.wav

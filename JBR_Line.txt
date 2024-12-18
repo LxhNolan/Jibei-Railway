@@ -1,0 +1,10 @@
+BveTs Scenario 2.00:utf-8
+
+Title = 1001次 [普通] 李府井—东方特
+Route = Jibei_Railway/Map.txt 
+RouteTitle = 济北铁道-东方特线（Demo）
+Image = Jibei_Railway/JBR_LOGO.png
+Vehicle = Project-N1000\KHK1000SIMENS\Vehicle_4 1441.txt
+VehicleTitle = JBR-N1000型 
+Author = Route:LxhNolan, Vehicle:Project-N1000 
+Comment = 制作中

@@ -1,0 +1,11 @@
+BveTs Map 2.02:utf-8
+
+2813;
+Repeater['road2-1'].Begin('road2-1',-24,0,0,0,0,0,1,3,3,'Road2');
+   Track['road2-1'].X.Interpolate(-24,0);
+2994;
+   Track['road2-1'].X.Interpolate(500,0);
+   distance-70;
+   Repeater['road2-1'].End();
+3300;
+

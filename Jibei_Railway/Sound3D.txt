@@ -1,0 +1,9 @@
+BveTs Sound List 2.00
+
+mangdaoling,Sounds/pin_pon.wav
+people_at_station,..\Nagoya_Common\Sound\3D\People.wav
+kk1000_A,Sounds/kk1000_Accel.wav,10
+kk1000_D,Sounds/kk1000_Decel.wav,10
+kk1000_R,Sounds/kk1000_Run.wav,10
+Cross,..\Nagoya_Common\Sound\3D\Crossing_KB2.wav
+passing,Sounds/pass.wav
