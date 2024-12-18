@@ -215,7 +215,7 @@ https://tse1-mm.cn.bing.net/th/id/OIP-C.Wt-ze0vfWNw2LQA7HeNEXwHaE6?rs=1&pid=ImgD
 
 [Bve Trainsim 5.8 or Bve Trainsim 6](https://bvets.net)
 
-## Demo Version
+## Prologue Version
 
 - **Scenarios**
     - Local 1001  4 Cars
@@ -227,9 +227,9 @@ https://tse1-mm.cn.bing.net/th/id/OIP-C.Wt-ze0vfWNw2LQA7HeNEXwHaE6?rs=1&pid=ImgD
     Time：14 min
     Train：JBR-N1000 Series
 
-Ver.202411-25
+Ver.202412-11
 
-[Download](https://4key.cn/WzK)
+[Download](https://github.com/LxhNolan/Jibei-Railway/releases/download/BVE_JBR_P_241211/LxhNolan-JBR_Line_Demo-Ver.202412-11.zip)
 
 - **Update History**
     - 2024-11-13: Demo Version
