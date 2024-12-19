@@ -276,3 +276,285 @@ Ver.202412-11
 ## Official Version
 
 DATE: Coming Soon…
+
+
+# **【BVE5路線アドオン】済北鉄道**
+
+<aside>
+⚠️
+
+**免責事項：**
+
+1. この作品は先行体験バージョンです。本作では避けられない間違いなどが発生する可能性があります。
+2. この作品およびこのページに展示されている内容はフィクションであり、現実の会社、組織、人員、車両、駅、輸送サービス、信号システムなどとは何の関係もない。
+</aside>
+
+# 済北鉄道概要
+
+済北鉄道（Jibei Railway）は、架空の済北旅客鉄道有限公司が中国水東省済北市にサービスしている私営市域鉄道システムで、1本の本線、2本の支線、全長約97キロ、計48駅が設置されている。
+
+# 線路概要
+
+- 場所：中国水東省済北市
+- 運営会社：済北旅客電気鉄道有限公司
+- 路線名：済北鉄道線（済北本線、東方特線、龍洞口線）
+- 開通運営期間：2019年
+- 路線総距離：94 km
+- 合計駅数：48
+- 軌間：1435 mm
+- 電化方式：DC 1500 V
+- 複線：全線
+- 列車種別：普通、快速、特急、空港急行
+- 最高運転速度：120 km/h
+- 安全装置：C-ATS
+
+# 運用状況
+
+<ins/>
+
+## 運営路線
+
+| Lines | Starting and Ending Stations | Number of Stations | **Mileage (km)** | Train Formation | Logo Color |
+| --- | --- | --- | --- | --- | --- |
+| JBR Main Line | Gongyeyan-jiuyuan, Tantoucun | 34 | 68 | 4, 6, 8, 12 | Blue |
+| Dongfangte Line | Lifuzhuang, Guojiazhua-ng | 4 | 8 | 4 | Purple |
+| Longdongk-ou Line | Longdongk-ou, Guojiazhua-ng | 12 | 21 | 4, 6, 8 | Yellow |
+
+## 路線図
+
+![済北鉄道路線図](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd3b6240-f026-4e45-9482-df1f1e50dd42/b94d3e6b-75c6-4675-a35d-13e9676fa140/RMP_1732379094411.png)
+
+済北鉄道路線図
+
+![済北鉄道停車駅路線図](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd3b6240-f026-4e45-9482-df1f1e50dd42/8f4155e6-01ab-4e6f-9c72-2d4f8f5d738d/1000004443.png)
+
+済北鉄道停車駅路線図
+
+![済北鉄道路線図](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd3b6240-f026-4e45-9482-df1f1e50dd42/6714cb2f-2266-4043-ad54-653a5d7dadfe/RMP_1732442403923.png)
+
+済北鉄道路線図
+
+## 関連ファイル：
+
+[Jibei Railway Stations Information.xlsx](https://prod-files-secure.s3.us-west-2.amazonaws.com/cd3b6240-f026-4e45-9482-df1f1e50dd42/c5fcbb9e-629d-457f-8671-bb533d29200a/%E6%B5%8E%E5%8C%97%E9%93%81%E9%81%93%E8%BD%A6%E7%AB%99%E4%BF%A1%E6%81%AF_1.xlsx)
+
+## Stations&Mileage
+
+| Total Length of the Route | Number of Stations | Numerical Units |
+| --- | --- | --- |
+| 97.21 | 48 | km |
+- Jibei Main Line
+    
+    
+    | JBR Main Line | Milage | Station Spacing | Local | Rapid | Limited Express | Airport Express |
+    | --- | --- | --- | --- | --- | --- | --- |
+    | Airport T1 | 0.00 | 0.00 | ● | ● | ● | ● |
+    | Airport T2 | 0.42 | 0.42 | ● | ● | ● | ● |
+    | Linkong Jibei | 4.36 | 3.94 | ● | ↓ | ↓ | ● |
+    | Xiangyang | 6.15 | 1.79 | ● | ● | ↓ | ● |
+    | Liuchuan | 9.55 | 3.40 | ● | ↓ | ↓ | ↓ |
+    | Daoxiang | 11.50 | 1.95 | ● | ↓ | ↓ | ↓ |
+    | Tantoucun | 12.65 | 1.15 | ● | ● | ↓ | ● |
+    | Dongjibei | 15.14 | 2.49 | ● | ● | ● | ● |
+    | Linjiaying | 16.51 | 1.37 | ● | ↓ | ↓ | ↓ |
+    | Liusheren | 19.73 | 3.22 | ● | ● | ↓ | ● |
+    | Dongmatun | 21.62 | 1.89 | ● | ↓ | ↓ | ↓ |
+    | Shijianpu | 24.42 | 2.80 | ● | ● | ● | ● |
+    | Xinzhudian | 26.44 | 2.02 | ● | ↓ | ↓ | ↓ |
+    | Balipu | 27.98 | 1.54 | ● | ↓ | ↓ | ● |
+    | Lishui | 30.37 | 2.39 | ● | ↓ | ↓ | ↓ |
+    | Nanyuan | 31.07 | 0.70 | ● | ● | ↓ | ● |
+    | Shengchandad-ao | 32.69 | 1.62 | ● | ● | ● | ● |
+    | Jiluojiedao | 34.70 | 2.01 | ● | ● | ↓ | ↓ |
+    | Jibei | 36.31 | 1.61 | ● | ● | ● | ● |
+    | Tiyugongyuan | 37.18 | 0.87 | ● | ● | ↓ | ↓ |
+    | Anheng | 38.38 | 1.20 | ● | ↓ | ↓ | ↓ |
+    | Qiliqiao | 39.38 | 1.00 | ● | ● | ↓ | ● |
+    | Jiutun | 40.25 | 0.87 | ● | ↓ | ↓ | ↓ |
+    | Dongsantiao | 42.28 | 2.03 | ● | ↓ | ↓ | ↓ |
+    | Yueshan | 44.37 | 2.09 | ● | ● | ↓ | ● |
+    | Nanyueshan | 48.08 | 3.71 | ● | ↓ | ↓ | ↓ |
+    | LIfujing | 50.05 | 1.97 | ● | ● | ● | ● |
+    | Wangfuhe | 52.96 | 2.91 | ● | ↓ | ↓ | ↓ |
+    | Xinzhaoyingzi | 56.02 | 3.06 | ● | ↓ | ↓ | ↓ |
+    | Ziweijiedao | 59.55 | 3.53 | ● | ● | ↓ | ● |
+    | Xindaxuecheng | 61.51 | 1.96 | ● | ● | ● | ● |
+    | Shiboyuan | 63.27 | 1.76 | ● | ● | ↓ | ↓ |
+    | Chuangxindad-ao | 66.34 | 3.07 | ● | ↓ | ↓ | ↓ |
+    | Gongyeyanjiuy-uan | 68.28 | 1.94 | ● | ● | ● | ● |
+- Dongfangte Line
+    
+    
+    | Dongfangte Line | Milage | Station Spacing | Local | Rapid | Limited Express | Airport Express |
+    | --- | --- | --- | --- | --- | --- | --- |
+    | Dongfangte | 0.00 | 0.00 | ● | ● | ● | × |
+    | Xijibei | 1.59 | 1.59 | ● | ● | ● | × |
+    | Xiaoyangzhuang | 3.59 | 2.00 | ● | ↓ | ↓ | × |
+    | Lifujing | 7.56 | 3.97 | ● | ● | ● | × |
+- Longdongkou Line
+    
+    
+    | Longdongkou Line | Milage | Station Spacing | Local | Rapid | Limited Express | Airport Express |
+    | --- | --- | --- | --- | --- | --- | --- |
+    | Longdongkou | 0.00 | 0.00 | ● | ● | ● | × |
+    | Haojiazhuang | 1.71 | 1.71 | ● | ↓ | ↓ | × |
+    | Longao | 3.76 | 2.05 | ● | ● | ↓ | × |
+    | Jibei Olympic Sports Center | 5.01 | 1.25 | ● | ● | ● | × |
+    | Ligengdadao | 5.79 | 0.78 | ● | ↓ | ↓ | × |
+    | Tangjiazhuang | 6.84 | 1.05 | ● | ↓ | ↓ | × |
+    | Xihuayuan | 8.51 | 1.67 | ● | ↓ | ↓ | × |
+    | Shijianpu | 10.01 | 1.50 | ● | ● | ● | × |
+    | Hejiazhuang | 12.21 | 2.20 | ● | ↓ | ↓ | × |
+    | Huofenghuang-lu | 13.83 | 1.62 | ● | ↓ | ↓ | × |
+    | Baoshui | 17.64 | 3.81 | ● | ● | ↓ | × |
+    | Guojiazhuang | 21.37 | 3.73 | ● | ● | ● | × |
+
+<aside>
+💡
+
+Attention：
+
+1. ‘●’ indicates the station where the train of this type must stop;
+2. ‘×’ indicates that this type of train does not pass through or stop at this station;
+3. '↓' indicates that this type of train does not stop at this station.
+</aside>
+
+## 運用時間
+
+毎日05:00——翌01:30
+
+# 設備施設
+
+## 車両
+
+<aside>
+⚠️
+
+著作権の理由と車両原作者への尊重のため、本作に含まれる車両や素材バッグなどは自分でダウンロードしてください。私発などの無許可の伝播方法は本人は考えない。一部のリンクは何らかの理由で直接アクセスできない可能性があります。科学的なインターネットなどのソリューションを自分で探してください。
+
+また、一部の車両はBVE 6に対応していない可能性があるので、ゲームを実行するにはBVE 5.8を使用することが望ましい。
+
+</aside>
+
+### JBR-N1000形
+
+https://ts1.cn.mm.bing.net/th/id/R-C.d4a45887333b54ac4b994c5c1f3590db?rik=r0Dm5opcUA1hYg&riu=http%3a%2f%2fwww.kqtrain.net%2fjpeg%2fkeikyu%2fk10xxn%2fk1001-01.jpg&ehk=jq%2bXtkwF8p8H0nwvn7NfDyVGi1yB1B63YI6g3%2fJcTtU%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1
+
+|  |  |
+| --- | --- |
+| Cars | 4, 6, 8 or 12 |
+| Maximum Speed | 120 km/h |
+| Signal System | C-ATS |
+| Made by | [Project-N1000](https://projectn1000.web.fc2.com) |
+
+### JBR-3100形
+
+https://tse1-mm.cn.bing.net/th/id/OIP-C.Wt-ze0vfWNw2LQA7HeNEXwHaE6?rs=1&pid=ImgDetMain
+
+|  |  |
+| --- | --- |
+| Cars | 8 |
+| Maximum Speed | 120 km/h |
+| Signal System | C-ATS |
+| Made by | [JUS-K33](https://juste.web.fc2.com) |
+
+### JBR-3600形
+
+!https://kq-one.sakura.ne.jp/kqzukan/3600/3638.JPG
+
+|  |  |
+| --- | --- |
+| Cars | 6 or 8 |
+| Maximum Speed | 120 km/h |
+| Signal System | C-ATS |
+| Made by | [ゆーたん](https://yutanks-senzan.jimdofree.com/) |
+
+### JBR-5300形
+
+!https://juste.web.fc2.com/530.jpg
+
+|  |  |
+| --- | --- |
+| Cars | 8 |
+| Maximum Speed | 120 km/h |
+| Signal System | C-ATS |
+| Made by | [JUS-K33](https://juste.web.fc2.com) |
+
+### JBR-5500形
+
+!https://juste.web.fc2.com/17885.jpg
+
+|  |  |
+| --- | --- |
+| Cars | 8 |
+| Maximum Speed | 120 km/h |
+| Signal System | C-ATS |
+| Made by | [JUS-K33](https://juste.web.fc2.com) |
+
+# ダウンロード
+
+## **必要スペック**
+
+[Bve Trainsim 5.8 or Bve Trainsim 6](https://bvets.net)
+
+## Prologue Version
+
+- **Scenarios**
+    - Local 1001  4 Cars
+    Section：Lifujing Car Yard→Dongfangte
+    Max Speed: 120 km/h
+    When：Morning
+    Weather：Sunday
+    Station：All
+    Time：14 min
+    Train：JBR-N1000 Series
+
+Ver.202411-25
+
+[LxhNolan-JBR_Line_Demo-Ver.202412-11.zip](https://github.com/LxhNolan/Jibei-Railway/releases/download/BVE_JBR_P_241211/LxhNolan-JBR_Line_Demo-Ver.202412-11.zip)
+
+- **更新履歴**
+    - 2024-11-13: Demo Version
+        
+        東方特全線（李府井―東方特）路線形状と一部周辺景色の構築が完了
+        
+    - 2024-11-14: Update
+        1. 小楊荘から西済北までの区間、および終点の東方特までの制限速度を調整し、制限速度標識を追加する。
+        2. 各駅に盲導ベルと駅のホワイトノイズを追加しました（停止位置でしか聞こえません）。
+    - 2024-11-15: Update
+        1. 各駅の長さは従来の基礎の上で50メートル短縮された、
+        2. 新たに5組のAI車を追加した、
+        3. 軌道平坦度を改正し、列車高速運行時の車両揺れの幅を減少させた、
+        4. 李府井貯留線と李府井駅間の距離を短縮し、一部の軌道を微調整した、
+        5. ラインシーンにフォグ効果が追加されました。
+    - 2024-11-19: Update
+        1. いくつかの信号機を増設し、京急、京成、都営浅草用C-ATSを追加した。現在も信号システムを改善するためには多くの作業が必要です。
+        2. 終点の東方特駅の制限速度を調整した。
+        3. 東方特にAI車が追加された。
+    - 2024-11-21: Update
+        1. 中、英、日の3つの言語の放送音声を追加した。
+        2. 駅の発車ベルが追加されました。
+    - 2024-11-25: Update
+        
+        李府井駅、西済北駅のドア閉音声が追加された。
+        
+    - 2024-12-11: Update
+        
+        The title *LxhNolan-JBR Line Demo* has been renamed *LxhNolan-JBR Line Prologue*.
+        
+
+<aside>
+⚠️
+
+**特に注意：**
+
+1. このパケットはWindows 8.1以降のシステムバージョンでのみ使用できます。
+2. 本パケットは.zipファイルであり、ファイルサイズは105 MBであり、すべて解凍（中の「Sceniros.exe」を含む）したファイルサイズは176 MBである。
+3. 解凍後は必ず「Read_Me.txt」ファイルをお読みください。
+4. 「Sceniros.exe」のうち2つのマスターファイルは同じフォルダにある必要があります。
+5. 本パケットと以上の車両パケットは、BVE 5ゲーム本体上で動作するほか、［[Nagoya_Common（2024年7月版）](http://moffbarrel.stars.ne.jp/Nagoya_Common.html)］パケットが存在しないと、ゲームが正常に動作しません。
+</aside>
+
+## Official Version
+
+DATE：Coming Soon…
