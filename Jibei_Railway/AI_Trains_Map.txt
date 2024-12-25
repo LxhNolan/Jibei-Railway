@@ -1,0 +1,22 @@
+BveTs Map 2.02:utf-8
+
+20000;
+   Train['600-12-zf'].Stop(120,30,2.85,120);
+   
+$xdxc+235;
+   Train['600-12-1'].Load('Structures\Trains\1000SUS\1000_12c_a.txt', 1, -1);
+   Train['600-12-1'].Stop(3.1,30,2.85,120);
+   Train['600-12-zf'].Stop(3.1,30,2.85,120);
+
+6450;
+   Train['600-12-zf'].Load('Structures\Trains\1000SUS\1000_12c_b.txt','xdxc-zf2', 1);
+   Train['600-12-zf'].Stop(0,120,2.91,25);
+   
+$sby+235;
+   Train['600-12-1'].Stop(3.1,30,2.85,120);
+
+$cxdd+235;
+   Train['600-12-1'].Stop(3.1,30,2.85,120);
+
+$gyyjy+235;
+   Train['600-12-1'].Stop(3.1,30,2.85,45);

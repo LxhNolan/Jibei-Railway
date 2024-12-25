@@ -11,9 +11,15 @@ Signal.Load('Signals.csv');
 #设置背景
 Background.Change('Bg');
 
+$gyyjy=300;
+$cxdd=1990+550;
+$sby=4770;
+$xdxc=6789;
+
 include 'Map_Build.txt';
 include 'Map_Road.txt';
 include 'Map_Mountain.txt';
+include 'AI_Trains_Map.txt';
 //軌道変位
 	Irregularity.Change(0.0008, 0.0005, 0.000315, 50, 50, 50);
 	//Track.Accuracy(1)
@@ -52,7 +58,7 @@ include 'Map_Mountain.txt';
 245;
    Track['1'].X.Interpolate(10, 0);
 300;
-   $gyyjy=300;
+   
    include 'Structures/Stations/gongyeyanjiuyuan_Map.txt';
 # 工业研究院终点550m
 810;
@@ -70,7 +76,6 @@ include 'Map_Mountain.txt';
    Gradient.End();
    Curve.End();
 1990+550;
-   $cxdd=1990+550;
    include 'Structures/Stations/chuangxindadao_Map.txt';
 2895;
    Curve.BeginTransition();
@@ -100,8 +105,25 @@ include 'Map_Mountain.txt';
 4147;
    Curve.End();
 4770;
-   $sby=4770;
    include 'Structures/Stations/shiboyuan_Map.txt';
+4837;
+   Curve.BeginTransition();
+5087;
+   Curve.Begin(7004,0.008);
+5339;
+   Curve.BeginTransition();
+5881;
+   Curve.End();
+6789; 
+   include 'Structures/Stations/xindaxuecheng_Map.txt';
+6789+250+727;
+   Curve.BeginTransition();
+6789+250+1027;
+   Curve.Begin(9504,0.008);
+6789+250+1187;
+   Curve.BeginTransition();
+6789+250+1401;
+   Curve.End();
 
 
 

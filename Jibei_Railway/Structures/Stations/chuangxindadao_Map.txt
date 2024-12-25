@@ -16,7 +16,7 @@ $cxdd+0;
    Repeater['sta_wall_l_5'].Begin0('0', 1, 5, 5,'station_wall_l_5');
    Repeater['sta_roof_l_5'].Begin0('0', 1, 5, 5,'station_roof_l_5');
    Repeater['sta_eaves_l_5'].Begin0('0', 1, 5, 5,'station_eaves_l_5');
-   Repeater['ADr'].Begin('0',2,2,0,0,0,0,1,10,10,'ad1','ad2','ad3','ad4','ad5','ad6','ad7');
+   Repeater['ADr'].Begin('0',2,2,0,0,0,0,1,10,10,'ad1','ad2','ad3','ad4','ad5','ad6','ad7','ad8');
    Repeater['ADs_Poler'].Begin('0',2,1.25,-1,0,0,0,1,10,10,'Pole');
    Repeater['ADs_Pole2r'].Begin('0',2,1.25,0.6,0,0,0,1,10,10,'Pole');
    Structure['S_L'].Put('0',0,0,-2,0,0,0,1,1);

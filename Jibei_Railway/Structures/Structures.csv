@@ -41,8 +41,8 @@ DikeR3,Nature\Ground\DikeGrs5mR3.x
 DikeFace,Nature\Ground\DikeFace.x
 
 # 横跨桥
-HKQ1,..\..\Nagoya_Common\Build\Over\Mei\JRC.x
-HKQ2,..\..\Nagoya_Common\Build\Over\Mei\R21.x
+HKQ1,..\..\Nagoya_Common\Build\Over\00.x
+HKQ2,..\..\Nagoya_Common\Build\Over\01.x
 
 # Nature
    # 背景
@@ -78,6 +78,7 @@ rain,Nature\rain\rain.x
 # 公路
 Road4,..\..\Nagoya_Common\Build\Road\Road4.x
 Cross_5m,..\..\Nagoya_Common\Build\Road\Cross_5m.x
+Cross_4,..\..\Nagoya_Common\Build\Road\Cross_4.x
 Road1,..\..\Nagoya_Common\Build\Road\Road1.x  #单行道
 Road2,..\..\Nagoya_Common\Build\Road\Road2_nonblock.x  #双行道
 
@@ -115,7 +116,8 @@ stnkdr,..\..\Nagoya_Common\Build\Station\Mc223\kokesuiyama\kdr.x
 # 站台楼梯
 Step_D,..\..\Nagoya_Common\Build\Form\Step\Down\Step_D.x
 Step,..\..\Nagoya_Common\Build\Form\Step\Down\Step.x
-# Stations （车站构造）
+
+# Stations （地面车站构造）
 station_side_l_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5L.x
 station_floor_l_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5CL.x
 station_wall_l_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5WallL.x
@@ -131,6 +133,33 @@ WallSREnd1,../../Nagoya_Common/Build/Form/Plat_Form/WallSREnd.x,
 WallSL1,../../Nagoya_Common/Build/Form/Old_Form/WallSL.x,
 WallSR2,../../Nagoya_Common/Build/Form/Old_Form/WallSR.x,
 
+# Stations （高架车站构造）
+station_side2_l_5,..\..\Nagoya_Common\Build\Form\Old_Form\L_E.x
+station_wall2_l_5,..\..\Nagoya_Common\Build\Form\Old_Form\WallL.x
+station_roof2_l_5,..\..\Nagoya_Common\Build\Form\Old_Form\RoofCL.x
+station_eaves2_l_5,..\..\Nagoya_Common\Build\Form\Old_Form\RoofL.x
+station_floor2_l_5,..\..\Nagoya_Common\Build\Form\Old_Form\CL.x
+station_side2_r_5,..\..\Nagoya_Common\Build\Form\Old_Form\R_E.x
+station_wall2_r_5,..\..\Nagoya_Common\Build\Form\Old_Form\WallR.x
+station_roof2_r_5,..\..\Nagoya_Common\Build\Form\Old_Form\RoofCR.x
+station_eaves2_r_5,..\..\Nagoya_Common\Build\Form\Old_Form\RoofR.x
+station_floor2_r_5,..\..\Nagoya_Common\Build\Form\Old_Form\CR.x
+
+# 车站用栏杆
+F_endfence_A1,Sta_Fence\F_endfence_A1.x
+F_endfence_A3,Sta_Fence\F_endfence_A3.x
+F_endfence_A2,Sta_Fence\F_endfence_A2.x
+F_endfence_A4,Sta_Fence\F_endfence_A4.x
+F_endfence_B1,Sta_Fence\F_endfence_B1.x
+F_endfence_B2,Sta_Fence\F_endfence_B2.x
+F_endfence_B3,Sta_Fence\F_endfence_B3.x
+F_endfence_B4,Sta_Fence\F_endfence_B4.x
+F_endfence_stair,Sta_Fence\F_endfence_stair.x
+
+# 车站屏蔽门
+pbml,..\..\Nagoya_Common\Build\homedoor\20m_4\N_L.x
+pbmr,..\..\Nagoya_Common\Build\homedoor\20m_4\N_R.x
+
 # 铁道路口
 D_L,../../Nagoya_Common/Railway_Obj/Cross/Meiden/D_L.x,
 D_R,../../Nagoya_Common/Railway_Obj/Cross/Meiden/D_R.x,
@@ -143,6 +172,8 @@ S_R,../../Nagoya_Common/Railway_Obj/Cross/Meiden/S_R.x,
 gyyjy,Sta_Str\gyyjy.x
 cxdd_led_2r,Sta_Str\cxdd2r.x
 cxdd_led_1l,Sta_Str\cxdd1l.x
+xdxc_P12,Sta_Str\xdxc_P12.x
+xdxc_P34,Sta_Str\xdxc_P34.x
 
 strled1,..\..\Nagoya_Common\Build\Form\Next\Next.x
 strled2,..\..\Nagoya_Common\Build\Form\Next\Next1.x
@@ -151,6 +182,7 @@ strled2,..\..\Nagoya_Common\Build\Form\Next\Next1.x
 gyyjy_sta,StationName\Gongyeyanjiuyuan.x
 cxdd_sta,StationName\Chuangxindadao.x
 sby_sta,StationName\Shiboyuan.x
+xdxc_sta,StationName\Xindaxuecheng.x
 
 # 车站内标志
 exit0,Sta_Str\Exit_0.x
@@ -279,6 +311,14 @@ LfxR,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\R.x
 600_2b,Trains\khk600\600_2b.x
 600_3,Trains\khk600\600_3.x
 
+1000_M1x,Trains\1000SUS\M1'.x
+1000_M1s,Trains\1000SUS\M1s.x
+1000_M1u,Trains\1000SUS\M1u.x
+1000_M2sc,Trains\1000SUS\M2sc.x
+1000_M2uc,Trains\1000SUS\M2uc.x
+1000_M2uc2,Trains\1000SUS\M2uc2.x
+1000_T,Trains\1000SUS\T.x
+
 1500_1a,Trains\khk1500\1500_1a.x
 1500_1b,Trains\khk1500\1500_1b.x
 1500_2a,Trains\khk1500\1500_2a.x
@@ -334,6 +374,9 @@ Pole,..\..\Nagoya_Common\Railway_Obj\SigPole\Pole.x
 Pole_B,..\..\Nagoya_Common\Railway_Obj\SigPole\Pole_B.x
 SignPost,SigPost.x
 
+Sigpole,..\..\Nagoya_Common\Railway_Obj\SigPole\PoleS.x
+
+
 Diaoche_R,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Switch\R_R.x
 Diaoche_Y1,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Switch\Y.x
 Diaoche_Y2,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Switch\R_Y.x
@@ -365,6 +408,8 @@ AD4,..\..\Nagoya_Common\Build\Signbord\NichiS.x
 AD5,Build\Signbord\XHShouHu2.x
 AD6,Build\Signbord\sdxhxy.x
 AD7,Build\Signbord\fkcny.x
+AD8,Build\Signbord\XHqxdyj.x
 
 #ad(大)
 AD2-1,Panel/XHShouhu.x
+AD2-2,Panel/AD_B_1.x

@@ -1,7 +1,7 @@
 BveTs Map 2.02:utf-8
 
 2813;
-Repeater['road2-1'].Begin('road2-1',-24,0,0,0,0,0,1,3,3,'Road2');
+   Repeater['road2-1'].Begin('road2-1',-24,0,0,0,0,0,1,3,3,'Road2');
    Track['road2-1'].X.Interpolate(-24,0);
 2994;
    Track['road2-1'].X.Interpolate(500,0);
@@ -9,3 +9,11 @@ Repeater['road2-1'].Begin('road2-1',-24,0,0,0,0,0,1,3,3,'Road2');
    Repeater['road2-1'].End();
 3300;
 
+$xdxc-97;
+   Structure['Cross_5m'].Put('Gnd',-100+8,-0.01,0,0,0,0,1,1);
+   Structure['Cross_5m'].Put('Gnd',-100+8,-0.01,-10,0,0,0,1,1);
+   Structure['Cross_5m'].Put('Gnd',-200+8,-0.01,0,0,0,0,1,1);
+   Structure['Cross_5m'].Put('Gnd',-200+8,-0.01,-10,0,0,0,1,1);
+$xdxc-194.25;
+   Structure['Cross_4'].Put('Gnd',100-5,-0.01,0,0,0,0,1,1);
+   Structure['Cross_4'].Put('Gnd',200-5,-0.01,0,0,0,0,1,1);
