@@ -1,9 +1,22 @@
 BveTs Sound List 2.00
 
-mangdaoling,Sounds/pin_pon.wav
+#导盲铃
+daomangling,Sounds/pin_pon.wav
+
+#人声
 people_at_station,..\Nagoya_Common\Sound\3D\People.wav
+
+#京急1000型电机音
 kk1000_A,Sounds/kk1000_Accel.wav,10
 kk1000_D,Sounds/kk1000_Decel.wav,10
 kk1000_R,Sounds/kk1000_Run.wav,10
+
+#平交道
 Cross,..\Nagoya_Common\Sound\3D\Crossing_KB2.wav
+
+#列车通过
 passing,Sounds/pass.wav
+
+#车站语音提醒及音乐
+stationbroadcast,Sounds/Broadcast_at_station.wav
+stationmusic,Sounds/Music_at_station.wav

@@ -131,7 +131,7 @@ station_eaves_r_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5RoofR.x
 WallSLEnd1,../../Nagoya_Common/Build/Form/Plat_Form/WallSLEnd.x,
 WallSREnd1,../../Nagoya_Common/Build/Form/Plat_Form/WallSREnd.x,
 WallSL1,../../Nagoya_Common/Build/Form/Old_Form/WallSL.x,
-WallSR2,../../Nagoya_Common/Build/Form/Old_Form/WallSR.x,
+WallSR1,../../Nagoya_Common/Build/Form/Old_Form/WallSR.x,
 
 # Stations （高架车站构造）
 station_side2_l_5,..\..\Nagoya_Common\Build\Form\Old_Form\L_E.x

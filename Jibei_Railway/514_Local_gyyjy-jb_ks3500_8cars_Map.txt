@@ -1,0 +1,51 @@
+BveTs Map 2.02:utf-8
+
+include 'Map.txt';
+include '514_AI_Trains_Map.txt';
+Station.Load('514_Stations.csv');
+Curve.SetGauge(1.435);
+Curve.SetCenter(1.435/2);
+
+#工业研究院
+   520-18*4;
+      Station['gyyjy'].Put(1, -1, 1);
+      #Sound3D['stationmusic'].Put(5,3.9);
+      Sound3D['daomangling'].Put(5,3.9);
+      Sound3D['stationbroadcast'].Put(5,3.9);
+      Sound3D['people_at_station'].Put(5,2);
+
+#创新大道
+   $cxdd+250-15-18*2;
+      Station['cxdd'].Put(-1, -5, 5);
+      #Sound3D['stationmusic'].Put(5,3.9);
+      Sound3D['daomangling'].Put(-5,3.9);
+      Sound3D['stationbroadcast'].Put(-5,3.9);
+      Sound3D['people_at_station'].Put(-5,2);
+      Sound3D['people_at_station'].Put(4+5,2);
+   $cxdd-250;
+      Beacon.Put(1,0,0);
+
+#世博园
+   $sby+250-15-18*2;
+      Station['sby'].Put(-1, -2, 2);
+      #Sound3D['stationmusic'].Put(5,3.9);
+      Sound3D['daomangling'].Put(-5,3.9);
+      Sound3D['stationbroadcast'].Put(-5,3.9);
+      Sound3D['people_at_station'].Put(-5,2);
+      Sound3D['people_at_station'].Put(4+5,2);
+   $sby-250;
+      Beacon.Put(1,0,0);
+#新大学城
+   $xdxc+250-15-18*2;
+      Station['xdxc'].Put(-1, -2, 2);
+      #Sound3D['stationmusic'].Put(5,3.9);
+      Sound3D['daomangling'].Put(-5,3.9);
+      Sound3D['stationbroadcast'].Put(-5,3.9);
+      Sound3D['daomangling'].Put(4+5,3.9);
+      Sound3D['stationbroadcast'].Put(4+5,3.9);
+      Sound3D['people_at_station'].Put(5+4,2);
+      Sound3D['people_at_station'].Put(-5,2);
+      distance-2;
+      Train['1000-12-zf'].Enable('09:36:30');
+   $xdxc-250;
+      Beacon.Put(1,0,0);
