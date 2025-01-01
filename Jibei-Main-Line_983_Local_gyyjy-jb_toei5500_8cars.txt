@@ -1,0 +1,10 @@
+BveTs Scenario 2.00:utf-8
+
+Title = 983次 [普通] 工业研究院→济北
+Route = Jibei_Railway/983_Map.txt 
+RouteTitle = 济北铁道-济北本线
+Image = Jibei_Railway/JBR_LOGO.png
+Vehicle = jus\TOEI5500\Vehicles\vehicle_5509-1_8A.txt | jus\TOEI5500\Vehicles\vehicle_5509-1_8B.txt |jus\TOEI5500\Vehicles\vehicle_5509-8_8A.txt |jus\TOEI5500\Vehicles\vehicle_5509-8_8B.txt
+VehicleTitle = JBR5500(TOEI5500)型 8节编组
+Author = Route:LxhNolan, Vehicle:JUS-K33 
+Comment = 本列车停靠工研院至济北间沿途的各个车站。

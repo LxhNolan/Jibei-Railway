@@ -130,6 +130,8 @@ station_roof_r_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5RoofCR.x
 station_eaves_r_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5RoofR.x
 WallSLEnd1,../../Nagoya_Common/Build/Form/Plat_Form/WallSLEnd.x,
 WallSREnd1,../../Nagoya_Common/Build/Form/Plat_Form/WallSREnd.x,
+WallSLEnd,../../Nagoya_Common/Build/Form/Plat_Form/WallSLEnd.x,
+WallSREnd,../../Nagoya_Common/Build/Form/Plat_Form/WallSREnd.x,
 WallSL1,../../Nagoya_Common/Build/Form/Old_Form/WallSL.x,
 WallSR1,../../Nagoya_Common/Build/Form/Old_Form/WallSR.x,
 
@@ -266,6 +268,17 @@ stop_14,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\14.x,
 stop_15,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\15.x,
 stop_all,..\..\Nagoya_Common\Railway_Obj\Sign\Stop\type1\Zen.x,
 
+# 停车标(京成电铁用)
+StopupKs_4,Mirai\stop\StopupKs_4.x
+StopupKs_6,Mirai\stop\StopupKs_6.x
+StopupKs_8,Mirai\stop\StopupKs_8.x
+StopupKs_10,Mirai\stop\StopupKs_10.x
+StopupKs_12,Mirai\stop\StopupKs_12.x
+StopupKs_AEs,Mirai\stop\StopupKs_AE_s.x
+StopupKs_AEu,Mirai\stop\StopupKs_AE_U.x
+StopupKs_AE,Mirai\stop\StopupKs_AE.x
+StopupKs_All,Mirai\stop\StopupKs_All.x
+
 # 尽头标志
 end1,..\..\Nagoya_Common\Railway_Obj\End\1_End.x,
 end2,..\..\Nagoya_Common\Railway_Obj\End\2_End.x,
@@ -374,7 +387,7 @@ Pole,..\..\Nagoya_Common\Railway_Obj\SigPole\Pole.x
 Pole_B,..\..\Nagoya_Common\Railway_Obj\SigPole\Pole_B.x
 SignPost,SigPost.x
 
-Sigpole,..\..\Nagoya_Common\Railway_Obj\SigPole\PoleS.x
+Sigpoler,..\..\Nagoya_Common\Railway_Obj\SigPole\Pole_R.x
 
 
 Diaoche_R,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Switch\R_R.x
@@ -401,7 +414,7 @@ Youdao_Off,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Guidance\Off_LED.x
 Daishou_Off,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\HandSig\Off_Led.x
 
 #ad(小)
-AD1,Build\Signbord\XHShouHu.x
+AD1,Build\Signbord\XH1.x
 AD2,Build\Signbord\XHsjdhr.x
 AD3,..\..\Nagoya_Common\Build\Signbord\Nichi.x
 AD4,..\..\Nagoya_Common\Build\Signbord\NichiS.x
@@ -413,3 +426,4 @@ AD8,Build\Signbord\XHqxdyj.x
 #ad(大)
 AD2-1,Panel/XHShouhu.x
 AD2-2,Panel/AD_B_1.x
+AD2-3,Panel/XH1.x

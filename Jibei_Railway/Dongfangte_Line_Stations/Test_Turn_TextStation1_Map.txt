@@ -1,0 +1,201 @@
+BveTs Map 2.02:utf-8
+
+$lifujing - 300;
+   Structure['end4'].Put('0', 0, 0, 0, 0, 180, 0, 1, 1);
+   Structure['end4'].Put('1', 0, 0, 0, 0, 180, 0, 1, 1);
+
+$lifujing - 200+50+30;
+   Station['Sta0'].Put(0, 0, 0);
+	Structure['stop_4'].Put('0', 1.7, 0, 0, 0, 15, 0, 1, 25);
+
+$lifujing - 120 + 50-10;
+   Structure['Pole'].Put('0', -2, 1.5, 0, 0, 0, 0, 1, 1);
+   # Section.Begin('34','36');
+   Section.Begin('16','19');
+   Signal['Diaoche_1'].Put(0, '0', -2, 1.5, 0, 0, 0, 0, 2.5, 4.5);
+   Structure['Pole'].Put('1', 2, 1.5, 0, 0, 0, 0, 1, 1);
+   Structure['Diaoche_R'].Put('1', 2, 1.5, 0, 0, 0, 0, 0, 0);
+   
+
+$lifujing - 120 + 50+30;
+
+   Track[4].X.Interpolate(0, 200);
+	Track[5].X.Interpolate(3.8, -200);
+
+	JointNoise.Play(0);
+
+	Repeater['Ballast4'].Begin('4', 0, 0, 0, 0, 0, 0, 3, 5, 5, 'Ballast0');
+   Repeater['RailL4'].Begin('4', -0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailL0', 'RailL1', 'RailL2', 'RailL3', 'RailL4');
+   Repeater['RailR4'].Begin('4', 0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailR0', 'RailR1', 'RailR2', 'RailR3', 'RailR4');
+   Repeater['Ballast5'].Begin('5', 0, 0, 0, 0, 0, 0, 3, 5, 5, 'Ballast0');
+   Repeater['RailL5'].Begin('5', -0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailL0', 'RailL1', 'RailL2', 'RailL3', 'RailL4');
+   Repeater['RailR5'].Begin('5', 0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailR0', 'RailR1', 'RailR2', 'RailR3', 'RailR4');
+   Repeater['wire4'].Begin0('4', 1, 25, 25,'Kasen25A','Kasen25B');
+   Repeater['wire5'].Begin0('5', 1, 25, 25,'Kasen25A','Kasen25B');
+
+$lifujing - 120 + 20 + 50+30;
+	Track[4].X.Interpolate(1.00, 0);
+	Track[5].X.Interpolate(3.8-1.00, 0);
+
+$lifujing - 120+20+18+50+30;
+	Track[4].X.Interpolate(3.8-1.00, -200);
+	Track[5].X.Interpolate(1.00, 200);
+
+$lifujing - 120+20+18+10+50+30;
+	JointNoise.Play(0);
+
+$lifujing - 120+20+18+10+10+50+30;
+
+	Track[4].X.Interpolate(3.8, 0);
+	Track[5].X.Interpolate(0, 0);
+
+	Repeater['Ballast4'].End();
+   Repeater['RailL4'].End();
+   Repeater['RailR4'].End();
+   Repeater['Ballast5'].End();
+   Repeater['RailL5'].End();
+   Repeater['RailR5'].End();
+   Repeater['wire4'].End();
+   Repeater['wire5'].End();
+
+$lifujing + 50;
+   Structure['Signal1L0'].Put('0', -2, 4, -5.05, 0, 0, 0, 1, 1);
+   Structure['SignPost'].Put('0', -2, 0, -5, 0, 0, 0, 1, 1);
+   Signal['Diaoche_1'].Put(0, '0', -2, 1.5, -5.05, 0, 0, 0, 0, 0);
+   Structure['Youdao_Off'].Put('0', -2, 3.25, -5.05, 0, 0, 0, 1, 1);
+   Structure['Youdao_Off'].Put('1', 2, 3.25, -5.05, 0, 0, 0, 1, 1);
+   Structure['Daishou_Off'].Put('0', -2, 2.5, -5.05, 0, 0, 0, 1, 1);
+   Structure['Daishou_Off'].Put('1', 2, 2.5, -5.05, 0, 0, 0, 1, 1);
+   # Section.Begin('34','36','38','40');
+   Section.Begin('17', '19', '22', '25');
+   Structure['Signal1L0'].Put('1', 2, 4, -5.05, 0, 0, 0, 1, 1);
+   Structure['SignPost'].Put('1', +2, 0, -5, 0, 0, 0, 1, 1);
+   Structure['Diaoche_R'].Put('1', 2, 1.5, -5.05, 0, 0, 0, 0, 0);
+   Signal['Colour4L'].Put(0, '2', -2.25, 4, -5.05, 0, 0, 0, 1, 1);
+   Structure['SignPost'].Put('2', -2.25, 0, -5, 0, 0, 0, 1, 1);
+   Structure['Diaoche_R'].Put('2',-2, 1.5, -5.05, 0, 0, 0, 0, 0);
+   Structure['Youdao_Off'].Put('2', -2, 3.25, -5.05, 0, 0, 0, 1, 1);
+   Structure['Daishou_Off'].Put('2', -2, 2.5, -5.05, 0, 0, 0, 1, 1);
+
+   # 左侧站台1
+   Structure['WallSLEnd'].Put0('0', 1, 1);
+   Repeater['text1_station_side_l_5'].Begin0('', 3, 5, 5,'station_side_l_5');
+   Repeater['text1_station_floor_l_5'].Begin0('', 3, 5, 5,'station_floor_l_5');
+   Repeater['text1_station_wall_l_5'].Begin0('', 3, 5, 5,'station_wall_l_5');
+   Repeater['text1_station_roof_l_5'].Begin0('', 3, 5, 5,'station_roof_l_5');
+   Repeater['text1_station_eaves_l_5'].Begin0('', 3, 5, 5,'station_eaves_l_5');
+
+   # 右侧站台1
+   Structure['WallSREnd'].Put0('1', 1, 1);
+   Repeater['text1_station_side_r_5'].Begin0('1', 3, 5, 5,'station_side_r_5');
+   Repeater['text1_station_floor_r_5'].Begin0('1', 3, 5, 5,'station_floor_r_5');
+   # Repeater['text1_station_wall_r_5'].Begin0('1', 3, 5, 5,'station_wall_r_5');
+   Repeater['text1_station_roof_r_5'].Begin0('1', 3, 5, 5,'station_roof_r_5');
+   Repeater['text1_station_eaves_r_5'].Begin0('1', 3, 5, 5,'station_eaves_r_5');
+
+   # 左侧站台2
+   Structure['WallSLEnd'].Put0('2', 1, 1);
+   Repeater['text1_station_side_l2_5'].Begin0('2', 3, 5, 5,'station_side_l_5');
+   Repeater['text1_station_floor_l2_5'].Begin0('2', 3, 5, 5,'station_floor_l_5');
+   # Repeater['text1_station_wall_l2_5'].Begin0('2', 3, 5, 5,'station_wall_l_5');
+   Repeater['text1_station_roof_l2_5'].Begin0('2', 3, 5, 5,'station_roof_l_5');
+   Repeater['text1_station_eaves_l2_5'].Begin0('2', 3, 5, 5,'station_eaves_l_5');
+
+   # 右侧站台2
+   Structure['WallSREnd'].Put0('3', 1, 1);
+   Repeater['text1_station_side_r2_5'].Begin0('3', 3, 5, 5,'station_side_r_5');
+   Repeater['text1_station_floor_r2_5'].Begin0('3', 3, 5, 5,'station_floor_r_5');
+   Repeater['text1_station_wall_r2_5'].Begin0('3', 3, 5, 5,'station_wall_r_5');
+   Repeater['text1_station_roof_r2_5'].Begin0('3', 3, 5, 5,'station_roof_r_5');
+   Repeater['text1_station_eaves_r2_5'].Begin0('3', 3, 5, 5,'station_eaves_r_5');
+
+$lifujing + 275;
+   Station['Sta1'].Put(-1, -2, 2);
+	Structure['stop_all'].Put('0', 1.9, 0, 0, 0, 15, 0, 1, 25);
+   Sound3D['daomangling'].Put(-1, 3);
+   Sound3D['people_at_station'].Put(-4.3, 2.4);
+   distance - 100;
+   # Beacon.Put(252,0,24);#次駅設定
+   
+$lifujing + 300;
+   Structure['WallSLEnd'].Put0('0', 1, 1);
+   Structure['WallSREnd'].Put0('1', 1, 1);
+   Structure['WallSLEnd'].Put0('2', 1, 1);
+   Structure['WallSREnd'].Put0('3', 1, 1);
+   Repeater['fence_l'].Begin('0', -3, 0, 0, 0, 0, 0, 1, 5, 5, 'fence_5');
+   Repeater['fence_r'].Begin('3', 3, 0, 0, 0, 0, 0, 1, 5, 5, 'fence_5');   
+   Repeater['text1_station_side_l_5'].End();
+   Repeater['text1_station_floor_l_5'].End();
+   Repeater['text1_station_wall_l_5'].End();
+   Repeater['text1_station_roof_l_5'].End();
+   Repeater['text1_station_eaves_l_5'].End();
+   Repeater['text1_station_side_r_5'].End();
+   Repeater['text1_station_floor_r_5'].End();
+   # Repeater['text1_station_wall_r_5'].End();
+   Repeater['text1_station_roof_r_5'].End();
+   Repeater['text1_station_eaves_r_5'].End();
+   Repeater['text1_station_side_l2_5'].End();
+   Repeater['text1_station_floor_l2_5'].End();
+   # Repeater['text1_station_wall_l2_5'].End();
+   Repeater['text1_station_roof_l2_5'].End();
+   Repeater['text1_station_eaves_l2_5'].End();
+   Repeater['text1_station_side_r2_5'].End();
+   Repeater['text1_station_floor_r2_5'].End();
+   Repeater['text1_station_wall_r2_5'].End();
+   Repeater['text1_station_roof_r2_5'].End();
+   Repeater['text1_station_eaves_r2_5'].End();
+$ATS=$lifujing + 310;
+$ATS-150;
+	      Beacon.put(10, 1, 0810150);  
+      $ATS-10;
+   	   Beacon.put(9, 0, 1916);
+      $ATS;
+   	   Signal['Colour4L'].Put(1, 0, -2.4+0.7, 3.5, 0.1, 0, 0, 0, 0, 0);
+	      Section.Begin(17, 19, 22, 25);
+	      Structure['SigPoler'].Put(0, -2.4+0.7, 4, 0, 0, 0, 0, 0, 0);
+         Signal['Colour4L'].Put(1, 2, -2.4+0.7, 3.5, 0.1, 0, 0, 0, 0, 0);
+         Structure['SigPoler'].Put(2, -2.4+0.7, 4, 0, 0, 0, 0, 0, 0);
+         Structure['Signal1L0'].Put('1', 2.4-0.7, 3.5, 0.1, 0, 0, 0, 0, 0);
+	      Structure['SigPoler'].Put('1', 2.4-0.7, 4, 0, 0, 0, 0, 0, 0);
+   
+$lifujing + 350-30;
+
+   Track[4].X.Interpolate(0, 200);
+	Track[5].X.Interpolate(3.8, -200);
+
+	JointNoise.Play(0);
+
+	Repeater['Ballast4'].Begin('4', 0, 0, 0, 0, 0, 0, 3, 5, 5, 'Ballast0');
+   Repeater['RailL4'].Begin('4', -0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailL0', 'RailL1', 'RailL2', 'RailL3', 'RailL4');
+   Repeater['RailR4'].Begin('4', 0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailR0', 'RailR1', 'RailR2', 'RailR3', 'RailR4');
+   Repeater['Ballast5'].Begin('5', 0, 0, 0, 0, 0, 0, 3, 5, 5, 'Ballast0');
+   Repeater['RailL5'].Begin('5', -0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailL0', 'RailL1', 'RailL2', 'RailL3', 'RailL4');
+   Repeater['RailR5'].Begin('5', 0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailR0', 'RailR1', 'RailR2', 'RailR3', 'RailR4');
+   Repeater['wire4'].Begin0('4', 1, 25, 25,'Kasen25B','Kasen25A');
+   Repeater['wire5'].Begin0('5', 1, 25, 25,'Kasen25B','Kasen25A');
+
+$lifujing + 350 + 20-30;
+	Track[4].X.Interpolate(1.00, 0);
+	Track[5].X.Interpolate(3.8-1.00, 0);
+
+$lifujing + 350+20+18-30;
+	Track[4].X.Interpolate(3.8-1.00, -200);
+	Track[5].X.Interpolate(1.00, 200);
+
+$lifujing + 350+20+18+10-30;
+	JointNoise.Play(0);
+
+$lifujing + 350+20+18+10+10-30;
+
+	Track[4].X.Interpolate(3.8, 0);
+	Track[5].X.Interpolate(0, 0);
+
+	Repeater['Ballast4'].End();
+   Repeater['RailL4'].End();
+   Repeater['RailR4'].End();
+   Repeater['Ballast5'].End();
+   Repeater['RailL5'].End();
+   Repeater['RailR5'].End();
+   Repeater['wire4'].End();
+   Repeater['wire5'].End();
+   Sound['LFJtoXYZ1'].Play();

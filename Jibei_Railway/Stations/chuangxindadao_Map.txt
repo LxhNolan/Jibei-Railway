@@ -99,3 +99,17 @@ $cxdd+125;
 $cxdd+280;
    Repeater['Pole0'].Begin0('0', 1, 40, 40,'PoleB2','PoleA2');
    Repeater['Pole1'].Begin('1',0,0,0,0,180,0,1,40,40,'PoleA2','PoleB2');
+
+$cxdd+250.05;
+   Structure['AD2-3'].Put('0',-6,0,25,0,-10,0,1,1);
+   Structure['AD2-2'].Put('1',6,0,25,0,10,0,1,1);
+
+#停车标识
+   $cxdd+250/2+18*6+1;
+      Structure['StopupKs_12'].Put('0',1.8,0,0,0,0,0,1,1);
+   $cxdd+250/2+18*4+1;
+      Structure['StopupKs_8'].Put('0',1.8,0,0,0,0,0,1,1);
+   $cxdd+250/2+18*3+1;
+      Structure['StopupKs_6'].Put('0',1.8,0,0,0,0,0,1,1);
+   $cxdd+250/2+18*2+1;
+      Structure['StopupKs_4'].Put('0',1.8,0,0,0,0,0,1,1);

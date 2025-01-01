@@ -1,0 +1,357 @@
+BveTs Map 2.02:utf-8
+
+# 加载结构文件
+Structure.Load('Structures/Structures.csv');
+
+# 加载声音文件
+Sound.Load('Sound.csv');
+Sound3D.Load('Sound3D.csv');
+
+# 加载车站信息文件
+Station.Load('1007_Stations.csv');
+
+# 加载信号系统文件
+Signal.Load('Signals.csv');
+
+# 加载地图
+
+$lifujing = 3008;
+   include'Dongfangte_Line_Stations/Test_Turn_TextStation1_Map.txt';
+$xiaoyangzhuang = 6721;
+   include'Dongfangte_Line_Stations/Test_Turn_TextStation2_Map.txt';
+$xijibei = 8794;
+   include'Dongfangte_Line_Stations/Test_Turn_TextStation3_Map.txt';
+$dongfangte = 10317;
+   include'Dongfangte_Line_Stations/Test_Turn_TextStation4_Map.txt';
+include'1007_AI_Trains_Map.txt';
+include'1007_Map_ATS.txt';
+
+# 轨道平整度
+Irregularity.Change(0.0008, 0.0005, 0.0003, 50, 50, 50);
+
+# 环境
+Fog.Interpolate(0.002, 1, 1, 1); // 雾
+Light.Ambient(0.98, 0.95, 0.98);
+Light.Diffuse(0.5, 0.5, 0.5);
+Light.Direction(70, 30);
+
+0;
+   # 从0m开始铺设轨道以及架线柱（自己的）
+   Repeater['Ballast'].Begin0('0', 3, 5, 5, 'Ballast0');
+   Repeater['RailL'].Begin('0', -0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailL0', 'RailL1', 'RailL2', 'RailL3', 'RailL4');
+   Repeater['RailR'].Begin('0', 0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailR0', 'RailR1', 'RailR2', 'RailR3', 'RailR4');
+   Repeater['Grass'].Begin('0', 0, -0.6, 0, 0, 0, 0, 1, 25, 25, 'Grass');
+   Repeater['wire0'].Begin0('0', 1, 40, 40,'Kasen40A','Kasen40B');
+   Repeater['Pole0'].Begin0('0', 1, 40, 40,'poleB','poleA');
+   Background.Change('Bg');#设置背景
+   Curve.SetGauge(1.435);#设置轨距
+   Curve.SetCenter(0.7175);
+   Track['0'].Position(0, 0);
+   #再铺设旁边的轨道和架线柱
+   Repeater['Ballast1'].Begin('1', 0, 0, 0, 0, 0, 0, 3, 5, 5, 'Ballast0');
+   Repeater['RailL1'].Begin('1', -0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailL0', 'RailL1', 'RailL2', 'RailL3', 'RailL4');
+   Repeater['RailR1'].Begin('1', 0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailR0', 'RailR1', 'RailR2', 'RailR3', 'RailR4');
+   Track['1'].Position(3.8, 0);
+   Repeater['wire1'].Begin0('1', 1, 40, 40,'Kasen40A','Kasen40B');
+   Repeater['Pole1'].Begin('1', 0, 0, 0, 0, 180, 0, 1, 40, 40,'poleA','poleB');
+   Repeater['Ballast2'].Begin('2', 0, 0, 0, 0, 0, 0, 3, 5, 5, 'Ballast0');
+   Repeater['RailL2'].Begin('2', -0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailL0', 'RailL1', 'RailL2', 'RailL3', 'RailL4');
+   Repeater['RailR2'].Begin('2', 0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailR0', 'RailR1', 'RailR2', 'RailR3', 'RailR4');
+   Track['2'].Position(13.8, 0);
+   Repeater['wire2'].Begin0('2', 1, 40, 40,'Kasen40A','Kasen40B');
+   Repeater['Pole2'].Begin0('2', 1, 40, 40,'poleB','poleA');
+   Repeater['Ballast3'].Begin('3', 0, 0, 0, 0, 0, 0, 3, 5, 5, 'Ballast0');
+   Repeater['RailL3'].Begin('3', -0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailL0', 'RailL1', 'RailL2', 'RailL3', 'RailL4');
+   Repeater['RailR3'].Begin('3', 0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailR0', 'RailR1', 'RailR2', 'RailR3', 'RailR4');
+   Track['3'].Position(17.6, 0);
+   Repeater['wire3'].Begin0('3', 1, 40, 40,'Kasen40A','Kasen40B');
+   Repeater['Pole3'].Begin('3', 0, 0, 0, 0, 180, 0, 1, 40, 40,'poleA','poleB');
+130;
+   Gradient.BeginTransition();#进入坡度缓和曲线
+   
+180;
+   Curve.BeginTransition();#进入平面弯道缓和曲线
+   Gradient.Begin(25);#上坡千分之25
+220;
+   Curve.Begin(300, 0.105);#进入曲线半径300m，轨道超高105mm区间（顺时针方向）
+380;
+   Curve.BeginTransition();
+460;
+   Curve.Begin(-300, -0.105);#进入曲线半径300m，轨道超高105mm区间（逆时针方向）
+560;
+   Curve.BeginTransition();
+600;
+   Curve.End();#结束平面弯道缓和曲线
+   Gradient.BeginTransition();
+720;
+   Gradient.Begin(-35);
+1030;
+   Gradient.BeginTransition();
+1100;
+   Gradient.End();#结束坡度缓和曲线
+
+2800;
+   # 加载周边房子、树等景物
+	Repeater['railsideset_l0-1'].Begin('0', -7.5, 0, 0, 0, 0, 0, 0, 50, 50,
+			'railsideset_l_1_50', 'railsideset_l_2_50');
+   Repeater['railsideset_l0-2'].Begin('0', -27.5-5, 0, 0, 0, 0, 0, 0, 50, 50,
+			'railsideset_l_1_50', 'railsideset_l_2_50');
+	Repeater['houses_l0-1'].Begin('0', -20, 0, 15, 0, 0, 0, 0, 50, 25,
+			'house_j', 'house_i', 'house_h', 'house_g', 'house_f',
+			'house_e', 'house_d', 'house_c', 'house_b', 'house_a',
+			'house_t', 'house_s', 'house_r', 'house_q', 'house_p',
+			'house_o', 'house_n', 'house_m', 'house_l', 'house_k');
+   Repeater['houses_l0-2'].Begin('0', -40-5, 0, 15, 0, 0, 0, 0, 50, 25,
+			'house_j', 'house_i', 'house_h', 'house_g', 'house_f',
+			'house_e', 'house_d', 'house_c', 'house_b', 'house_a',
+			'house_t', 'house_s', 'house_r', 'house_q', 'house_p',
+			'house_o', 'house_n', 'house_m', 'house_l', 'house_k');
+	Repeater['railsideset_r3-1'].Begin('3', 7, 0, 0, 0, 0, 0, 0, 50, 50,
+			'railsideset_r_1_50', 'railsideset_r_2_50',
+			'railsideset_r_3_50', 'railsideset_r_1_50',
+			'railsideset_r_4_50');
+   Repeater['railsideset_r3-2'].Begin('3', 27+5, 0, 0, 0, 0, 0, 0, 50, 50,
+			'railsideset_r_1_50', 'railsideset_r_2_50',
+			'railsideset_r_3_50', 'railsideset_r_1_50',
+			'railsideset_r_4_50');
+	Repeater['houses_r3-1'].Begin('3', 20, 0, 15, 0, 0, 0, 0, 50, 25,
+			'house_a', 'house_b', 'house_c', 'house_d', 'house_e',
+			'house_f', 'house_g', 'house_h', 'house_i', 'house_j',
+			'house_k', 'house_l', 'house_m', 'house_n', 'house_o',
+			'house_p', 'house_q', 'house_r', 'house_s', 'house_t');
+   Repeater['houses_r3-2'].Begin('3', 40+5, 0, 15, 0, 0, 0, 0, 50, 25,
+			'house_a', 'house_b', 'house_c', 'house_d', 'house_e',
+			'house_f', 'house_g', 'house_h', 'house_i', 'house_j',
+			'house_k', 'house_l', 'house_m', 'house_n', 'house_o',
+			'house_p', 'house_q', 'house_r', 'house_s', 'house_t');
+
+3500;
+	Curve.BeginTransition();
+	Track['2'].X.Interpolate(13.800, 12000);
+   Track['3'].X.Interpolate(17.600, 12000);
+	
+3525;
+   Track['2'].X.Interpolate(13.826, 12000);
+   Track['3'].X.Interpolate(17.626, 12000);
+
+3550;
+	Curve.Begin(-2000, -0.050);
+	Track['2'].X.Interpolate(14.009, 2000);
+   Track['3'].X.Interpolate(17.809, 2000);
+
+3625;
+	Curve.BeginTransition();
+	Track['2'].X.Interpolate(16.354, 2400);
+   Track['3'].X.Interpolate(20.154, 2400);
+
+3650;
+	Track['2'].X.Interpolate(17.745, 12000);
+   Track['3'].X.Interpolate(21.545, 12000);
+3675;
+	Curve.End();
+	Track['2'].X.Interpolate(19.285, 0);
+   Track['3'].X.Interpolate(23.085, 0);
+
+3675+25;
+   Track['2'].X.Interpolate(19.285+1.540, 0);
+   Track['3'].X.Interpolate(23.085+1.540, 0);
+   
+3675+25*500;
+   Track['2'].X.Interpolate(19.285+1.540*500, 0);
+   Track['3'].X.Interpolate(23.085+1.540*500, 0);
+
+4000;
+   Repeater['houses_r1-1'].Begin('1', 20, 0, 15, 0, 0, 0, 0, 50, 25,
+			'house_a', 'house_b', 'house_c', 'house_d', 'house_e',
+			'house_f', 'house_g', 'house_h', 'house_i', 'house_j',
+			'house_k', 'house_l', 'house_m', 'house_n', 'house_o',
+			'house_p', 'house_q', 'house_r', 'house_s', 'house_t');
+   Repeater['railsideset_r1-1'].Begin('1', 7, 0, 0, 0, 0, 0, 0, 50, 50,
+			'railsideset_r_1_50', 'railsideset_r_2_50',
+			'railsideset_r_3_50', 'railsideset_r_1_50',
+			'railsideset_r_4_50');
+   Repeater['fence_r1-1'].Begin('1', 3, 0, 0, 0, 0, 0, 1, 5, 5, 'fence_5');
+
+4500;
+   Repeater['houses_r1-2'].Begin('1', 20+20, 0, 15, 0, 0, 0, 0, 50, 25,
+			'house_a', 'house_b', 'house_c', 'house_d', 'house_e',
+			'house_f', 'house_g', 'house_h', 'house_i', 'house_j',
+			'house_k', 'house_l', 'house_m', 'house_n', 'house_o',
+			'house_p', 'house_q', 'house_r', 'house_s', 'house_t');
+   Repeater['railsideset_r1-2'].Begin('1', 7+20, 0, 0, 0, 0, 0, 0, 50, 50,
+			'railsideset_r_1_50', 'railsideset_r_2_50',
+			'railsideset_r_3_50', 'railsideset_r_1_50',
+			'railsideset_r_4_50');
+
+4950;
+   Curve.BeginTransition();
+
+5000;
+   Repeater['railsideset_r3-1'].End();
+   Repeater['railsideset_r3-2'].End();
+   Repeater['houses_r3-1'].End();
+   Repeater['houses_r3-2'].End();
+   Repeater['wire2'].End();
+   Repeater['Pole2'].End();
+   Repeater['wire3'].End();
+   Repeater['Pole3'].End();
+   Repeater['Ballast2'].End();
+   Repeater['Ballast3'].End();
+   Repeater['RailL2'].End();
+   Repeater['RailR2'].End();
+   Repeater['RailL3'].End();
+   Repeater['RailR3'].End();
+   Repeater['fence_r'].End();
+
+   Curve.Begin(900, 0.050);
+
+5050;
+   Curve.BeginTransition();
+
+5150;
+   Curve.End();
+
+5500;
+   Curve.BeginTransition();
+
+5600;
+   Curve.Begin(1050, 0.030);
+
+5800;
+   Curve.BeginTransition();
+
+6075;
+   Curve.Begin(-1200, -0.028);
+
+6480;
+   Curve.BeginTransition();
+
+6580;
+   Curve.End();
+
+7100;
+   Curve.BeginTransition();
+
+7200;
+   Curve.Begin(-2000, -0.025);
+
+8000;
+   Speedlimit.Begin(70);
+   Beacon.put(13, 0, 14);
+   Structure['L7'].Put('0', 0-2.75, 1.5, -0.35, 0, 0, 0, 1, 1);
+   Structure['L0'].Put('0', 0.25-2.75, 1.5, -0.35, 0, 0, 0, 1, 1);
+8200;
+   Curve.BeginTransition();
+   Repeater['wire0'].End();
+   Repeater['Pole0'].End();
+   Repeater['wire1'].End();
+   Repeater['Pole1'].End();
+   Repeater['wire0'].Begin0('0', 1, 25, 25,'Kasen25B','Kasen25A');
+   Repeater['Pole0'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25,'poleA','poleB');
+   Repeater['wire1'].Begin0('1', 1, 25, 25,'Kasen25B','Kasen25A');
+   Repeater['Pole1'].Begin('1', 0, 0, 0, 0, 180, 0, 1, 25, 25,'poleB','poleA');
+   Speedlimit.Begin(55);
+   Beacon.put(13, 0, 11);
+   Structure['Limitpole'].Put('0', 1.9, 0, 0, 0, 0, 0, 1, 1);
+   Structure['L5'].Put('0', 1.65, 0, 0, 0, 0, 0, 1, 1);
+   Structure['L5'].Put('0', 1.9, 0, 0, 0, 0, 0, 1, 1);
+
+8300;
+   Speedlimit.Begin(45);
+   Beacon.put(13, 0, 9);
+   Structure['Limitpole'].Put('0', 1.9, 0, 0, 0, 0, 0, 1, 1);
+   Structure['L4'].Put('0', 1.65, 0, 0, 0, 0, 0, 1, 1);
+   Structure['L5'].Put('0', 1.9, 0, 0, 0, 0, 0, 1, 1);
+
+8390;
+   Curve.Begin(-180, 0);
+   
+8490;
+   Curve.BeginTransition();
+
+8575;
+   Speedlimit.Begin(55);
+   Beacon.put(13, 0, 11);
+   Structure['Limitpole'].Put('0', -1.9, 0, -0.5, 0, 0, 0, 1, 1);
+   Structure['L5'].Put('0', -2.15, 0, -0.5, 0, 0, 0, 1, 1);
+   Structure['L5'].Put('0', -1.9, 0, -0.5, 0, 0, 0, 1, 1);
+8590;
+   Curve.Begin(225, 0);
+
+8670;
+   Curve.BeginTransition();
+
+8700;
+   Repeater['wire0'].End();
+   Repeater['Pole0'].End();
+   Repeater['wire1'].End();
+   Repeater['Pole1'].End();
+   Repeater['wire0'].Begin0('0', 1, 40, 40,'Kasen40B','Kasen40A');
+   Repeater['Pole0'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 40, 40,'poleA','poleB');
+   Repeater['wire1'].Begin0('1', 1, 40, 40,'Kasen40B','Kasen40A');
+   Repeater['Pole1'].Begin('1', 0, 0, 0, 0, 180, 0, 1, 40, 40,'poleB','poleA');
+
+8740;
+   Speedlimit.End();
+   Beacon.put(13, 0, 0);
+   Structure['Lend'].Put('0', -1.9, 0, 0, 0, 0, 0, 1, 1);
+   Structure['Limitpole'].Put('0', -1.9, 0, 0, 0, 0, 0, 1, 1);
+   
+8770;
+   Curve.End();
+
+9100;
+   Curve.BeginTransition();
+   Repeater['wire0'].End();
+   Repeater['Pole0'].End();
+   Repeater['wire1'].End();
+   Repeater['Pole1'].End();
+   Repeater['wire0'].Begin0('0', 1, 25, 25,'Kasen25B','Kasen25A');
+   Repeater['Pole0'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25,'poleA','poleB');
+   Repeater['wire1'].Begin0('1', 1, 25, 25,'Kasen25B','Kasen25A');
+   Repeater['Pole1'].Begin('1', 0, 0, 0, 0, 180, 0, 1, 25, 25,'poleB','poleA');
+
+9125;
+   Beacon.put(13, 0, 11);
+   Speedlimit.Begin(55);
+   Structure['Limitpole'].Put('0', -1.9, 0, -0.5, 0, 0, 0, 1, 1);
+   Structure['L5'].Put('0', -2.15, 0, -0.5, 0, 0, 0, 1, 1);
+   Structure['L5'].Put('0', -1.9, 0, -0.5, 0, 0, 0, 1, 1);
+
+9200;
+   Curve.Begin(227, 0);
+   
+9300;
+   Curve.BeginTransition();
+
+9375;
+   Speedlimit.Begin(45);
+   Beacon.put(13, 0, 9);
+   Structure['Limitpole'].Put('0', -1.9, 0, 0, 0, 0, 0, 1, 1);
+   Structure['L4'].Put('0', -2.15, 0, 0, 0, 0, 0, 1, 1);
+   Structure['L5'].Put('0', -1.9, 0, 0, 0, 0, 0, 1, 1);
+
+9400;
+   Curve.Begin(-182, 0);
+   
+
+9480;
+   Curve.BeginTransition();
+
+9575;
+   Speedlimit.End();
+   Beacon.put(13, 0, 0);
+   Structure['Lend'].Put('0', 0-2.5, 1.5, -0.2, 0, 0, 0, 1, 1);
+
+9600;
+   Repeater['wire0'].End();
+   Repeater['Pole0'].End();
+   Repeater['wire1'].End();
+   Repeater['Pole1'].End();
+   Repeater['wire0'].Begin0('0', 1, 40, 40,'Kasen40B','Kasen40A');
+   Repeater['Pole0'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 40, 40,'poleA','poleB');
+   Repeater['wire1'].Begin0('1', 1, 40, 40,'Kasen40B','Kasen40A');
+   Repeater['Pole1'].Begin('1', 0, 0, 0, 0, 180, 0, 1, 40, 40,'poleB','poleA');
+9610;
+   Curve.End();
+   Beacon.put(13, 0, 0);

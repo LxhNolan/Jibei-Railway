@@ -303,3 +303,21 @@ $xdxc+271;
    Repeater['Pole1'].Begin('1',0,0,0,0,180,0,1,40,40,'PoleB','PoleA');
    Repeater['pier0-0l'].End();
 	Repeater['pier1-0r'].End();
+
+#停车标识
+   $xdxc+250/2+18*6+1;
+      Structure['StopupKs_12'].Put('0',1.8,0,0,0,0,0,1,1);
+   $xdxc+250/2+18*4+1;
+      Structure['StopupKs_8'].Put('0',1.8,0,0,0,0,0,1,1);
+   $xdxc+250/2+18*3+1;
+      Structure['StopupKs_6'].Put('0',1.8,0,0,0,0,0,1,1);
+   $xdxc+250/2+18*2+1;
+      Structure['StopupKs_4'].Put('0',1.8,0,0,0,0,0,1,1);
+   $xdxc+250/2+18*6+1;
+      Structure['StopupKs_12'].Put('xdxc-l',-1.8,0,0,0,0,0,1,1);
+   $xdxc+250/2+18*4+1;
+      Structure['StopupKs_8'].Put('xdxc-l',-1.8,0,0,0,0,0,1,1);
+   $xdxc+250/2+18*3+1;
+      Structure['StopupKs_6'].Put('xdxc-l',-1.8,0,0,0,0,0,1,1);
+   $xdxc+250/2+18*2+1;
+      Structure['StopupKs_4'].Put('xdxc-l',-1.8,0,0,0,0,0,1,1);

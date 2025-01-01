@@ -1,0 +1,10 @@
+BveTs Scenario 2.00:utf-8
+
+Title = 983次 [普通] 工业研究院→济北
+Route = Jibei_Railway/983_Map.txt 
+RouteTitle = 济北铁道-济北本线
+Image = Jibei_Railway/JBR_LOGO.png
+Vehicle = napper_napalm\train\K_SEI3400\vehicle_3408.txt | napper_napalm\train\K_SEI3400\vehicle_3418.txt | napper_napalm\train\K_SEI3400\vehicle_3428.txt | napper_napalm\train\K_SEI3400\vehicle_3438.txt | napper_napalm\train\K_SEI3400\vehicle_3448.txt
+VehicleTitle = JBR3400(KS3400)型 8节编组
+Author = Route:LxhNolan, Vehicle:napper_napalm 
+Comment = 本列车停靠工研院至济北间沿途的各个车站。

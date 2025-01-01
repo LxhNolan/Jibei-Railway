@@ -1,0 +1,11 @@
+BveTs Map 2.02:utf-8
+
+$Bdis-150;
+	Beacon.put(10, 1, 20000);
+$Bdis;
+	Signal['Color4yg'].Put(1, 0, -2.2, 4.2, 0, 0, 0, 0, 0, 0);
+	Section.Begin(1, 3, 5, 7); 
+	Structure['SigPole'].Put(0, -2.4, 0, 0, 0, 0, 0, 0, 0);
+
+	Structure['SignalBack'].Put(1, 2.2, 4.2, 0, 0, 0, 0, 0, 0);
+	Structure['SigPole'].Put(1, 2.4, 0, 0, 0, 0, 0, 0, 0);
