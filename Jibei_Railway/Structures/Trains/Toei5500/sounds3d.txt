@@ -1,6 +1,0 @@
-BveTs Sound List 1.00
-
-5500run,sounds\5500\run.wav
-5500Accel,sounds\5500\accel.wav
-5500Decel,sounds\5500\decel.wav
-5500Sta,sounds\5500\sta.wav
