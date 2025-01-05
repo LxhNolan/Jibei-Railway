@@ -38,7 +38,7 @@ $gyyjy+0;
    Repeater['sta_side_l_5'].Begin0('1', 1, 5, 5,'station_side_l_5');
    Repeater['sta_floor_l_5'].Begin0('1', 1, 5, 5,'station_floor_l_5');
    # Repeater['sta_wall_l_5'].Begin0('1', 1, 5, 5,'station_wall_l_5');
-   Repeater['sta_roof_l_5'].Begin0('1', 1, 5, 5,'station_roof_l_5');
+   Repeater['sta_roof_l_5'].Begin('1',0,0.01,0,0,0,0, 1, 5, 5,'station_roof_l_5');
    Repeater['sta_eaves_l_5'].Begin0('1', 1, 5, 5,'station_eaves_l_5');
    Structure['end4'].Put('0', 0, 0, 0, 0, 180, 0, 1, 1);
    Structure['end4'].Put('1', 0, 0, 0, 0, 180, 0, 1, 1);

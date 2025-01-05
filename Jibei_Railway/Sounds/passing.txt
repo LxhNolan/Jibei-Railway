@@ -1,0 +1,7 @@
+BveTs Train 1.00
+
+[Sound3D]
+key=passing
+distance2=250
+distance1=0
+Function=Stationary

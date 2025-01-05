@@ -36,6 +36,14 @@ Light.Diffuse(0.5, 0.5, 0.5);
 Light.Direction(70, 30);
 
 0;
+   Beacon.Put(20, 0, 1);
+	Beacon.Put(21, 0, 0);
+	Beacon.put(24, 0, 1050000);
+	Beacon.put(26, 0, 0);
+	Beacon.Put(243, 0, 15001600);
+	Beacon.Put(244, 0, 4);
+	Beacon.put(246, 0, 3000);
+   Section.Begin(16, 17, 19, 21, 25); 
    # 从0m开始铺设轨道以及架线柱（自己的）
    Repeater['Ballast'].Begin0('0', 3, 5, 5, 'Ballast0');
    Repeater['RailL'].Begin('0', -0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailL0', 'RailL1', 'RailL2', 'RailL3', 'RailL4');

@@ -318,6 +318,11 @@ LfxR,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\R.x
 
 # AI车
 #他列車
+600_1,Trains\khk600\600_1.x
+600_1b,Trains\khk600\600_1b.x
+600_2,Trains\khk600\600_2.x
+600_2b,Trains\khk600\600_2b.x
+600_3,Trains\khk600\600_3.x
 
 1000_M1x,Trains\1000SUS\M1'.x
 1000_M1s,Trains\1000SUS\M1s.x
@@ -326,6 +331,32 @@ LfxR,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\R.x
 1000_M2uc,Trains\1000SUS\M2uc.x
 1000_M2uc2,Trains\1000SUS\M2uc2.x
 1000_T,Trains\1000SUS\T.x
+
+1500_1a,Trains\khk1500\1500_1a.x
+1500_1b,Trains\khk1500\1500_1b.x
+1500_2a,Trains\khk1500\1500_2a.x
+1500_2b,Trains\khk1500\1500_2b.x
+1500_2Pa,Trains\khk1500\1500_2Pa.x
+1500_2Pb,Trains\khk1500\1500_2Pb.x
+1500_3a,Trains\khk1500\1500_3a.x
+1500_3b,Trains\khk1500\1500_3b.x
+
+2000_1,Trains\khk1500\2000_1.x
+2000_2a,Trains\khk1500\2000_2a.x
+2000_2b,Trains\khk1500\2000_2b.x
+2000_2Pa,Trains\khk1500\2000_2Pa.x
+2000_2Pb,Trains\khk1500\2000_2Pb.x
+2000_3,Trains\khk1500\2000_3.x
+
+3300_1b,Trains\ks3300\3300_1b.x
+3300_2b,Trains\ks3300\3300_2b.x
+3300_2a,Trains\ks3300\3300_2a.x
+3300_1,Trains\ks3300\3300_1.x
+
+7260_1b,Trains\ks3300\7260_1b.x
+7260_2b,Trains\ks3300\7260_2b.x
+7260_2a,Trains\ks3300\7260_2a.x
+7260_1,Trains\ks3300\7260_1.x
 
 ##信号柱
 #梯子なし

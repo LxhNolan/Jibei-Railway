@@ -1,0 +1,79 @@
+BveTs Map 2.02:utf-8
+#Train 1000-12-zf2
+   $xdxc+235;
+      Train['1000-12-zf2'].Load('Structures\Trains\1000SUS\1000_12c_b.txt','xdxc-zf2', 1);
+      Train['1000-12-zf2'].Stop(3.1,75,2.85,120);
+#Train 1000-12-zf2
+   $xdxc+235;
+      Train['1000-12-zf1'].Load('Structures\Trains\1000SUS\1000_12c_b.txt','xdxc-zf1', -1);
+      Train['1000-12-zf1'].Stop(0,0,2.91,25);
+   6450-300;
+      Train['1000-12-zf1'].Stop(2.74,0,0,0);
+      Train['1000-12-zf1'].Enable('08:30:00');
+#Train 1000-12-1
+   $xdxc+235;
+      Train['1000-12-1'].Load('Structures\Trains\1000SUS\1000_12c_a.txt', 1, -1);
+      Train['1000-12-1'].Stop(3.1,30,2.85,120);
+
+   $sby+235;
+      Train['1000-12-1'].Stop(3.1,30,2.85,120);
+
+   $cxdd+235;
+      Train['1000-12-1'].Stop(2.45,30,2.85,120);
+
+   $gyyjy+450;
+      #Train['1000-12-1'].Stop(0,0,0,25);
+      distance+750;
+      Train['1000-12-1'].Stop(0,0,0,55);
+
+   $gyyjy+220;
+      Train['1000-12-1'].Stop(2.45,30,0,0);
+
+#Train 1000-12-2
+   $xdxc+235;
+      Train['1000-12-2'].Load('Structures\Trains\1000SUS\1000_12c_b.txt', 1, -1);
+      Train['1000-12-2'].Stop(3.1,30+60*5,2.85,120);
+
+   $sby+235;
+      Train['1000-12-2'].Stop(3.1,30,2.85,120);
+
+   $cxdd+235;
+      Train['1000-12-2'].Stop(2.45,30,2.85,120);
+
+   $gyyjy+450;
+      #Train['1000-12-2'].Stop(0,0,0,25);
+      distance+750;
+      Train['1000-12-2'].Stop(0,0,0,55);
+
+   $gyyjy+220;
+      Train['1000-12-2'].Stop(2.45,30,0,0);
+
+#Train 1000-12-3
+   $xdxc+2500;
+      Train['1000-12-3'].Stop(0,30+60*7,0,120);
+   $xdxc+235;
+      Train['1000-12-3'].Load('Structures\Trains\1000SUS\1000_12c_a.txt', 1, -1);
+      Train['1000-12-3'].Stop(3.4,45,3.57,120);
+
+   $sby+235;
+      Train['1000-12-3'].Stop(3.1,30,2.85,120);
+
+   $cxdd+235;
+      Train['1000-12-3'].Stop(2.45,30,2.85,120);
+
+   $gyyjy+450;
+      #Train['1000-12-3'].Stop(0,0,0,25);
+      distance+750;
+      Train['1000-12-3'].Stop(0,0,0,55);
+
+   $gyyjy+220;
+      Train['1000-12-3'].Stop(2.45,30,0,0);
+
+#passing sound
+   $cxdd+0;
+      Train['passing1'].Load('Sounds/passing.txt','0',1);
+      Train['passing1'].Stop(0,0,0,0);
+
+   $sby+0;
+      Train['passing2'].Load('Sounds/passing.txt','0',1);
+      Train['passing2'].Stop(0,0,0,0);
