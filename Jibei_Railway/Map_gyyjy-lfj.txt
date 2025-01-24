@@ -1,139 +1,336 @@
 BveTs Map 2.02:utf-8
 
-# 加载结构文件
-Structure.Load('Structures/Structures.csv');
 # 加载声音文件
-Sound.Load('Sound.csv');
-Sound3D.Load('Sound3D.csv');
+   Sound.Load('Sound.csv');
+   Sound3D.Load('Sound3D.csv');
 # 加载信号系统文件
-#Signal.Load('Signals.csv');
+   #Signal.Load('Signals.csv');
 #设置背景
-Background.Change('Bg');
+   Background.Change('Bg');
+#车站位置
+   $gyyjy=300;
+   $cxdd=1990+550;
+   $sby=4770;
+   $xdxc=6789;
+   $zwjd=8756+14;
+   $xzyz=13534-4-40;
+   $wfh=17810+50;
+   $lfj=20770+20;
 
-$gyyjy=300;
-$cxdd=1990+550;
-$sby=4770;
-$xdxc=6789;
-
-include 'Map_gyyjy-lfj_Build.txt';
-include 'Map_gyyjy-lfj_Road.txt';
-include 'Map_gyyjy-lfj_Mountain.txt';
+#加载地图
+   include 'Map_gyyjy-lfj_Build.txt';
+   include 'Map_gyyjy-lfj_Road.txt';
+   include 'Map_gyyjy-lfj_Nature.txt';
 
 //軌道変位
-	Irregularity.Change(0.0008, 0.0005, 0.000315, 50, 50, 50);
+	Irregularity.Change(0.0008, 0.0005, 0.0003, 50, 50, 50);
 	//Track.Accuracy(1)
 //粘着特性
 	Adhesion.Change(0.351, 0, 0.009496677);
+//其它
+   0;
+      # About Track
+      Repeater['Gnd'].Begin('Gnd', 0, -1, 0, 0, 0, 0, 0, 0, 25, 'Ground1a', 'Ground1b', 'Ground1c', 'Ground1d', 'Ground1e' );
+      #Repeater['main'].Begin0('0',1,5,5,'PTRail');
+      #Repeater['pole0'].Begin0('0',1,40,40,'Pole2');
+      Track['0'].Position(0, 0);
+      Track['1'].Position(4, 0);
+      #Repeater['DikeR0'].Begin0(1, 1, 5, 5, 'DikeR1', 'DikeR2', 'DikeR3' );
+      #Repeater['DikeL1'].Begin0(1, 1, 5, 5, 'DikeL1', 'DikeL2', 'DikeL3' );
+   	#Repeater['DikeR1'].Begin0(0, 1, 5, 5, 'DikeR1', 'DikeR2', 'DikeR3' );
+      #Repeater['Jiaxian0'].Begin0('0',1,40,40,'Kasen40B','Kasen40A');
+      #Repeater['Jiaxian1'].Begin0('1',1,40,40,'Kasen40B','Kasen40A');
+      # Road
+      Repeater['road2-1'].Begin('road2-1',-24,0,0,0,0,0,1,10,10,'Road2');
+      Track['road2-1'].Position(0,0);
+      Repeater['road2-2'].Begin('road2-2',32,0,0,0,0,0,1,10,10,'Road2');
+      Track['road2-2'].Position(0,0);
 
-0;
+      # Repeater['rain'].Begin0('0',1,20,20,'rain');
+   80;
+      #Repeater['Pole0'].Begin0('0', 1, 40, 40,'PoleA2','PoleB2');
+      #Repeater['Pole1'].Begin('1',0,0,0,0,180,0,1,40,40,'PoleB2','PoleA2');
+   100;
+      Track['1'].X.Interpolate(4, 1000);
+   120;
+      Track['1'].X.Interpolate(5, 0);
+      Track['1'].X.Interpolate(5, -1000);
+   245;
+      Track['1'].X.Interpolate(10, 0);
+   300;
+      include 'Stations/gongyeyanjiuyuan_Map.txt';
+# 工业研究院终点550m GYYJY-CXDD
+   810;
+      Gradient.BeginTransition();
+      Curve.BeginTransition();
+      SpeedLimit.Begin(100);
+      Structure['LimitPole'].Put('0',-2.5,0,0,0,0,0,1,1);
+      Structure['L100'].Put('0',-2.5,0,0,0,0,0,1,1);
+      distance-170;
+      Beacon.put(16, 0, 242009);
+   	Beacon.put(17, 0, 170);
+   950;
+      Gradient.Begin(5.5);
    
-   # About Track
-   Repeater['Gnd'].Begin('Gnd', 0, -1, 0, 0, 0, 0, 0, 0, 25, 'Ground1a', 'Ground1b', 'Ground1c', 'Ground1d', 'Ground1e' );
-   #Repeater['main'].Begin0('0',1,5,5,'PTRail');
-   ##Repeater['pole0'].Begin0('0',1,40,40,'Pole2');
-   Track['0'].Position(0, 0);
-   Track['1'].Position(4, 0);
-   #Repeater['DikeR0'].Begin0(1, 1, 5, 5, 'DikeR1', 'DikeR2', 'DikeR3' );
-   #Repeater['DikeL1'].Begin0(1, 1, 5, 5, 'DikeL1', 'DikeL2', 'DikeL3' );
-	#Repeater['DikeR1'].Begin0(0, 1, 5, 5, 'DikeR1', 'DikeR2', 'DikeR3' );
-   #Repeater['Jiaxian0'].Begin0('0',1,40,40,'Kasen40B','Kasen40A');
-   #Repeater['Jiaxian1'].Begin0('1',1,40,40,'Kasen40B','Kasen40A');
-   # Road
-   Repeater['road2-1'].Begin('road2-1',-24,0,0,0,0,0,1,10,10,'Road2');
-   Track['road2-1'].Position(0,0);
-   Repeater['road2-2'].Begin('road2-2',32,0,0,0,0,0,1,10,10,'Road2');
-   Track['road2-2'].Position(0,0);
+   1075;
+      Curve.Begin(-550, -0.15);
+   1350;
+      Gradient.BeginTransition();
+      Curve.BeginTransition();
+   1550;
+      Gradient.End();
+      Curve.End();
+      SpeedLimit.End();
+      Beacon.put(13, 0, 0);
+      distance-55;
+      Structure['Lend'].Put('0',-2.5,0,0,0,0,0,1,1);
+      Structure['LimitPole'].Put('0',-2.5,0,0,0,0,0,1,1);
+   1990+550;
+      include 'Stations/chuangxindadao_Map.txt';
+#CXDD-SBY
+   2895;
+      Gradient.BeginTransition();
+      Track['Gnd'].Y.Interpolate(0,-7.5);
+      Track['road2-1'].Y.Interpolate(0,-7.5);
+      Track['road2-2'].Y.Interpolate(0,-7.5);
+   2995;
+      Gradient.Begin(7.5);
+      distance+(5/0.0075);
+      Track['Gnd'].Y.Interpolate(-5,0);
+      Track['road2-1'].Y.Interpolate(-5,0);
+      Track['road2-2'].Y.Interpolate(-5,0);
+      Curve.BeginTransition();
+      Gradient.BeginTransition();
+      distance+125;
+      Gradient.End();
+   3360;
+      Curve.BeginTransition();
+   3460;
+      Curve.Begin(-1500,-0.05);
+   3530;#高架桥开始
+      RollingNoise.Change(4);
+   3625;
+      Curve.BeginTransition();
+   4050;
+      Curve.Begin(3004,0.009);
+   4147;
+      Curve.End();
+   4770;
+      include 'Stations/shiboyuan_Map.txt';
+#SBY-XDXC
+   4837;
+      Curve.BeginTransition();
+   5087;
+      Curve.Begin(7004,0.008);
+   5339;
+      Curve.BeginTransition();
+   5881;
+      Curve.End();
+   6789; 
+      include 'Stations/xindaxuecheng3_Map.txt';
+#XDXC-ZWJD
+   6789+250+727;
+      Curve.BeginTransition();
+   6789+250+1027;
+      Curve.Begin(9504,0.008);
+   6789+250+1187;
+      Curve.BeginTransition();
+   6789+250+1401;
+      Curve.End();
 
-   # Repeater['rain'].Begin0('0',1,20,20,'rain');
-80;
-   #Repeater['Pole0'].Begin0('0', 1, 40, 40,'PoleA2','PoleB2');
-   #Repeater['Pole1'].Begin('1',0,0,0,0,180,0,1,40,40,'PoleB2','PoleA2');
-100;
-   Track['1'].X.Interpolate(4, 1000);
-120;
-   Track['1'].X.Interpolate(5, 0);
+   8756;
+      include 'Stations/ziweijiedao_Map.txt';
+#ZWJD-XZYZ
+   9931;
+      Curve.BeginTransition();
+   10045;   
+      Curve.Begin(2304,0.008);
+   10163;
+      Curve.BeginTransition();
+   10295;
+      Curve.End();
+   11284;
+      Curve.BeginTransition();
+   11540;   
+      Curve.Begin(1804,0.010);
+   11795;
+      Curve.BeginTransition();
+   12003;
+      Curve.End();
+   13534;
+      include 'Stations/Xinzhaoyingzi_Map.txt';
 
-   Track['1'].X.Interpolate(5, -1000);
-245;
-   Track['1'].X.Interpolate(10, 0);
-300;
+#紫薇街道至新赵营子间的车库联络线1
+   10860;
+      Repeater['ckllx1'].Begin0('ckllx1',1,5,5,'GJRail');
+      Repeater['JX-ckllx1'].Begin0('ckllx1',1,40,40,'Kasen40B','Kasen40A');
+      
+      Track['ckllx1'].X.Interpolate(0, 200);
+      distance+40;
+      Repeater['Pole0'].Begin('0',0,0,0,0,0,0,1,40,40,'Pole2');
+      Repeater['Pole1'].End();
+      distance+80;
+      Repeater['Pole0'].Begin('0',0,0,0,0,0,0,1,40,40,'PoleB','PoleA');
+      Structure['PoleA3'].Put('ckllx1',0,0,0,0,180,0,1,1);
+      distance+40;
+      Structure['Pole3'].Put('0',-0.7,0,0,0,0,0,1,1);
+      Repeater['Pole0'].End();
+      distance+40;
+      Repeater['Pole0'].Begin('0',0,0,0,0,0,0,1,40,40,'PoleB','PoleA');
+      Repeater['Pole1'].Begin('1',0,0,0,0,180,0,1,40,40,'PoleA','PoleB');
+      Repeater['Poleckllx1'].Begin('ckllx1',0,0,0,0,180,0,1,40,40,'PoleA','PoleB');
+   10880;
+	   Track['ckllx1'].X.Interpolate(1.00, 0);
+      JointNoise.Play(0);
+   10898;
+	   Track['ckllx1'].X.Interpolate(4-1.00, -200);
+   10918;
+	   Track['ckllx1'].X.Interpolate(4, 0);
+      Repeater['ckllx1'].End();
+   10940;
+      Repeater['ckllx1'].Begin0('ckllx1',1,5,5,'GJRail');
+      Repeater['ckllx1WallR'].Begin('ckllx1',1,0,0,0,0,0,1,5,5,'WallR');
+      Repeater['ckllx1Pier'].Begin0('ckllx1',1,20,20,'pier');
+      
+      Track['ckllx1'].X.Interpolate(4, 3000);
+      Track['ckllx1'].Cant.Interpolate(0);
+      
+      Repeater['WallR'].End();
+      #Repeater['WallL'].End();
+   10965;
+      Track['ckllx1'].X.Interpolate(4.1, 600);
+      distance+80;
+      Repeater['ckllx1WallL'].Begin('ckllx1',-1,0,0,0,0,0,1,5,5,'WallL');
+      Repeater['WallR'].Begin('1',1,0,0,0,0,0,1,5,5,'WallR');
+   10990;
+      Track['ckllx1'].X.Interpolate(4.83, 500);
+      Track['ckllx1'].Cant.Interpolate(0);
+   10945;
+      #Track['ckllx1'].X.Interpolate(4.01, 500);
+      #Track['ckllx1'].Cant.Interpolate(0);
+      distance+430;
+      Repeater['ckllx1'].End();
+      Repeater['ckllx1WallR'].End();
+      Repeater['JX-ckllx1'].End();
+      Repeater['ckllx1Pier'].End();
+      Repeater['ckllx1WallL'].End();
+      Repeater['Poleckllx1'].End();
+   11390;
+      Track['ckllx1'].X.Interpolate(224.86, 600);
+      Track['ckllx1'].Cant.Interpolate();
+   11415;
+      Track['ckllx1'].X.Interpolate(262.43, 3000);
+      
+   11440;
+      Track['ckllx1'].X.Interpolate(303.15, 0);
+      Track['ckllx1'].Cant.Interpolate(0);
+#紫薇街道至新赵营子间的车库联络线2
+   11745-7.5;
+      Track['ckllx2'].X.Interpolate(506.51, 550);
+      Track['ckllx2'].Cant.Interpolate(0);
+   12245-7.5;
+      Track['ckllx2'].X.Interpolate(6, 500);
+      Track['ckllx2'].Cant.Interpolate(0);
+      
+      distance-450-7.5;
+      Repeater['ckllx2'].Begin0('ckllx2',1,5,5,'GJRail');
+      Repeater['JX-ckllx2'].Begin0('ckllx2',1,40,40,'Kasen40A','Kasen40B');
+      Repeater['Poleckllx2'].Begin('ckllx2',0,0,0,0,180,0,1,40,40,'PoleA','PoleB');
+      Repeater['ckllx2WallL'].Begin('ckllx2',-1,0,0,0,0,0,1,5,5,'WallL');
+      Repeater['ckllx2WallR'].Begin('ckllx2',1,0,0,0,0,0,1,5,5,'WallR');
+      Repeater['ckllx2Pier'].Begin0('ckllx2',1,20,20,'pier');
    
-   include 'Stations/gongyeyanjiuyuan_Map.txt';
-# 工业研究院终点550m
-810;
-   Gradient.BeginTransition();
-   Curve.BeginTransition();
-   SpeedLimit.Begin(100);
-   Structure['LimitPole'].Put('0',-2.5,0,0,0,0,0,1,1);
-   Structure['L100'].Put('0',-2.5,0,0,0,0,0,1,1);
-   distance-170;
-   Beacon.put(16, 0, 242107);
-	Beacon.put(17, 0, 170);
-950;
-   Gradient.Begin(5.5);
-   
-1075;
-   Curve.Begin(-550, -0.15);
-1350;
-   Gradient.BeginTransition();
-   Curve.BeginTransition();
-1550;
-   Gradient.End();
-   Curve.End();
-   SpeedLimit.End();
-   Beacon.put(13, 0, 0);
-   distance-55;
-   Structure['Lend'].Put('0',-2.5,0,0,0,0,0,1,1);
-   Structure['LimitPole'].Put('0',-2.5,0,0,0,0,0,1,1);
-1990+550;
-   include 'Stations/chuangxindadao_Map.txt';
-2895;
-   Curve.BeginTransition();
-   Gradient.BeginTransition();
-   Track['Gnd'].Y.Interpolate(0,-7.5);
-   Track['road2-1'].Y.Interpolate(0,-7.5);
-   Track['road2-2'].Y.Interpolate(0,-7.5);
-2995;
-   Gradient.Begin(7.5);
-   distance+(8/0.0075);
-   Track['Gnd'].Y.Interpolate(-8,0);
-   Track['road2-1'].Y.Interpolate(-8,0);
-   Track['road2-2'].Y.Interpolate(-8,0);
-   Curve.BeginTransition();
-   Gradient.BeginTransition();
-   distance+200;
-   Curve.End();
-   Gradient.End();
-3360;
-   Curve.BeginTransition();
-3460;
-   Curve.Begin(-1500,-0.05);
-3625;
-   Curve.BeginTransition();
-4050;
-   Curve.Begin(3004,0.009);
-4147;
-   Curve.End();
-4770;
-   include 'Stations/shiboyuan_Map.txt';
-4837;
-   Curve.BeginTransition();
-5087;
-   Curve.Begin(7004,0.008);
-5339;
-   Curve.BeginTransition();
-5881;
-   Curve.End();
-6789; 
-   include 'Stations/xindaxuecheng_Map.txt';
-6789+250+727;
-   Curve.BeginTransition();
-6789+250+1027;
-   Curve.Begin(9504,0.008);
-6789+250+1187;
-   Curve.BeginTransition();
-6789+250+1401;
-   Curve.End();
+   12270-7.5;
+      Track['ckllx2'].X.Interpolate(4.5, 600);
+      Repeater['ckllx2WallR'].End();
+      Repeater['WallR'].Begin('1',1,0,0,0,0,0,1,10,10,'WallR');
+      distance-64;
+      Repeater['ckllx2WallL'].End();
+      Repeater['WallR'].End();
+   12300-7.5;
+      Track['ckllx2'].X.Interpolate(4, 0);
+      Track['ckllx2'].Cant.Interpolate(0);
+   12322;
+      Track['ckllx2'].X.Interpolate(4, -200);
+   12342;
+      Track['ckllx2'].X.Interpolate(4-1.00, 0);
+   12360;
+	   Track['ckllx2'].X.Interpolate(1.00, 200);
+      JointNoise.Play(0);
+   12380;
+      Track['ckllx2'].X.Interpolate(0, 0);
+      Repeater['JX-ckllx2'].End();
+      Repeater['ckllx2'].End();
+      Repeater['ckllx2Pier'].End();
+      Repeater['Pole0'].Begin('0',0,0,0,0,0,0,1,40,40,'PoleA','PoleB');
+      Repeater['Pole1'].Begin('1',0,0,0,0,180,0,1,40,40,'PoleB','PoleA');
+   12220;
+      Repeater['Poleckllx2'].End();
+      Structure['Pole3'].Put0('0',1,1);
+      distance+40;
+      Structure['PoleA3'].Put('ckllx2',0,0,0,0,180,0,1,1);
+      distance+40;
+      Repeater['Pole0'].Begin('0',0,0,0,0,0,0,1,40,40,'Pole2');
+      distance-120;
+      Repeater['Pole1'].End();
 
+#XZYZ-WFH
+   15118;
+      Curve.BeginTransition();
+   15341;
+      Curve.Begin(-1700,0.010);
+   15793;
+      Curve.BeginTransition();
+   15993;
+      Curve.End();
+   #王符河中桥
+      $wfh-300+12.5;
+         RollingNoise.Change(4);
+      $wfh-600-12.5;
+         RollingNoise.Change(2);
+   17810;
+      include 'Stations/wangfuhe3_Map.txt';
 
-
+#WFH-LFJ
+   18350;	
+      Curve.BeginTransition();
+      Repeater['Gnd1'].Begin('Gnd1', 0, -1.001, 0, 0, 0, 0, 0, 0, 25, 'Grass');
+   18400;
+      SpeedLimit.Begin(110);
+      Structure['LimitPole'].Put('0',-2.5,0,0,0,0,0,1,1);
+      Structure['L110'].Put('0',-2.5,0,0,0,0,0,1,1);
+      distance-170;
+      Beacon.put(16, 0, 242207);
+   	Beacon.put(17, 0, 170);
+   19100;
+      Repeater['Gnd1'].Begin('Gnd1', 0, -1.001, 0, 0, 0, 0, 0, 0, 25, 'Ground1a', 'Ground1b', 'Ground1c', 'Ground1d', 'Ground1e' );
+   18550;
+      Curve.Begin(774,-0.125);
+   19288;
+      Curve.BeginTransition();
+   19488;
+      Curve.End();
+      Structure['Lend'].Put('0',-2.5,0,0,0,0,0,1,1);
+      Structure['LimitPole'].Put('0',-2.5,0,0,0,0,0,1,1);
+      distance+18*8;
+      SpeedLimit.End();
+      Beacon.put(13, 0, 0);
+   18955;
+      Gradient.BeginTransition();
+      Track['Gnd1'].Y.Interpolate(-5,7.5);
+      Track['road2-1'].Y.Interpolate(-5,7.5);
+      Track['road2-2'].Y.Interpolate(-5,7.5);
+   19055;
+      Gradient.Begin(-7.5);
+      distance+(5/0.0075);
+      Track['Gnd1'].Y.Interpolate(0,0);
+      Track['road2-1'].Y.Interpolate(0,0);
+      Track['road2-2'].Y.Interpolate(0,0);
+      Gradient.BeginTransition();
+      distance+125;
+      Gradient.End();
+   19055;
+      distance+(2/0.0075);
+      RollingNoise.Change(0);
+   20775;
+      include 'Stations/Lifujing3_Map.txt';

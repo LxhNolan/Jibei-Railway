@@ -15,8 +15,17 @@ kk1000_R,Sounds/kk1000_Run.wav,10
 Cross,..\Nagoya_Common\Sound\3D\Crossing_KB2.wav
 
 #列车通过
-passing,Sounds/pass.wav
+passing,Sounds/pass.wav,64,2.5
 
 #车站语音提醒及音乐
 stationbroadcast,Sounds/Broadcast_at_station.wav
 stationmusic,Sounds/Music_at_station.wav
+
+#京成AE、3100型电机音
+Run, Sounds/Keisei3000/RunM02.wav,512,2.5
+RunS, Sounds/RunS02.wav,64,2.5	#AE
+Accel, Sounds/Keisei3000/Accel02.wav,64,2.5	#加速
+Decel, Sounds/Keisei3000/Decel02.wav,64,2.5	#減速
+
+#新幹線
+RunS01, Sounds/RunS03.wav,33,2.5

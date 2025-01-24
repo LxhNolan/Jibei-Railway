@@ -1,0 +1,8 @@
+BveTs Map 2.02:utf-8
+
+$sby+270+400*4-70-1;
+      PreTrain.Pass('08:32:40');
+$xdxc+260-1;
+      PreTrain.Pass('08:33:10');
+40000;
+      PreTrain.Pass('08:33:51');

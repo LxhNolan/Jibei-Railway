@@ -16,13 +16,13 @@ Signal.Load('Signals.csv');
 # 加载地图
 
 $lifujing = 3008;
-   include'Dongfangte_Line_Stations/Test_Turn_TextStation1_Map.txt';
+   include'Fangte_Line_Stations/Test_Turn_TextStation1_Map.txt';
 $xiaoyangzhuang = 6721;
-   include'Dongfangte_Line_Stations/Test_Turn_TextStation2_Map.txt';
+   include'Fangte_Line_Stations/Test_Turn_TextStation2_Map.txt';
 $xijibei = 8794;
-   include'Dongfangte_Line_Stations/Test_Turn_TextStation3_Map.txt';
+   include'Fangte_Line_Stations/Test_Turn_TextStation3_Map.txt';
 $dongfangte = 10317;
-   include'Dongfangte_Line_Stations/Test_Turn_TextStation4_Map.txt';
+   include'Fangte_Line_Stations/Test_Turn_TextStation4_Map.txt';
 include'1007_AI_Trains_Map.txt';
 include'1007_Map_ATS.txt';
 
@@ -38,12 +38,13 @@ Light.Direction(70, 30);
 0;
    Beacon.Put(20, 0, 1);
 	Beacon.Put(21, 0, 0);
-	Beacon.put(24, 0, 1050000);
-	Beacon.put(26, 0, 0);
-	Beacon.Put(243, 0, 15001600);
-	Beacon.Put(244, 0, 4);
-	Beacon.put(246, 0, 3000);
-   Section.Begin(16, 17, 19, 21, 25); 
+	#Beacon.put(24, 0, 1050000);
+	#Beacon.put(26, 0, 0);
+	#Beacon.Put(243, 0, 15001600);
+	#Beacon.Put(244, 0, 4);
+	#Beacon.put(246, 0, 3000);
+   #Section.Begin(16, 17, 19, 21, 25); 
+   Section.Begin(33, 34, 36, 38, 40); 
    # 从0m开始铺设轨道以及架线柱（自己的）
    Repeater['Ballast'].Begin0('0', 3, 5, 5, 'Ballast0');
    Repeater['RailL'].Begin('0', -0.7175, 0, 0, 0, 0, 0, 3, 5, 5, 'RailL0', 'RailL1', 'RailL2', 'RailL3', 'RailL4');

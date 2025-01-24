@@ -1,19 +1,88 @@
 BveTs Map 2.02:utf-8
 
-2813;
-   Repeater['road2-1'].Begin('road2-1',-24,0,0,0,0,0,1,3,3,'Road2');
-   Track['road2-1'].X.Interpolate(-24,0);
-2994;
-   Track['road2-1'].X.Interpolate(500,0);
-   distance-70;
-   Repeater['road2-1'].End();
-3300;
+#创新大道附近横向道路
+   2813;
+      Repeater['road2-1'].Begin('road2-1',-24,0,0,0,0,0,1,3,3,'Road2');
+      Track['road2-1'].X.Interpolate(-24,0);
+   2994;
+      Track['road2-1'].X.Interpolate(500,0);
+      distance-70;
+      Repeater['road2-1'].End();
+#铁路两侧的公路
+   2838;
+      Repeater['road2-2'].Begin('Gnd',13,0,0,0,0,0,1,10,10,'Road2');
+      Repeater['road2-3'].Begin('Gnd',-9,0,-10,0,0,0,1,10,10,'Road2');
+      
+#新大学城附近横向道路
+   $xdxc-97;
+      Structure['Cross_5m'].Put('Gnd',-100+8,-0.01,0,0,0,0,1,1);
+      Structure['Cross_5m'].Put('Gnd',-100+8,-0.01,-10,0,0,0,1,1);
+      Structure['Cross_5m'].Put('Gnd',-200+8,-0.01,0,0,0,0,1,1);
+      Structure['Cross_5m'].Put('Gnd',-200+8,-0.01,-10,0,0,0,1,1);
+   $xdxc-194.25;
+      Structure['Cross_4'].Put('Gnd',100-5,-0.01,0,0,0,0,1,1);
+      Structure['Cross_4'].Put('Gnd',200-5,-0.01,0,0,0,0,1,1);
+#WFH-LFJ铁轨两侧的道路
+   
+   18350;	
+   // 曲線イ R774 TCLa200 CCL738 TCLb200 C50	
+   	Curve.Interpolate(0, 0);
+   	Track['gnd'].X.Interpolate(0, -4644);
+	
+   18450;	
+   	Track['gnd'].X.Interpolate(-1.08, -928.8);
+	
+   18550;	
+   	Curve.Interpolate(774, -0.125);
+   	Track['gnd'].X.Interpolate(-8.64, -774);
+	
+   19288;	
+   	Curve.Interpolate();
+   	Track['gnd'].X.Interpolate(-667.68, -928.8);
+	
+   19388;	
+   	Track['gnd'].X.Interpolate(-861.42, -4644);
+	
+   19488;	
+   	Curve.Interpolate(0, 0);
+   	Track['gnd'].X.Interpolate(-1112.54, 0);
+	
+      Repeater['Gnd'].End();
+      Repeater['road2-2'].End();
+      Repeater['road2-3'].End();
+   // 曲線イここまで	
 
-$xdxc-97;
-   Structure['Cross_5m'].Put('Gnd',-100+8,-0.01,0,0,0,0,1,1);
-   Structure['Cross_5m'].Put('Gnd',-100+8,-0.01,-10,0,0,0,1,1);
-   Structure['Cross_5m'].Put('Gnd',-200+8,-0.01,0,0,0,0,1,1);
-   Structure['Cross_5m'].Put('Gnd',-200+8,-0.01,-10,0,0,0,1,1);
-$xdxc-194.25;
-   Structure['Cross_4'].Put('Gnd',100-5,-0.01,0,0,0,0,1,1);
-   Structure['Cross_4'].Put('Gnd',200-5,-0.01,0,0,0,0,1,1);
+#WFH-LFJ
+   #高铁
+      19402;
+         Track['Highrailway1L'].X.Interpolate(500,0);
+         Track['Highrailway1L'].Y.Interpolate(7.5,0);
+         Repeater['WallL_Highrailway1'].Begin('Highrailway1L',0,0,3,0,0,0,1,9,9,'WallL');
+         Repeater['PierL_Highrailway1'].Begin('Highrailway1L',0,0,3,0,0,0,1,36,36,'Pier');
+         Repeater['PoleL_Highrailway1'].Begin('Highrailway1L',0,0,3,0,0,0,1,36,36,'PoleA','PoleB');
+         Repeater['JXL_Highrailway1'].Begin('Highrailway1L',0,0,3,0,0,0,1,36,36,'Kasen40B','Kasen40A');
+         Repeater['RailL_Highrailway1'].Begin('Highrailway1L',0,0,3,0,0,0,1,4.5,4.5,'GJRail');
+         distance+9.5;
+         Track['Highrailway1R'].X.Interpolate(500,0);
+         Track['Highrailway1R'].Y.Interpolate(7.5,0);
+         Repeater['WallR_Highrailway1'].Begin('Highrailway1R',0,0,-8+3,0,0,0,1,9,9,'WallR');
+         Repeater['PierR_Highrailway1'].Begin('Highrailway1R',0,0,-8+3,0,0,0,1,36,36,'Pier');
+         Repeater['PoleR_Highrailway1'].Begin('Highrailway1R',0,0,-8+3,0,180,0,1,36,36,'PoleB','PoleA');
+         Repeater['JXR_Highrailway1'].Begin('Highrailway1R',0,0,-8+3,0,0,0,1,36,36,'Kasen40B','Kasen40A');
+         Repeater['RailR_Highrailway1'].Begin('Highrailway1R',0,0,-8+3,0,0,0,1,4.5,4.5,'GJRail');
+      21390;
+         Track['Highrailway1L'].X.Interpolate(-500,0);
+         Track['Highrailway1L'].Y.Interpolate(7.5,0);
+         Repeater['WallL_Highrailway1'].End();
+         Repeater['PierL_Highrailway1'].End();
+         Repeater['PoleL_Highrailway1'].End();
+         Repeater['JXL_Highrailway1'].End();
+         Repeater['RailL_Highrailway1'].End();
+         distance+9.5;
+         Track['Highrailway1R'].X.Interpolate(-500,0);
+         Track['Highrailway1R'].Y.Interpolate(7.5,0);
+         Repeater['WallR_Highrailway1'].End();
+         Repeater['PierR_Highrailway1'].End();
+         Repeater['PoleR_Highrailway1'].End();
+         Repeater['JXR_Highrailway1'].End();
+         Repeater['RailR_Highrailway1'].End();

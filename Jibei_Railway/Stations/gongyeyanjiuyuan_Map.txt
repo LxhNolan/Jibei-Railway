@@ -42,10 +42,10 @@ $gyyjy+0;
    Repeater['sta_eaves_l_5'].Begin0('1', 1, 5, 5,'station_eaves_l_5');
    Structure['end4'].Put('0', 0, 0, 0, 0, 180, 0, 1, 1);
    Structure['end4'].Put('1', 0, 0, 0, 0, 180, 0, 1, 1);
-   Repeater['ADl'].Begin('0',-3,2,0,0,0,0,1,10,10,'ad1','ad2','ad3','ad4','ad5','ad6','ad7','AD8');
+   Repeater['ADl'].Begin('0',-3,2,0,0,0,0,1,10,10,'ad1','ad2','ad3','ad4','ad5','ad6','ad7','AD8','ad9');
    Repeater['ADs_Polel'].Begin('0',-3,1.25,-1,0,0,0,1,10,10,'Pole');
    Repeater['ADs_Pole2l'].Begin('0',-3,1.25,0.6,0,0,0,1,10,10,'Pole');
-   Repeater['ADr'].Begin('1',3,2,0,0,0,0,1,10,10,'ad1','ad2','ad3','ad4','ad5','ad6','ad7','AD8');
+   Repeater['ADr'].Begin('1',3,2,0,0,0,0,1,10,10,'ad1','ad2','ad3','ad4','ad5','ad6','ad7','AD8','ad9');
    Repeater['ADs_Poler'].Begin('1',3,1.25,-1,0,0,0,1,10,10,'Pole');
    Repeater['ADs_Pole2r'].Begin('1',3,1.25,0.6,0,0,0,1,10,10,'Pole');
    distance+22.5;
@@ -121,28 +121,34 @@ $gyyjy+240.05;
    distance+47;
    Track['1-1'].X.Interpolate(4, 0);
    
-660;
+650;
+   Structure['LimitPole'].Put('1',2.5,0,0,0,0,0,1,1);
+   Structure['L30'].Put('1',2.5,0,0,0,0,0,1,1);
+   Structure['L5'].Put('1',2.5,0,0,0,0,0,1,1);
+   
+670;
 	Track['2'].X.Interpolate(0, 200);
 	Track['3'].X.Interpolate(4, -200);
    Track['1-1'].X.Interpolate(4, -200);
-
+   
 	JointNoise.Play(0);
 
     Repeater['main2'].Begin0('2',1,5,5,'PTRail');
     Repeater['main3'].Begin0('3',1,5,5,'PTRail');
+    distance-10;
     Repeater['Jiaxian2'].Begin0('2',1,40,40,'Kasen40A','Kasen40B');
     Repeater['Jiaxian3'].Begin0('3',1,40,40,'Kasen40A','Kasen40B');
-680;
+690;
 	Track['2'].X.Interpolate(1.00, 0);
 	Track['3'].X.Interpolate(4-1.00, 0);
    Track['1-1'].X.Interpolate(4-1.00, 0);
-698;
+708;
 	Track['2'].X.Interpolate(4-1.00, -200);
 	Track['3'].X.Interpolate(1.00, 200);
    Track['1-1'].X.Interpolate(1.00, 200);
-708;
-	JointNoise.Play(0);
 718;
+	JointNoise.Play(0);
+728;
 	Track['2'].X.Interpolate(4, 0);
 	Track['3'].X.Interpolate(0, 0);
    Track['1-1'].X.Interpolate(0, 0);

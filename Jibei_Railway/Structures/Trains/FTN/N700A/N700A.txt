@@ -1,0 +1,206 @@
+BveTs Train 1.01
+
+[structure]
+Key = N783-1000
+Distance = 375
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N787
+Distance = 350
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N786-1500
+Distance = 325
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N785
+Distance = 300
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N785-300
+Distance = 275
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N785
+Distance = 250
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N787-1400
+Distance = 225
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N775
+Distance = 200
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N776-1000
+Distance = 175
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N777
+Distance = 150
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N786-1700
+Distance = 125
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N785-600
+Distance = 100
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N785-1500
+Distance = 75
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N786-200
+Distance = 50
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N787-1500
+Distance = 25
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N784-1000
+Distance = 0
+Span = 25
+Z = 12.5
+
+
+#[Sound3d]
+#Key  =  RunS01
+#Distance1 = 0
+#Distance2 = 375
+#Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance = 400
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 378
+Distance2 = 372
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 353
+Distance2 = 347
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 328
+Distance2 = 322
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 303
+Distance2 = 297
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 278
+Distance2 = 272
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 253
+Distance2 = 247
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 228
+Distance2 = 222
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 203
+Distance2 = 197
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 178
+Distance2 = 172
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 153
+Distance2 = 147
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 128
+Distance2 = 122
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 103
+Distance2 = 97
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 78
+Distance2 = 72
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 53
+Distance2 = 47
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance1 = 28
+Distance2 = 22
+Function = Run
+
+[Sound3d]
+Key = RunS01
+Distance = 3
+Function = Run
+
+

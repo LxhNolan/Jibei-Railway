@@ -1,0 +1,20 @@
+﻿Bvets structure List 2.00
+
+5500_Mc2,Toei5500\Mc2.x
+5500_Mc1,Toei5500\Mc1.x
+5500_T,Toei5500\T.x
+5500_T2,Toei5500\T2.x
+5500_M,Toei5500\M.x
+5500_M2,Toei5500\M2.x
+//以下夜間用ストラクチャ
+5500_Mc2_n,Toei5500\Mc2_n.x
+5500_Mc1_n,Toei5500\Mc1_n.x
+5500_T_n,Toei5500\T_n.x
+5500_T2_n,Toei5500\T2_n.x
+5500_M_n,Toei5500\M_n.x
+5500_M2_n,Toei5500\M2_n.x
+//以下前照灯・急行灯・尾灯
+5500_low,Toei5500\low.x
+5500_high,Toei5500\high.x
+5500_exp,Toei5500\exp.x
+5500_be_tou,Toei5500\be_tou.x

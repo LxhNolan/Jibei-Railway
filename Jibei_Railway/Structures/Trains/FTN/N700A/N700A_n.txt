@@ -1,0 +1,105 @@
+BveTs Train 1.01
+
+[structure]
+Key = N783-1000
+Distance = 375
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N787
+Distance = 350
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N786-1500
+Distance = 325
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N785
+Distance = 300
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N785-300
+Distance = 275
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N785
+Distance = 250
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N787-1400
+Distance = 225
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N775
+Distance = 200
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N776-1000
+Distance = 175
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N777
+Distance = 150
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N786-1700
+Distance = 125
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N785-600
+Distance = 100
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N785-1500
+Distance = 75
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N786-200
+Distance = 50
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N787-1500
+Distance = 25
+Span = 25
+Z = 12.5
+
+[structure]
+Key = N784-1000
+Distance = 0
+Span = 25
+Z = 12.5
+
+
+[Sound3d]
+Key  =  Blower_S
+Distance1 = 0
+Distance2 = 400
+Function = Stationary
+

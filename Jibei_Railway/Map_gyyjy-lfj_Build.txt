@@ -44,32 +44,33 @@ BveTs Map 2.02:utf-8
    Sound3D['Cross'].Put(0,2);
    Repeater['fence_l'].Begin('0',-3.5,-1,0,0,0,0,1,10,10,'fence_5');
    Repeater['fence_r'].Begin('1',3.5,-1,0,0,0,0,1,10,10,'fence_5');
-800;#学校(济北市幼儿师范高等专科学校; 工业研究院附近)
-   Structure['School'].Put('Gnd',-100,-1,0,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-100,3.5-1,0,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-100,3.5*2-1,0,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-100,3.5*3-1,0,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-100,3.5*4-1,0,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-100,3.5*5-1,0,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-100,-1,-75,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-100,3.5-1,-75,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-100,3.5*2-1,-75,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-100,3.5*3-1,-75,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-100,3.5*4-1,-75,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-100,3.5*5-1,-75,0,-90,0,1,1);
-   Structure['School'].Put('Gnd',-75,-1,50,0,0,0,1,1);
-   Structure['School'].Put('Gnd',-75,3.5-1,50,0,0,0,1,1);
-   Structure['School'].Put('Gnd',-75,3.5*2-1,50,0,0,0,1,1);
-   Structure['School'].Put('Gnd',-75,3.5*3-1,50,0,0,0,1,1);
-   Structure['School'].Put('Gnd',-75,-1,-125,0,0,0,1,1);
-   Structure['School'].Put('Gnd',-75,3.5-1,-125,0,0,0,1,1);
-   Structure['School'].Put('Gnd',-75,3.5*2-1,-125,0,0,0,1,1);
-   Structure['Lou11'].Put('Gnd',-125,-1,50,0,-90,0,1,1);
-   Structure['Lou10'].Put('Gnd',-125,-1,-50,0,-90,0,1,1);
-950;
-   Structure['Ob_B'].Put('Gnd',15,-1,0,0,0,0,1,1);
-   Structure['Ob_B'].Put('Gnd',15,-1,40,0,0,0,1,1);
-   Structure['Ob_B'].Put('Gnd',15,-1,80,0,0,0,1,1);
+#学校(济北市幼儿师范高等专科学校; 工业研究院附近)
+   800;
+      Structure['School'].Put('Gnd',-100,-1,0,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-100,3.5-1,0,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-100,3.5*2-1,0,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-100,3.5*3-1,0,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-100,3.5*4-1,0,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-100,3.5*5-1,0,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-100,-1,-75,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-100,3.5-1,-75,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-100,3.5*2-1,-75,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-100,3.5*3-1,-75,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-100,3.5*4-1,-75,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-100,3.5*5-1,-75,0,-90,0,1,1);
+      Structure['School'].Put('Gnd',-75,-1,50,0,0,0,1,1);
+      Structure['School'].Put('Gnd',-75,3.5-1,50,0,0,0,1,1);
+      Structure['School'].Put('Gnd',-75,3.5*2-1,50,0,0,0,1,1);
+      Structure['School'].Put('Gnd',-75,3.5*3-1,50,0,0,0,1,1);
+      Structure['School'].Put('Gnd',-75,-1,-125,0,0,0,1,1);
+      Structure['School'].Put('Gnd',-75,3.5-1,-125,0,0,0,1,1);
+      Structure['School'].Put('Gnd',-75,3.5*2-1,-125,0,0,0,1,1);
+      Structure['Lou11'].Put('Gnd',-125,-1,50,0,-90,0,1,1);
+      Structure['Lou10'].Put('Gnd',-125,-1,-50,0,-90,0,1,1);
+   950;
+      Structure['Ob_B'].Put('Gnd',15,-1,0,0,0,0,1,1);
+      Structure['Ob_B'].Put('Gnd',15,-1,40,0,0,0,1,1);
+      Structure['Ob_B'].Put('Gnd',15,-1,80,0,0,0,1,1);
 
 2600;#学校(创新谷发展中心)
    #主楼1-1
@@ -184,19 +185,19 @@ BveTs Map 2.02:utf-8
       Structure['Lou00'].Put('Gnd',180,-1,200,0,0,0,1,1);
 
 # 创新大道站 ========================================
-
-2824.25; # 平交道(创新大道站附近)
-   Structure['D_L'].Put('0',-1.5,0.1,-0.45,0,-18,0,1,1);
-   Structure['D_R'].Put('1',6,0.1,3.5,0,-18,0,1,1);
-   Repeater['road2-2'].End();
-   distance-5;
-   Repeater['fence_r'].End();
-   Repeater['fence_l'].End();
-   distance+19;
-   Repeater['fence_l'].Begin('0',-3.5,-1,0,0,0,0,1,10,10,'fence_5');
-   Repeater['fence_r'].Begin('1',3.5,-1,0,0,0,0,1,10,10,'fence_5');
-   distance+10;
-   Sound3D['Cross'].Put(0,2);
+# 平交道(创新大道站附近)
+   2824.25;
+      Structure['D_L'].Put('0',-1.5,0.1,-0.45,0,-18,0,1,1);
+      Structure['D_R'].Put('1',6,0.1,3.5,0,-18,0,1,1);
+      Repeater['road2-2'].End();
+      distance-5;
+      Repeater['fence_r'].End();
+      Repeater['fence_l'].End();
+      distance+19;
+      Repeater['fence_l'].Begin('0',-3.5,-1,0,0,0,0,1,10,10,'fence_5');
+      Repeater['fence_r'].Begin('1',3.5,-1,0,0,0,0,1,10,10,'fence_5');
+      distance+10;
+      Sound3D['Cross'].Put(0,2);
 # 小区群(创新大道站附近)
    2837;
       Repeater['Lou10'].Begin('Gnd',90,0,30,0,00,0,1,120,120,'Lou10');
@@ -211,16 +212,14 @@ BveTs Map 2.02:utf-8
       distance+100;
       Repeater['Lou00'].End();
       Repeater['Lou03'].End();
+   3015;
+      Structure['HKQ2'].Put('Gnd',2,7,23,0,0,0,1,1);
+      Structure['HKQ2'].Put('Gnd',2,7,23+15,0,0,0,1,1);
+      Structure['HKQ2'].Put('Gnd',214,7,23,0,0,0,1,1);
+      Structure['HKQ2'].Put('Gnd',214,7,23+15,0,0,0,1,1);
 
-2838;
-   Repeater['road2-2'].Begin('road2-2',13,0,0,0,0,0,1,10,10,'Road2');
-   Repeater['road2-3'].Begin('Gnd',-9,0,-10,0,0,0,1,10,10,'Road2');
-3015;
-   Structure['HKQ2'].Put('Gnd',2,7,23,0,0,0,1,1);
-   Structure['HKQ2'].Put('Gnd',2,7,23+15,0,0,0,1,1);
-   Structure['HKQ2'].Put('Gnd',214,7,23,0,0,0,1,1);
-   Structure['HKQ2'].Put('Gnd',214,7,23+15,0,0,0,1,1);
-3690; # 高架桥段
+# 高架桥段
+   3690-40*4; 
    Repeater['fence_r'].End();
    Repeater['fence_l'].End();
    Repeater['main'].End();
@@ -250,6 +249,7 @@ BveTs Map 2.02:utf-8
 #世博园附近村落及建筑(4770m左右)
    #Village
    4010;
+      Structure['Cross_5m'].Put('Gnd',-29-26*4-16,-0.01,100,0,90,0,1,1);
       Structure['Cross_5m'].Put('Gnd',0,-0.01,-5,0,0,0,1,1);
       Structure['Cross_5m'].Put('Gnd',-200,-0.01,-5,0,0,0,1,1);
       Structure['Cross_5m'].Put('Gnd',200,-0.01,-5,0,0,0,1,1);
@@ -274,6 +274,20 @@ BveTs Map 2.02:utf-8
 			'house_f', 'house_g', 'house_h', 'house_i', 'house_j',
 			'house_k', 'house_l', 'house_m', 'house_n', 'house_o',
 			'house_p', 'house_q', 'house_r', 'house_s', 'house_t');
+      Repeater['railsideset_l0-4'].Begin('Gnd', -17-26*3, -0.05, 0, 0, 0, 0, 0, 50, 50,
+			'railsideset_l_1_50', 'railsideset_l_2_50');
+      Repeater['Village0-4'].Begin('Gnd',-29-26*3,-0.05,15,0,0,0,1,25,25,
+         'house_a', 'house_b', 'house_c', 'house_d', 'house_e',
+			'house_f', 'house_g', 'house_h', 'house_i', 'house_j',
+			'house_k', 'house_l', 'house_m', 'house_n', 'house_o',
+			'house_p', 'house_q', 'house_r', 'house_s', 'house_t');
+      Repeater['railsideset_l0-5'].Begin('Gnd', -17-26*4, -0.05, 0, 0, 0, 0, 0, 50, 50,
+			'railsideset_l_1_50', 'railsideset_l_2_50');
+      Repeater['Village0-5'].Begin('Gnd',-29-26*4,-0.05,15,0,0,0,1,25,25,
+         'house_a', 'house_b', 'house_c', 'house_d', 'house_e',
+			'house_f', 'house_g', 'house_h', 'house_i', 'house_j',
+			'house_k', 'house_l', 'house_m', 'house_n', 'house_o',
+			'house_p', 'house_q', 'house_r', 'house_s', 'house_t');
    4720;
       Structure['Cross_4'].Put('Gnd',0,-0.01,45,0,0,0,1,1);
       Structure['Cross_4'].Put('Gnd',-200,-0.01,45,0,0,0,1,1);
@@ -281,11 +295,16 @@ BveTs Map 2.02:utf-8
       Repeater['railsideset_l0-1'].End();
       Repeater['railsideset_l0-2'].End();
       Repeater['railsideset_l0-3'].End();
+      Repeater['railsideset_l0-4'].End();
+      Repeater['railsideset_l0-5'].End();
       Repeater['Village0-1'].End();
       Repeater['Village0-2'].End();
       Repeater['Village0-3'].End();
+      Repeater['Village0-4'].End();
+      Repeater['Village0-5'].End();
 
-   4801;#济北交通学院建筑
+#济北交通学院建筑
+   4801;
       Repeater['jbjtxy1-1'].Begin('Gnd',-240,-1,0,0,0,0,1,50,50,'School');
       Repeater['jbjtxy1-2'].Begin('Gnd',-240,-1+3.5,0,0,0,0,1,50,50,'School');
       Repeater['jbjtxy1-3'].Begin('Gnd',-240,-1+3.5*2,0,0,0,0,1,50,50,'School');
@@ -314,3 +333,37 @@ BveTs Map 2.02:utf-8
       Repeater['jbjtxy1-4'].End();
       Repeater['jbjtxy1-5'].End();
       Repeater['jbjtxylou09'].End();
+
+#XZYZ-WFH
+   #王符河中桥
+      $wfh-600-12.5;
+         Repeater['main'].Begin0('0',1,5,5,'QLRail');
+         Repeater['main1'].Begin0('1',1,5,5,'QLRail');
+         Repeater['WallL'].Begin0('0',1,25,25,'Bridge2');
+         Repeater['WallR'].Begin0('1',1,25,25,'Bridge2');
+      $wfh-300+12.5;
+         Repeater['main'].Begin0('0',1,5,5,'GJRail');
+         Repeater['main1'].Begin0('1',1,5,5,'GJRail');
+         Repeater['WallL'].Begin('0',-1,0,0,0,0,0,1,10,10,'WallL');
+         Repeater['WallR'].Begin('1',1,0,0,0,0,0,1,10,10,'WallR');
+         distance-10;
+         Repeater['WallL'].End();
+         Repeater['WallR'].End();
+         
+#WFH-LFJ
+   #高架桥结束，地上铁轨开始
+      19055;
+         distance+(2/0.0075);
+         Repeater['fence_l'].Begin('0',-3.5,-1,0,0,0,0,1,10,10,'fence_5');
+         Repeater['fence_r'].Begin('1',3.5,-1,0,0,0,0,1,10,10,'fence_5');
+         Repeater['WallL'].End();
+         Repeater['WallR'].End();
+         Repeater['main'].Begin0('0',1,5,5,'PTRail');
+         Repeater['main1'].Begin0('1',1,5,5,'PTRail');
+         Repeater['DikeL0'].Begin0(0, 1, 5, 5, 'DikeL1', 'DikeL2', 'DikeL3' );
+         Repeater['DikeR0'].Begin0(1, 1, 5, 5, 'DikeR1', 'DikeR2', 'DikeR3' );
+         #Repeater['DikeL1'].Begin0(1, 1, 5, 5, 'DikeL1', 'DikeL2', 'DikeL3' );
+         #Repeater['DikeR1'].Begin0(0, 1, 5, 5, 'DikeR1', 'DikeR2', 'DikeR3' );
+         19340;
+         Repeater['Pole0'].Begin0('0', 1, 40, 40,'PoleA2','PoleB2');
+         Repeater['Pole1'].Begin('1',0,0,0,0,180,0,1,40,40,'PoleB2','PoleA2');

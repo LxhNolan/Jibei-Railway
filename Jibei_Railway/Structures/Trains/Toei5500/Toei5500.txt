@@ -1,0 +1,100 @@
+BveTs Train 1.00
+
+[structure]
+key=5500_Mc1
+distance=0
+span=18
+z=1
+[structure]
+key=5500_T
+distance=-18
+span=18
+z=1
+
+[structure]
+key=5500_M
+distance=-36
+span=18
+z=1
+
+[structure]
+key=5500_T
+distance=-54
+span=18
+z=1
+
+[structure]
+key=5500_T2
+distance=-72
+span=18
+z=1
+
+[structure]
+key=5500_M2
+distance=-90
+span=18
+z=1
+
+[structure]
+key=5500_T2
+distance=-108
+span=18
+z=1
+
+[structure]
+key=5500_Mc2
+distance=-126
+span=18
+z=1
+
+#前照灯(ロービーム)
+[structure]
+key=5500_low
+distance=-126
+span=18
+z=1
+
+#前照灯(ハイビーム)
+;[structure]
+;key=5500_high
+;distance=-126
+;span=18
+;z=1
+
+#急行灯
+[structure]
+key=5500_exp
+distance=-126
+span=18
+z=1
+
+#尾灯
+;[structure]
+;key=5500_be_tou
+;distance=-126
+;span=18
+;z=1
+
+[Sound3d]
+Key = 5500Run
+Distance1 = -114
+Distance2 = 10
+Function = run
+
+[Sound3d]
+Key = 5500Accel
+Distance1 = -114
+Distance2 = 10
+Function = accelerate
+
+[Sound3d]
+Key = 5500Decel
+Distance1 = -114
+Distance2 = 10
+Function = decelerate
+
+[Sound3d]
+Key = 5500Sta
+Distance1 = -114
+Distance2 = 10
+Function = Stationary

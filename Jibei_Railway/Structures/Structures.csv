@@ -30,7 +30,10 @@ pier,..\..\Nagoya_Common\railway_obj\dike\pier.x
 
 # Tracks(桥梁铁轨1435mm)
 QLRail,..\..\Nagoya_Common\Railway_Obj\Rail\Han_Line\Bridge1.x
-
+Bridge0,..\..\Nagoya_Common\Railway_Obj\Bridge\Bridge0.x
+Bridge1,..\..\Nagoya_Common\Railway_Obj\Bridge\Bridge1.x
+Bridge2,..\..\Nagoya_Common\Railway_Obj\Bridge\Bridge2.x
+Bridge4,..\..\Nagoya_Common\Railway_Obj\Bridge\Bridge4.x
 # 铁轨大堤
 DikeL1,Nature\Ground\DikeGrs5mL1.x
 DikeL2,Nature\Ground\DikeGrs5mL2.x
@@ -117,7 +120,7 @@ stnkdr,..\..\Nagoya_Common\Build\Station\Mc223\kokesuiyama\kdr.x
 Step_D,..\..\Nagoya_Common\Build\Form\Step\Down\Step_D.x
 Step,..\..\Nagoya_Common\Build\Form\Step\Down\Step.x
 
-# Stations （地面车站构造）
+# Stations （车站构造1）
 station_side_l_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5L.x
 station_floor_l_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5CL.x
 station_wall_l_5,..\..\Nagoya_Common\Build\Form\Plat_Form\5WallL.x
@@ -135,7 +138,7 @@ WallSREnd,../../Nagoya_Common/Build/Form/Plat_Form/WallSREnd.x,
 WallSL1,../../Nagoya_Common/Build/Form/Old_Form/WallSL.x,
 WallSR1,../../Nagoya_Common/Build/Form/Old_Form/WallSR.x,
 
-# Stations （高架车站构造）
+# Stations （车站构造2）
 station_side2_l_5,..\..\Nagoya_Common\Build\Form\Old_Form\L_E.x
 station_wall2_l_5,..\..\Nagoya_Common\Build\Form\Old_Form\WallL.x
 station_roof2_l_5,..\..\Nagoya_Common\Build\Form\Old_Form\RoofCL.x
@@ -185,6 +188,9 @@ gyyjy_sta,StationName\Gongyeyanjiuyuan.x
 cxdd_sta,StationName\Chuangxindadao.x
 sby_sta,StationName\Shiboyuan.x
 xdxc_sta,StationName\Xindaxuecheng.x
+zwjd_sta,StationName\Ziweijiedao.x
+xzyz_sta,StationName\Xinzhaoyingzi.x
+wfh_sta,StationName\Wangfuhe.x
 
 # 车站内标志
 exit0,Sta_Str\Exit_0.x
@@ -211,8 +217,11 @@ poleA,..\..\Nagoya_Common\railway_obj\pole\pole0_8.x,
 poleB,..\..\Nagoya_Common\railway_obj\pole\pole0_9.x,
 poleA2,..\..\Nagoya_Common\railway_obj\pole\pole0_0.x,
 poleB2,..\..\Nagoya_Common\railway_obj\pole\pole0_1.x,
+poleA3,..\..\Nagoya_Common\railway_obj\pole\pole0_12.x,
 pole2,..\..\Nagoya_Common\railway_obj\pole\pole1_3.x,
+pole2a,..\..\Nagoya_Common\railway_obj\pole\pole1_2.x,
 pole3,..\..\Nagoya_Common\railway_obj\pole\pole2_3.x,
+pole3a,..\..\Nagoya_Common\railway_obj\pole\pole2_2.x,
 pole4,..\..\Nagoya_Common\railway_obj\pole\pole3_3.x,
 pole5,..\..\Nagoya_Common\railway_obj\pole\pole4_3.x,
 pole6,..\..\Nagoya_Common\railway_obj\pole\pole5_3.x,
@@ -348,15 +357,124 @@ LfxR,..\..\Nagoya_Common\Railway_Obj\Sign\Limit\R.x
 2000_2Pb,Trains\khk1500\2000_2Pb.x
 2000_3,Trains\khk1500\2000_3.x
 
-3300_1b,Trains\ks3300\3300_1b.x
-3300_2b,Trains\ks3300\3300_2b.x
-3300_2a,Trains\ks3300\3300_2a.x
-3300_1,Trains\ks3300\3300_1.x
+#KS3150
+   3151_1, Trains\nf4\KS3150\3151_1.x
+   3151_2, Trains\nf4\KS3150\3151_2.x
+   3151_3, Trains\nf4\KS3150\3151_3.x
+   3151_4, Trains\nf4\KS3150\3151_4.x
+   3151_5, Trains\nf4\KS3150\3151_5.x
+   3151_6, Trains\nf4\KS3150\3151_6.x
+   3151_7, Trains\nf4\KS3150\3151_7.x
+   3151_8, Trains\nf4\KS3150\3151_8.x
+   3151_1_HeadLightOn, Trains\nf4\KS3150\3151_1_HeadLightOn.x
+   3151_1_HeadLightOn_3, Trains\nf4\KS3150\3151_1_HeadLightOn_3.x
+   3151_1_HeadLightOff, Trains\nf4\KS3150\3151_1_HeadLightOff.x
+   3151_1_HeadLightOff_4, Trains\nf4\KS3150\3151_1_HeadLightOff_4.x
+   3151_8_HeadLightOn, Trains\nf4\KS3150\3151_8_HeadLightOn.x
+   3151_8_HeadLightOn_4, Trains\nf4\KS3150\3151_8_HeadLightOn_4.x
+   3151_8_HeadLightOff, Trains\nf4\KS3150\3151_8_HeadLightOff.x
+   3151_8_HeadLightOff_3, Trains\nf4\KS3150\3151_8_HeadLightOff_3.x
+   Destination_1, Trains\nf4\KS3150\Destination_1.x
+   Destination_2, Trains\nf4\KS3150\Destination_2.x
+   Destination_3, Trains\nf4\KS3150\Destination_3.x
+   Destination_4, Trains\nf4\KS3150\Destination_4.x
+
+#KS3400
+   3400_1,Trains\ks3400\3400_1.x
+   3400_1b,Trains\ks3400\3400_1b.x
+   3400_2,Trains\ks3400\3400_2.x
+   3400_2b,Trains\ks3400\3400_2b.x
+   3400_3,Trains\ks3400\3400_3.x
+
+#KS3300
+   3300_1b,Trains\ks3300\3300_1b.x
+   3300_2b,Trains\ks3300\3300_2b.x
+   3300_2a,Trains\ks3300\3300_2a.x
+   3300_1,Trains\ks3300\3300_1.x
+
+#京成3600形(共通)
+	3600_CU-15_3 for Narita,Trains\ks3600\3600_Common\CU-15_3 for Narita.x	#クーラー 3台(京成成田方面行)
+	3600_CU-15_3 for Ueno,Trains\ks3600\3600_Common\CU-15_3 for Ueno.x		#クーラー 3台　(京成上野方面行)
+	3600_CU-15_4,Trains\ks3600\3600_Common\CU-15_4.x				#クーラー 4台
+	3600_DSR,Trains\ks3600\3600_Common\DSR.x					#デジタルSRアンテナ
+	3600_Hood_Back,Trains\ks3600\3600_Common\Hood_Back.x				#転落防止幌(後尾車)
+	3600_Hood_Front,Trains\ks3600\3600_Common\Hood_Front.x			#転落防止幌(先頭車)
+	3600_Under_M1 for Narita,Trains\ks3600\3600_Common\Under_M1 for Narita.x	#床下機器 M1車(京成成田方面行)
+	3600_Under_M1 for Ueno,Trains\ks3600\3600_Common\Under_M1 for Ueno.x		#床下機器 M1車	(京成上野方面行)
+	3600_Under_M2 for Narita,Trains\ks3600\3600_Common\Under_M2 for Narita.x	#床下機器 M2車(京成成田方面行)
+	3600_Under_M2 for Ueno,Trains\ks3600\3600_Common\Under_M2 for Ueno.x		#床下機器 M2車	(京成上野方面行)
+	3600_Under_Tc for Narita,Trains\ks3600\3600_Common\Under_Tc for Narita.x	#床下機器 Tc車(京成成田方面行)
+	3600_Under_Tc for Ueno,Trains\ks3600\3600_Common\Under_Tc for Ueno.x		#床下機器 Tc車	(京成上野方面行)
+   #共通(パンタ)
+	PT4819-A-M_1f,Trains\ks3600\Common\PT4819-A-M_1f.x
+	PT4819-A-M_1b,Trains\ks3600\Common\PT4819-A-M_1b.x
+	PT4819-A-M_2,Trains\ks3600\Common\PT4819-A-M_2.x
+#KS3600(3658)
+   3658_Body_M_TOQ for Narita,Trains\ks3600\3658\Body_M_TOQ for Narita.x		#中間車(京成成田方面行)
+	3658_Body_M_TOQ for Ueno,Trains\ks3600\3658\Body_M_TOQ for Ueno.x		#中間車　(京成上野方面行)
+	3658_Body_Tc_Back_TOQ,Trains\ks3600\3658\Body_Tc_Back_TOQ.x			#後尾車
+	3658_Body_Tc_Front_TOQ,Trains\ks3600\3658\Body_Tc_Front_TOQ.x			#先頭車
+
+#KS3600(3668)
+	3668_Body_M_Back_TOQ,Trains\ks3600\3668\Body_M_Back_TOQ.x			#中間車(種車：後尾車)
+	3668_Body_M_Front_TOQ,Trains\ks3600\3668\Body_M_Front_TOQ.x			#中間車(種車：先頭車)
+	3668_Body_Mc_Back_TOQ,Trains\ks3600\3668\Body_Mc_Back_TOQ.x			#後尾車
+	3668_Body_Mc_Front_TOQ,Trains\ks3600\3668\Body_Mc_Front_TOQ.x			#先頭車
+	3668_CU-15_3_Front,Trains\ks3600\3668\CU-15_3_Front.x				#クーラー 3台(先頭車)
+	3668_CU-15_3_Back,Trains\ks3600\3668\CU-15_3_Back.x				#クーラー 3台(後尾車)
+	3668_IR_L_Back,Trains\ks3600\3668\IR_L_Back.x					#IRアンテナ(長・後尾車)
+	3668_IR_L_Front,Trains\ks3600\3668\IR_L_Front.x				#IRアンテナ(長・先頭車)
+	3668_IR_S_Back,Trains\ks3600\3668\IR_S_Back.x					#IRアンテナ(短・後尾車)
+	3668_IR_S_Front,Trains\ks3600\3668\IR_S_Front.x				#IRアンテナ(短・先頭車)
+	3668_Hood_Back,Trains\ks3600\3668\Hood_Back.x					#3621、3628号車用転落防止幌(後尾車)
+	3668_Hood_Front,Trains\ks3600\3668\Hood_Front.x				#3621、3628号車用転落防止幌(先頭車)
+#KS3700
+   3700_1,Trains\ks3700\3700_1.x
+   3700_1b,Trains\ks3700\3700_1b.x
+   3700_2,Trains\ks3700\3700_2.x
+   3700_2b,Trains\ks3700\3700_2b.x
+   3700_3,Trains\ks3700\3700_3.x
+
+#北总7800
+   7800_1,Trains\ks3700\7800_1.x
+   7800_1b,Trains\ks3700\7800_1b.x
+   7800_2,Trains\ks3700\7800_2.x
+   7800_2b,Trains\ks3700\7800_2b.x
+   7800_3,Trains\ks3700\7800_3.x
+
+ks20_1b,Trains\ks20\ks20b.x
+tk20,Trains\ks20\tk20.x
+ks20_1,Trains\ks20\ks20.x
 
 7260_1b,Trains\ks3300\7260_1b.x
 7260_2b,Trains\ks3300\7260_2b.x
 7260_2a,Trains\ks3300\7260_2a.x
 7260_1,Trains\ks3300\7260_1.x
+
+AE-1,Trains\nf4\AE\AE-1.x
+AE-2,Trains\nf4\AE\AE-2.x
+AE-4,Trains\nf4\AE\AE-4.x
+AE-5,Trains\nf4\AE\AE-5.x
+AE-6,Trains\nf4\AE\AE-6.x
+AE-7,Trains\nf4\AE\AE-7.x
+AE-8,Trains\nf4\AE\AE-8.x
+
+#N700A
+N784-1000, Trains\FTN\N700A\784-1000.x
+N787-1500, Trains\FTN\N700A\787-1500.x
+N786-200, Trains\FTN\N700A\786-200.x
+N785-1500, Trains\FTN\N700A\785-1500.x
+N785-600, Trains\FTN\N700A\785-600.x
+N786-1700, Trains\FTN\N700A\786-1700.x
+N777, Trains\FTN\N700A\777.x
+N776-1000, Trains\FTN\N700A\776-1000.x
+N775, Trains\FTN\N700A\775.x
+N787-1400, Trains\FTN\N700A\787-1400.x
+N785, Trains\FTN\N700A\785.x
+N785-300, Trains\FTN\N700A\785-300.x
+N786-1500, Trains\FTN\N700A\786-1500.x
+N787, Trains\FTN\N700A\787.x
+N783-1000, Trains\FTN\N700A\783-1000.x
 
 ##信号柱
 #梯子なし
@@ -366,6 +484,7 @@ Pole_B,..\..\Nagoya_Common\Railway_Obj\SigPole\Pole_B.x
 SignPost,SigPost.x
 
 Sigpoler,..\..\Nagoya_Common\Railway_Obj\SigPole\Pole_R.x
+Sigpolel,..\..\Nagoya_Common\Railway_Obj\SigPole\Pole_L.x
 
 
 Diaoche_R,..\..\Nagoya_Common\Railway_Obj\Signal\Switch\Switch\R_R.x
@@ -400,8 +519,10 @@ AD5,Build\Signbord\XHShouHu2.x
 AD6,Build\Signbord\sdxhxy.x
 AD7,Build\Signbord\fkcny.x
 AD8,Build\Signbord\XHqxdyj.x
+AD9,Build\Signbord\XHqxdyj2.x
 
 #ad(大)
 AD2-1,Panel/XHShouhu.x
 AD2-2,Panel/AD_B_1.x
-AD2-3,Panel/XH1.x
+AD2-3,Panel/XHqxdyj.x
+AD2-4,Panel/XHqxdyj2.x
