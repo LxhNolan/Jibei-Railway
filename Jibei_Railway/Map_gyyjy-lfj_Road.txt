@@ -24,27 +24,27 @@ BveTs Map 2.02:utf-8
       Structure['Cross_4'].Put('Gnd',200-5,-0.01,0,0,0,0,1,1);
 #WFH-LFJ铁轨两侧的道路
    
-   18350;	
+   17950;	
    // 曲線イ R774 TCLa200 CCL738 TCLb200 C50	
-   	Curve.Interpolate(0, 0);
+   	#Curve.Interpolate(0, 0);
    	Track['gnd'].X.Interpolate(0, -4644);
 	
    18450;	
    	Track['gnd'].X.Interpolate(-1.08, -928.8);
 	
    18550;	
-   	Curve.Interpolate(774, -0.125);
+   	#Curve.Interpolate(774, -0.125);
    	Track['gnd'].X.Interpolate(-8.64, -774);
 	
    19288;	
-   	Curve.Interpolate();
+   	#Curve.Interpolate();
    	Track['gnd'].X.Interpolate(-667.68, -928.8);
 	
    19388;	
    	Track['gnd'].X.Interpolate(-861.42, -4644);
 	
-   19488;	
-   	Curve.Interpolate(0, 0);
+   19888;	
+   	#Curve.Interpolate(0, 0);
    	Track['gnd'].X.Interpolate(-1112.54, 0);
 	
       Repeater['Gnd'].End();

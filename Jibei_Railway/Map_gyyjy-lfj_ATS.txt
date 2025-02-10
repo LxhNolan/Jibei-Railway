@@ -8,7 +8,7 @@ BveTs Map 2.02:utf-8
    $Bdis=$gyyjy+235;
       include 'Map_C-ATS/Map_C-ATS_ks.txt';
    $gyyjy+236;
-      Beacon.Put(16,1,0);
+      #Beacon.Put(16,1,0);
 
 #GYYJY-CXDD
    $Bdis=735;
@@ -32,8 +32,8 @@ BveTs Map 2.02:utf-8
       include 'Map_C-ATS/Map_C-ATS_ks2.txt';
 
 #SBY-XDXC
-   $Bdis=$sby+270;
-      include 'Map_C-ATS/Map_C-ATS_ks2.txt';
+   $Bdis=$sby+270-23.5;
+      include 'Map_C-ATS/Map_C-ATS_ks2_high_r.txt';
    $Bdis=$sby+270+550-350;
       include 'Map_C-ATS/Map_C-ATS_ks2_yugao.txt';
    $Bdis=$sby+270+550;
@@ -45,8 +45,8 @@ BveTs Map 2.02:utf-8
    $Bdis=$sby+270+400*4-70;
       include 'Map_C-ATS/Map_C-ATS_ks2.txt';
       $sby+270+400*4-70;
-      Structure['SignPost'].Put('0',-2,-1,1,0,0,0,0,0);
-      Structure['Signal1L0'].Put('0',-2,2.5,0.9,0,0,0,1,1);
+      Structure['SignPost'].Put('0',-2,-1,1+3,0,0,0,0,0);
+      Structure['Signal1L0'].Put('0',-2,2.5,0.9+3,0,0,0,1,1);
 #XDXC(P3)
    $ATS=$xdxc-10;
       $ATS-150;
@@ -59,13 +59,17 @@ BveTs Map 2.02:utf-8
 	      #Structure['SigPoler'].Put('xdxc-l', -2.4+0.7, 4, 0, 0, 0, 0, 0, 0);
    $ATS=$xdxc+260;
       $ATS-150;
-	      Beacon.put(10, 1, 0810150);  
+	      Beacon.put(10, 1, 0810150);
+         Structure['BP'].Put('0',1.75,0.5,0,0,0,0,0,0);
+         Structure['BP'].Put('xdxc-l',-2,0.5,0,0,0,0,0,0);
       $ATS-10;
    	   Beacon.put(9, 0, 1916);
       $ATS;
    	   Signal['Colour4L'].Put(1, 0, -2.4+0.7, 3.5, 0.1, 0, 0, 0, 0, 0);
 	      Section.Begin(34, 36, 38, 40);
-	      Structure['SigPoler'].Put(0, -2.4+0.7, 4, 0, 0, 0, 0, 0, 0);
+	      Structure['AP'].Put('0',1.75,0.5,0,0,0,0,0,0);
+         Structure['AP'].Put('xdxc-l',-2,0.5,0,0,0,0,0,0);
+         Structure['SigPoler'].Put(0, -2.4+0.7, 4, 0, 0, 0, 0, 0, 0);
          Structure['Signal1L0'].Put('xdxc-l', -2.4+0.7, 3.5, 0.1, 0, 0, 0, 0, 0);
 	      Structure['SigPoler'].Put('xdxc-l', -2.4+0.7, 4, 0, 0, 0, 0, 0, 0);
       
@@ -127,9 +131,12 @@ BveTs Map 2.02:utf-8
    $Bdis=$wfh+270+550*2+10;
       include 'Map_C-ATS/Map_C-ATS_ks2.txt';
    $Bdis=$wfh+270+550*3-10;
-      include 'Map_C-ATS/Map_C-ATS_ks2.txt';
+      include 'Map_C-ATS/Map_C-ATS_ks3.txt';
+      $wfh+270+550*3-10;
+      Structure['L105'].Put('0',-2.6,1,0.4,0,0,0,0,0);
+      Structure['Lats'].Put('0',-2.6,1.4,0.4,0,0,0,0,0);
    $Bdis=$wfh+270+550*4-120;
-      include 'Map_C-ATS/Map_C-ATS_ks2.txt';
+      include 'Map_C-ATS/Map_C-ATS_ks3.txt';
 #LFJ-NYS
    $Bdis=$lfj+200+250.5+25+550-10;
       include 'Map_C-ATS/Map_C-ATS_ks2.txt';
@@ -138,4 +145,10 @@ BveTs Map 2.02:utf-8
    $Bdis=$lfj+200+250.5+25+550*3-10;
       include 'Map_C-ATS/Map_C-ATS_ks2.txt';
    $Bdis=$lfj+200+250.5+25+550*4-120;
+      include 'Map_C-ATS/Map_C-ATS_ks2.txt';
+   40000;
+      include 'Map_C-ATS/Map_C-ATS_ks2.txt';
+   41000;
+      include 'Map_C-ATS/Map_C-ATS_ks2.txt';
+   42000;
       include 'Map_C-ATS/Map_C-ATS_ks2.txt';

@@ -93,7 +93,7 @@ BveTs Map 2.02:utf-8
       Train['ks3600_4car-1'].Load('Structures\Trains\ks3600\3668\3668_4Cars for Narita.txt','lfj-yard2',1);
       Train['ks3600_4car-1'].Stop(0,0,2.95,25);
    $lfj+200+250/2+18*6+1-18*4;
-      Train['ks3600_4car-1'].Stop(3.6,90,2.95,25);
+      Train['ks3600_4car-1'].Stop(3.6,90,2.95,110);
    $lfj+200+250/2+18*6+1+3000;
       Train['ks3600_4car-1'].Stop(3.6,90,2.95,120);
 #Train-ks3600-2

@@ -103,7 +103,10 @@ $cxdd+280;
 $cxdd+250.05;
    Structure['AD2-3'].Put('0',-6,0,25,0,-10,0,1,1);
    Structure['AD2-2'].Put('1',6,0,25,0,10,0,1,1);
-
+   Structure['F_endfence_B1'].Put('1',2,1.25,4.9,0,0,0,1,1);#站台栏杆
+   Structure['F_endfence_B1'].Put('0',-2,1.25,4.9,0,0,0,1,1);#站台栏杆
+   Structure['limit_k_jbr'].Put('0',-2,1.8,4.8,0,0,0,0,0);
+   #Structure['limit_k_jbr'].Put('1',2,1.8,4.8,0,0,0,0,0);
 #停车标识
    $cxdd+250/2+18*6+1;
       Structure['StopupKs_12'].Put('0',1.8,0,0,0,0,0,1,1);

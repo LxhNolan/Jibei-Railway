@@ -134,6 +134,8 @@ $wfh+125+250.5+10;
    #Repeater['2u_1u_lB'].End();
    Repeater['2u_1u_rZ'].End();
    #Repeater['2u_1u_rB'].End();
+   Structure['limit_k_jbr'].Put('0',-2,1.8,4.8,0,0,0,0,0);
+   Structure['limit_k_jbr'].Put('wfh-l',2,1.8,4.8,0,0,0,0,0);
    Structure['F_endfence_B1'].Put('0',-2.25,1.25,5-0.05,0,0,0,1,1);
    Structure['F_endfence_B1'].Put('1',2.25,1.25,5-0.05,0,0,0,1,1);
    Structure['F_endfence_B1'].Put('wfh-r',-2.25,1.25,5-0.05,0,0,0,1,1);

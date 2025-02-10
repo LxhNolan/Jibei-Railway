@@ -7,7 +7,7 @@ include 'T141A_AI_Trains_Map.txt';
 include 'T141A_Map_ATS.txt';
 include 'Map_gyyjy-lfj_ATS.txt';
 Station.Load('T141A_Stations.csv');
-Signal.Speedlimit(0,0,25,45,45,75,105,120,0,0,25,45,45,55,70,70,0,0,25,45,45,68,75,95,100,120,0,0,25,45,45,55,70,0,0,25,45,45,75,105,130,160,0,null);
+Signal.Speedlimit(0,0,25,45,45,75,105,120,0,0,25,45,45,55,70,70,0,0,25,45,45,68,75,95,100,120,0,0,25,45,45,55,70,0,0,25,45,45,75,105,120,160,0,null);
 Signal.Load('Signals.csv');
 Curve.SetGauge(1.435);
 Curve.SetCenter(1.435/2);
@@ -16,7 +16,7 @@ Curve.SetCenter(1.435/2);
    #Beacon.Put(13, 0, 26);
    Beacon.Put(20, 0, 1);//ATS初期設定(C-ATS)
 	#Beacon.Put(21, 0, 0);
-   Beacon.Put(22, 0, 3);//路線の設定(月路本線,特急かぐや)
+   Beacon.Put(22, 0, 3);//路線の設定
 	#Beacon.put(24, 0, 3050000);
 	#Beacon.put(26, 0, 0);
 	#Beacon.Put(243, 0, 15001600);
@@ -32,9 +32,8 @@ Curve.SetCenter(1.435/2);
       Sound3D['daomangling'].Put(5,3.9);
       #Sound3D['stationbroadcast'].Put(5,3.9);
       Sound3D['people_at_station'].Put(2.5,2);
-      distance+0.01;
-      Beacon.put(240, 0, 102);
-      Beacon.put(240, 0, 101);
+      distance+0.1;
+      Beacon.put(240, 0, 1);
       distance+300;
       Sound['Gyyjy-Xdxc1'].Play();
 

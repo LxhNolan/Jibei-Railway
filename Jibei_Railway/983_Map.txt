@@ -45,7 +45,7 @@ Curve.SetCenter(1.435/2);
    $cxdd-400;
       Beacon.Put(1,0,0);
    $cxdd-500;
-      Beacon.Put(237,0,1);
+      Beacon.Put(237,0,0);
    $cxdd-20;
       Sound['door-left'].Play();
 
@@ -60,7 +60,7 @@ Curve.SetCenter(1.435/2);
    $sby-400;
       Beacon.Put(1,0,0);
    $sby-500;
-      Beacon.Put(237,0,1);
+      Beacon.Put(237,0,0);
    $sby-10;
       Sound['door-left'].Play();
 #新大学城
@@ -79,7 +79,7 @@ Curve.SetCenter(1.435/2);
    $xdxc-400;
       Beacon.Put(1,0,0);
    $xdxc-500;
-      Beacon.Put(237,0,1);
+      Beacon.Put(237,0,0);
 #紫薇街道
    $zwjd+250-15-18*2;
       Station['zwjd'].Put(-1, -2, 2);
@@ -91,7 +91,7 @@ Curve.SetCenter(1.435/2);
    $zwjd-400;
       Beacon.Put(1,0,0);
    $zwjd-500;
-      Beacon.Put(237,0,1);
+      Beacon.Put(237,0,0);
    $zwjd-10;
       Sound['door-left'].Play();
 #新赵营子
@@ -105,7 +105,7 @@ Curve.SetCenter(1.435/2);
    $xzyz-400;
       Beacon.Put(1,0,0);
    $xzyz-500;
-      Beacon.Put(237,0,1);
+      Beacon.Put(237,0,0);
    $xzyz-10;
       Sound['door-left'].Play();
 #王符河
@@ -119,7 +119,7 @@ Curve.SetCenter(1.435/2);
    $wfh+125+10-400;
       Beacon.Put(1,0,0);
    $wfh+125+10-500;
-      Beacon.Put(237,0,1);
+      Beacon.Put(237,0,0);
    $wfh+125+10-10;
       Sound['door-left'].Play();
 #李府井(P3)
@@ -133,6 +133,6 @@ Curve.SetCenter(1.435/2);
    $lfj+200-300;
       Beacon.Put(1,0,0);
    $lfj+200-400;
-      Beacon.Put(237,0,1);
+      Beacon.Put(237,0,0);
    $lfj+200-10;
       Sound['door-left'].Play();

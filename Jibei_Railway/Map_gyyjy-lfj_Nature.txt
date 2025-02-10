@@ -95,7 +95,7 @@ BveTs Map 2.02:utf-8
          Structure['DikeFace'].Put('Gnd',200,0,-1,0,0,0,1,1);
       
 #LFJ-NYS
-   21900;
+   21800;
       Repeater['Gnd1'].Begin('Gnd1', 0, -1, 0, 0, 0, 0, 0, 0, 25, 'Grass' );
-      distance+500;
-      #Repeater['Gnd1'].Begin('Gnd1', 0, -1, 0, 0, 0, 0, 0, 0, 25, 'Ground1e', 'Ground1d', 'Ground1c', 'Ground1b', 'Ground1a' );
+      distance+750;
+      Repeater['Gnd1'].Begin('Gnd1', 0, -1, 0, 0, 0, 0, 0, 0, 25, 'Ground1a', 'Ground1b', 'Ground1c', 'Ground1d', 'Ground1e' );

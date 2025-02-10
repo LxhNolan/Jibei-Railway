@@ -25,6 +25,7 @@ door-right,Sounds/Dooropen_right.wav
 
 #车站及车内广播
 at_station,Sounds/Station_Broadcast.wav
+ltdexp_dep1,Sounds/gyy_ltdexp_dep_p2.wav
 LFJtoXYZ1,Sounds/LFJ_to_XYZ_1.wav
 LFJtoXYZ2,Sounds/LFJ_to_XYZ_2.wav
 XYZtoXJB1,Sounds/XYZ_to_XJB_1.wav

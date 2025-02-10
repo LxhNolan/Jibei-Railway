@@ -82,6 +82,7 @@ $xzyz+250.00;
    Structure['F_endfence_B4'].Put('0',-5.5,1.25,-0.05,0,0,0,1,1);
    Structure['F_endfence_B3'].Put('1',3,1.25,-0.05,0,0,0,1,1);
    Structure['F_endfence_B4'].Put('1',5.5,1.25,-0.05,0,0,0,1,1);
+   Structure['limit_k_jbr'].Put('0',-2.5,3.5,-4.5,0,0,0,0,0);
    Repeater['WallL'].Begin(0,-1,0,0,0,0,0,1,10,10,'WallL');
 	Repeater['WallR'].Begin(1,1,0,0,0,0,0,1,10,10,'WallR');
    Repeater['pbml'].End();

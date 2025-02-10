@@ -27,6 +27,10 @@ BveTs Map 2.02:utf-8
    #铁轨设置(LFJ-P2侧线)
       $lfj+40;
       Repeater['Rail_lfj-2'].Begin('lfj-2',0,0,0,0,0,0,1,5,5,'PTRail');
+      Structure['L40'].Put('0',-2,0,0,0,0,0,0,0);
+      Structure['L0'].Put('0',-2,0,0,0,0,0,0,0);
+      Structure['LfxR'].Put('0',-2,0,0,0,0,0,0,0);
+      Structure['LimitPole'].Put('0',-2,0,0,0,0,0,0,0);
       Track['lfj-2'].X.Interpolate(0,200);
       $lfj+60;
       Track['lfj-2'].X.Interpolate(1,0);
@@ -39,6 +43,10 @@ BveTs Map 2.02:utf-8
       $lfj+200+320;
       Repeater['Rail_lfj-2'].Begin('lfj-2',0,0,0,0,0,0,1,5,5,'PTRail');
       Track['lfj-2'].X.Interpolate(4,-200);
+      Structure['L40'].Put('1',2,0,0,0,0,0,0,0);
+      Structure['L0'].Put('1',2,0,0,0,0,0,0,0);
+      Structure['LfxL'].Put('1',2,0,0,0,0,0,0,0);
+      Structure['LimitPole'].Put('1',2,0,0,0,0,0,0,0);
       $lfj+200+340;
       Track['lfj-2'].X.Interpolate(3,0);
       $lfj+200+360;
@@ -46,6 +54,8 @@ BveTs Map 2.02:utf-8
       JointNoise.Play(0);
       $lfj+200+380;
       Track['lfj-2'].X.Interpolate(0,0);
+      Structure['Lend'].Put('0',-2,0,0,0,0,0,0,0);
+      Structure['LimitPole'].Put('0',-2,0,0,0,0,0,0,0);
       Repeater['Rail_lfj-2'].End();
    #铁轨设置(LFJ-P4侧线)
       $lfj-120;
@@ -65,6 +75,10 @@ BveTs Map 2.02:utf-8
       Repeater['DikeL_lfj-p4'].Begin0('lfj-p4', 1, 5, 5, 'DikeL1', 'DikeL2', 'DikeL3' );
       Repeater['DikeR_lfj-p4'].Begin0('lfj-p4', 1, 5, 5, 'DikeR1', 'DikeR2', 'DikeR3' );
       Track['lfj-p4'].X.Interpolate(0,-500);
+      Structure['L50'].Put('0',-2,0,0,0,0,0,0,0);
+      Structure['L0'].Put('0',-2,0,0,0,0,0,0,0);
+      Structure['LfxL'].Put('0',-2,0,0,0,0,0,0,0);
+      Structure['LimitPole'].Put('0',-2,0,0,0,0,0,0,0);
       distance+25;
       JointNoise.Play(0);
       $lfj+10;
@@ -79,6 +93,10 @@ BveTs Map 2.02:utf-8
    #铁轨设置(LFJ-P5侧线1)
       $lfj+120;
       Repeater['Rail_lfj-p5'].Begin('lfj-p5',0,0,0,0,0,0,1,5,5,'PTRail');
+      Structure['L30'].Put('lfj-p5',2,0,0,0,0,0,0,0);
+      Structure['L5'].Put('lfj-p5',2,0,0,0,0,0,0,0);
+      Structure['LfxL'].Put('lfj-p5',2,0,0,0,0,0,0,0);
+      Structure['LimitPole'].Put('lfj-p5',2,0,0,0,0,0,0,0);
       Track['lfj-p5'].X.Interpolate(-10.05,-200);
       $lfj+140;
       Track['lfj-p5'].X.Interpolate(-11,-0);
@@ -99,21 +117,36 @@ BveTs Map 2.02:utf-8
    #铁轨设置(LFJ-P5侧线2)
       $lfj+120;
       Repeater['Rail_lfj-p5-2'].Begin('lfj-p5-2',0,0,0,0,0,0,1,5,5,'PTRail');
+      Structure['L30'].Put('lfj-p5-2',-2,0,0,0,0,0,0,0);
+      Structure['L5'].Put('lfj-p5-2',-2,0,0,0,0,0,0,0);
+      Structure['LfxR'].Put('lfj-p5-2',-2,0,0,0,0,0,0,0);
+      Structure['LimitPole'].Put('lfj-p5-2',-2,0,0,0,0,0,0,0);
       Track['lfj-p5-2'].X.Interpolate(-14,200);
       $lfj+140;
       Track['lfj-p5-2'].X.Interpolate(-13,0);
       $lfj+160;
       Track['lfj-p5-2'].X.Interpolate(-11,-200);
       $lfj+180;
+      Structure['Lend'].Put('lfj-p5',-2,0,0,0,0,0,0,0);
+      Structure['LimitPole'].Put('lfj-p5',-2,0,0,0,0,0,0,0);
+      Structure['Lend'].Put('lfj-p5-2',2,0,0,0,0,0,0,0);
+      Structure['LimitPole'].Put('lfj-p5-2',2,0,0,0,0,0,0,0);
       Track['lfj-p5-2'].X.Interpolate(-10.05,0);
       $lfj+480;
       Track['lfj-p5-2'].X.Interpolate(-10.05,-200);
+      distance-5;
+      Structure['L30'].Put('lfj-p5-2',2,0,0,0,0,0,0,0);
+      Structure['L5'].Put('lfj-p5-2',2,0,0,0,0,0,0,0);
+      Structure['LfxL'].Put('lfj-p5-2',2,0,0,0,0,0,0,0);
+      Structure['LimitPole'].Put('lfj-p5-2',2,0,0,0,0,0,0,0);
       $lfj+500;
       Track['lfj-p5-2'].X.Interpolate(-11,-0);
       $lfj+520;
       Track['lfj-p5-2'].X.Interpolate(-13,200);
       $lfj+540;
       Track['lfj-p5-2'].X.Interpolate(-14,0);
+      Structure['Lend'].Put('lfj-p5-2',-2,0,0,0,0,0,0,0);
+      Structure['LimitPole'].Put('lfj-p5-2',-2,0,0,0,0,0,0,0);
       Repeater['Rail_lfj-p5-2'].End();
    #铁轨设置(LFJ-Yard1-P4)
       $lfj-120;
@@ -129,7 +162,7 @@ BveTs Map 2.02:utf-8
       Structure['Dikeface'].Put('lfj-yard2',0,0,0,0,0,0,1,1);
       Repeater['Rail_lfj-yard2'].Begin('lfj-yard2',0,0,0,0,0,0,1,5,5,'PTRail');
       Track['lfj-yard2'].Position(-14,0);
-   #铁轨设置(Fangte Line-2)
+   #铁轨设置(Fangte Line-1)
       $lfj+750;#21540	
       // 曲線イ R2004 TCLa50 CCL75 TCLb50 C50	
       	Track['lfj-yard1'].X.Interpolate(-10.05, -12024);
@@ -142,22 +175,22 @@ BveTs Map 2.02:utf-8
 	      Track['lfj-yard1'].X.Interpolate(-10.26, -2004);
 	      Track['lfj-yard1'].Cant.Interpolate(-0.05);
 	
-      $lfj+750+125;#21665;	
-	      Track['lfj-yard1'].X.Interpolate(-12.6, -2404.8);
+      $lfj+750+550;#22090;	
+	      Track['lfj-yard1'].X.Interpolate(-79.87, -2404.8);
       	Track['lfj-yard1'].Cant.Interpolate();
 	
-      $lfj+750+150;#21690;	
-	      Track['lfj-yard1'].X.Interpolate(-13.98, -12024);
+      $lfj+750+575;#22115;	
+	      Track['lfj-yard1'].X.Interpolate(-86.78, -12024);
 	
-      $lfj+750+175;#21715;	
-      	Track['lfj-yard1'].X.Interpolate(-15.51, 0);
+      $lfj+750+600;#22140;	
+      	Track['lfj-yard1'].X.Interpolate(-93.86, 0);
       	Track['lfj-yard1'].Cant.Interpolate(0);
          
       // 曲線イここまで	
 	
-      $lfj+750+5000;#26715;	
+      $lfj+750+5600;#27140;	
       // 曲線ロ R0 TCLa0 CCL0 TCLb0 C0	
-	      Track['lfj-yard1'].X.Interpolate(-327.84, 0);
+	      Track['lfj-yard1'].X.Interpolate(-1516.03, 0);
 	      Track['lfj-yard1'].Cant.Interpolate(0);
 
    #铁轨设置(Fangte Line-2)
@@ -173,23 +206,34 @@ BveTs Map 2.02:utf-8
       	Track['lfj-yard2'].X.Interpolate(-14.21, -2000);
 	      Track['lfj-yard2'].Cant.Interpolate(-0.05);
 	
-      $lfj+750+125;#21665;	
-      	Track['lfj-yard2'].X.Interpolate(-16.55, -2400);
+       $lfj+750+550;#22090;	
+	      Track['lfj-yard2'].X.Interpolate(-83.97, -2400);
       	Track['lfj-yard2'].Cant.Interpolate();
 	
-      $lfj+750+150;#21690;	
-      	Track['lfj-yard2'].X.Interpolate(-17.93, -12000);
+      $lfj+750+575;#22115;	
+	      Track['lfj-yard2'].X.Interpolate(-90.89, -12000);
 	
-      $lfj+750+175;#21715;	
-      	Track['lfj-yard2'].X.Interpolate(-19.47, 0);
+      $lfj+750+600;#22140;	
+      	Track['lfj-yard2'].X.Interpolate(-97.98, 0);
       	Track['lfj-yard2'].Cant.Interpolate(0);
-	
-      $lfj+750+5000;#26715;	
-      // 曲線ロ R0 TCLa0 CCL0 TCLb0 C0	
-      	Track['lfj-yard2'].X.Interpolate(-332.43, 0);
-      	Track['lfj-yard2'].Cant.Interpolate(0);
-
+         
       // 曲線イここまで	
+	
+       $lfj+750+5600;#27140;	
+      // 曲線ロ R0 TCLa0 CCL0 TCLb0 C0	
+	      Track['lfj-yard2'].X.Interpolate(-1523.21, 0);
+	      Track['lfj-yard2'].Cant.Interpolate(0);
+      
+      22800;
+         Repeater['Rail_lfj-yard1'].End();
+         Repeater['Rail_lfj-yard2'].End();
+         Repeater['DikeR_lfj-yard1'].End();
+         Repeater['DikeL_lfj-yard2'].End();
+         Repeater['Pole_lfj-yard1'].End();
+         Repeater['Pole_lfj-yard2'].End();
+         Repeater['JX_lfj-yard1'].End();
+         Repeater['JX_lfj-yard2'].End();
+         Repeater['fence_l'].End();
    #铁轨旁栏杆
       $lfj-120;
          Repeater['fence_l'].Begin('lfj-yard2',-3.5,-1,0,0,0,0,1,10,10,'fence_5');
@@ -245,22 +289,25 @@ BveTs Map 2.02:utf-8
          Repeater['ADs_Poler'].Begin('lfj-1',2+1,1.25,-1,0,0,0,1,10,10,'Pole');
          Repeater['ADs_Pole2r'].Begin('lfj-1',2+1,1.25,0.6,0,0,0,1,10,10,'Pole');
          distance+22.5;#站名标
-         Repeater['wfh_sta0'].Begin('0',-5,3.4,2.5,0,0,0,1,50,50,'wfh_sta');
-         Repeater['wfh_sta1'].Begin('1',5,3.4,2.5,0,0,0,1,50,50,'wfh_sta');
+         Repeater['lfj_sta0'].Begin('0',-5,3.4,2.5,0,180,0,1,50,50,'lfjB_sta');
+         Repeater['lfj_sta1'].Begin('1',5,3.4,2.5,0,180,0,1,50,50,'lfjA_sta');
+         
          distance+42.5;#车站LED显示屏
          Repeater['2u_1u_lZ'].Begin('0',-5,4.5,5,0,0,0,1,100,100,'xdxc_P34');
          #Repeater['2u_1u_lB'].Begin('0',-5,4.5,5,0,0,0,1,100,100,'xdxc_P34');
          Repeater['2u_1u_rZ'].Begin('1',5,4.5,5,0,0,0,1,100,100,'xdxc_P12');
          #Repeater['2u_1u_rB'].Begin('1',5,4.5,5,0,0,0,1,100,100,'xdxc_P12');
+         $lfj+200+22.5+150;
+         Repeater['lfj_sta2'].Begin('lfj-p5',-5-1,3.4,2.5,0,180,0,1,50,50,'lfjC_sta');
       $lfj+200+125;#车站内饰
          Structure['Daia'].Put('0',-5,0,20,0,180,0,1,1);
          Structure['Daia'].Put('1',5,0,20,0,0,0,1,1);
          Structure['Daia'].Put('0',-5,0,-20,0,180,0,1,1);
          Structure['Daia'].Put('1',5,0,-20,0,0,0,1,1);
-         Structure['step_d'].Put('0',-5,0,40,0,0,0,1,1);
-         Structure['step_d'].Put('1',5,0,40,0,0,0,1,1);
-         Structure['step_d'].Put('0',-5,0,-40,0,180,0,1,1);
-         Structure['step_d'].Put('1',5,0,-40,0,180,0,1,1);
+         Structure['step_d'].Put('0',-5.15,0,40,0,180,0,1,1);
+         Structure['step_d'].Put('1',5-0.1,0,40,0,180,0,1,1);
+         Structure['step_d'].Put('0',-5,0,-40,0,0,0,1,1);
+         Structure['step_d'].Put('1',5.1,0,-40,0,0,0,1,1);
          Structure['ev'].Put('0',-5,0,-5+10,0,180,0,1,1);
          Structure['ev'].Put('1',5,0,-5+10,0,180,0,1,1);
          Structure['ev'].Put('0',-5,0,-7+10,0,0,0,1,1);
@@ -308,12 +355,15 @@ BveTs Map 2.02:utf-8
          Repeater['ADr'].End();
          Repeater['ADs_Poler'].End();
          Repeater['ADs_Pole2r'].End();
-         Repeater['wfh_sta0'].End();
-         Repeater['wfh_sta1'].End();
+         Repeater['lfj_sta0'].End();
+         Repeater['lfj_sta1'].End();
+         
          Repeater['2u_1u_lZ'].End();
          #Repeater['2u_1u_lB'].End();
          Repeater['2u_1u_rZ'].End();
          #Repeater['2u_1u_rB'].End();
+         Structure['limit_k_jbr'].Put('0',-2,1.8,4.4,0,0,0,0,0);
+         Structure['limit_k_jbr'].Put('1',2,1.8,4.4,0,0,0,0,0);
          Structure['F_endfence_B1'].Put('0',-2.25,1.25,5-0.5,0,0,0,1,1);
          Structure['F_endfence_B1'].Put('1',2.25,1.25,5-0.5,0,0,0,1,1);
          Structure['F_endfence_B1'].Put('lfj-1',-2.25,1.25,5-0.5,0,0,0,1,1);
@@ -322,15 +372,16 @@ BveTs Map 2.02:utf-8
          Structure['WallSREnd1'].Put('1',0,0,4.5,0,0,0,1,1);
          Structure['WallSREnd1'].Put('lfj-p4',0,0,4.5,0,0,0,1,1);
          Structure['WallSLEnd1'].Put('lfj-1',0,0,4.5,0,0,0,1,1);
-         
-         #P4栏杆
+         $lfj+200+250.5-150;
+         Repeater['lfj_sta2'].End();
+      #P4栏杆
          $lfj+200;
          Repeater['F_endfence_B41_lfj-p4'].Begin('lfj-p4',2.5,1.25,2,0,90,0,1,3,3,'F_endfence_B4');
          distance+150;
          Repeater['F_endfence_B41_lfj-p4'].End();
          Repeater['pbmr-0'].Begin('lfj-p4',0.6,0,0,0,0,0,1,5,5,'pbmr');
          
-         #P5站台
+      #P5站台
          $lfj+350;
          # 站台构造
          Structure['Step'].Put('lfj-p5',-4.5,0,0,0,180,0,1,1);
@@ -453,7 +504,7 @@ BveTs Map 2.02:utf-8
 #信号机
    //进站
       $Bdis=$lfj-120;
-      include 'Map_C-ATS/Map_C-ATS_ks2.txt';
+      include 'Map_C-ATS/Map_C-ATS_ks3.txt';
       $lfj-120;
       Structure['SignPost'].Put('0',-2,-1,1,0,0,0,0,0);
       Structure['Signal1L0'].Put('0',-2,2.5,0.9,0,0,0,1,1);
@@ -462,16 +513,24 @@ BveTs Map 2.02:utf-8
    //lfj-(P2-P3)
       $ATS=$lfj+200+250.5+25;
       $ATS-150;
-	      Beacon.put(10, 1, 0810150);  
+	      Beacon.put(10, 1, 0810150);
+         Structure['BP'].Put('0',2,0.5,0,0,0,0,0,0);
+         Structure['BP'].Put('lfj-p5',2,0.5,0,0,0,0,0,0);
       $ATS-10;
    	   Beacon.put(9, 0, 1916);
       $ATS;
-   	   Signal['Colour4L'].Put(1, 0, -2.4+0.7, 3.5, 0.1, 0, 0, 0, 0, 0);
+   	   Signal['Colour4L'].Put(1, 0, -2.4+0.7, 3.5, 5+0.1, 0, 0, 0, 0, 0);
 	      Section.Begin(34, 36, 38, 40);
-	      Structure['SigPoler'].Put('0', -2.4+0.7, 4, 0, 0, 0, 0, 0, 0);
-         Structure['Signal1L0'].Put('lfj-p5', -2.4+0.7, 3.5, 0.1, 0, 0, 0, 0, 0);
-	      Structure['SigPoler'].Put('lfj-p5', -2.4+0.7, 4, 0, 0, 0, 0, 0, 0);
-         Structure['Signal1L0'].Put('lfj-p4', 2.4-0.7, 3.5, 0.1, 0, 0, 0, 0, 0);
-	      Structure['SigPolel'].Put('lfj-p4', 2.4-0.7, 4, 0, 0, 0, 0, 0, 0);
-         Structure['Signal1L0'].Put('lfj-2', 2.4-0.7, 3.5, 0.1, 0, 0, 0, 0, 0);
-	      Structure['SigPolel'].Put('lfj-2', 2.4-0.7, 4, 0, 0, 0, 0, 0, 0);
+	      Structure['AP'].Put('0',2,0.5,0,0,0,0,0,0);
+         Structure['AP'].Put('lfj-p5',2,0.5,0,0,0,0,0,0);
+         Structure['SigPoler'].Put('0', -2.4+0.7, 4, 5+0, 0, 0, 0, 0, 0);
+         Structure['Signal1L4'].Put('lfj-p5', -2.4+0.7, 3.5, 5+0.1, 0, 0, 0, 0, 0);
+	      Structure['SigPoler'].Put('lfj-p5', -2.4+0.7, 4, 5+0, 0, 0, 0, 0, 0);
+         Structure['Signal1L0'].Put('lfj-p4', 2.4-0.7, 3.5, 5+0.1, 0, 0, 0, 0, 0);
+	      Structure['SigPolel'].Put('lfj-p4', 2.4-0.7, 4, 5+0, 0, 0, 0, 0, 0);
+         Structure['Signal1L0'].Put('lfj-2', 2.4-0.7, 3.5, 5+0.1, 0, 0, 0, 0, 0);
+	      Structure['SigPolel'].Put('lfj-2', 2.4-0.7, 4, 5+0, 0, 0, 0, 0, 0);
+         Structure['L110'].Put('lfj-yard2',-1.9,1,5+0.4,0,0,0,0,0);
+         Structure['Lats'].Put('lfj-yard2',-1.9,1.4,5+0.4,0,0,0,0,0);
+         Structure['L110'].Put('lfj-yard1',1.9,1,5+0.4,0,0,0,0,0);
+         Structure['Lats'].Put('lfj-yard1',1.9,1.4,5+0.4,0,0,0,0,0);

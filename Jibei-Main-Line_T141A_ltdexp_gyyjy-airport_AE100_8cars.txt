@@ -5,7 +5,6 @@ Route = Jibei_Railway/T141A_Map.txt
 RouteTitle = 济北铁道-济北本线
 Image = Jibei_Railway/JBR_LOGO.png
 Vehicle = napper_napalm\train\K_SEIAE100\vehicle_AE138.txt 
-#  Skyliner_AE\vehicle\vehicle-1.txt |
 VehicleTitle = JBRAE100(KSAE100)型 8节编组
 Author = Route:LxhNolan, Vehicle:napper_napalm 
-Comment = 本列车停靠：新大学城、李府井、济北、生产大道、十涧堡、东济北、机场南。
+Comment = (最高110km/h)本列车停靠：新大学城、李府井、济北、生产大道、十涧堡、东济北、机场南。

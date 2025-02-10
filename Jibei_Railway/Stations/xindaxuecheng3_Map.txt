@@ -252,6 +252,10 @@ $xdxc+250.05;
    Structure['WallSREnd1'].Put('1',0,0,5,0,0,0,1,1);
    Structure['WallSREnd1'].Put('xdxc-l',0,0,5,0,0,0,1,1);
    Structure['WallSLEnd1'].Put('xdxc-r',0,0,5,0,0,0,1,1);
+   Structure['limit_k_jbr'].Put('0',-2,1.8,4.8,0,0,0,0,0);
+   #Structure['limit_k_jbr'].Put('1',2,1.8,4.8,0,0,0,0,0);
+   #Structure['limit_k_jbr'].Put('xdxc-r',-2,1.8,4.8,0,0,0,0,0);
+   Structure['limit_k_jbr'].Put('xdxc-l',2,1.8,4.8,0,0,0,0,0);
    Repeater['WallL'].Begin(0,0,0,5,0,0,0,1,10,10,'WallL');
 	Repeater['WallR'].Begin(1,0,0,5,0,0,0,1,10,10,'WallR');
 

@@ -292,27 +292,27 @@ BveTs Map 2.02:utf-8
       include 'Stations/wangfuhe3_Map.txt';
 
 #WFH-LFJ
-   18350;	
+   17950;	
       Curve.BeginTransition();
       Repeater['Gnd1'].Begin('Gnd1', 0, -1.001, 0, 0, 0, 0, 0, 0, 25, 'Grass');
    18400;
       SpeedLimit.Begin(110);
       Structure['LimitPole'].Put('0',-2.5,0,0,0,0,0,1,1);
       Structure['L110'].Put('0',-2.5,0,0,0,0,0,1,1);
-      distance-170;
-      Beacon.put(16, 0, 242207);
-   	Beacon.put(17, 0, 170);
+      distance-500;
+      Beacon.put(16, 0, 262207);
+   	Beacon.put(17, 0, 500);
    19100;
       Repeater['Gnd1'].Begin('Gnd1', 0, -1.001, 0, 0, 0, 0, 0, 0, 25, 'Ground1a', 'Ground1b', 'Ground1c', 'Ground1d', 'Ground1e' );
    18550;
       Curve.Begin(774,-0.125);
    19288;
       Curve.BeginTransition();
-   19488;
+   19988;
       Curve.End();
       Structure['Lend'].Put('0',-2.5,0,0,0,0,0,1,1);
       Structure['LimitPole'].Put('0',-2.5,0,0,0,0,0,1,1);
-      distance+18*8;
+      #distance+18*8;
       SpeedLimit.End();
       Beacon.put(13, 0, 0);
    18955;
