@@ -1,0 +1,69 @@
+bvets train 1.00
+
+[Structure]
+Key = 1000_M2sc
+Distance = -15
+Z = 17
+Span = 16
+
+[Structure]
+Key = 1000_M1u
+Distance = -33
+Z = 17
+Span = 16
+
+[Structure]
+Key = 1000_T
+Distance = -51
+Z = 17
+Span = 16
+
+[Structure]
+Key = 1000_T
+Distance = -69
+Z = 17
+Span = 16
+
+[Structure]
+Key = 1000_T
+Distance = -87
+Z = 17
+Span = 16
+
+[Structure]
+Key = 1000_T
+Distance = -105
+Z = 17
+Span = 16
+
+[Structure]
+Key = 1000_M1u
+Distance = -123
+Z = 17
+Span = 16
+
+[Structure]
+Key = 1000_M2uc
+Distance = -141
+Z = 17
+Span = 16
+
+
+
+[Sound3D]
+key=kk1000_D
+distance2=0
+distance1=-144
+Function=Deceleration
+
+[Sound3D]
+key=kk1000_A
+distance2=0
+distance1=-144
+Function=Acceleration
+
+[Sound3D]
+key=kk1000_R
+distance2=0
+distance1=-144
+Function=run

@@ -1,0 +1,11 @@
+BveTs Station List 2.00:utf-8,,,,,,,,,,,,
+#stationKey,stationText,arrivalTime,depertureTime,stoppageTime,defaultTime,signalFlag,alightingTime,passengers,arrivalSoundKey,depertureSoundKey,doorReopen,stuckInDoor
+
+gyyjy,工业研究院(JM-34),09:27:30,09:30:00,34.5,09:27:30,1,30,0.5594,,Dep10,0.1,1
+njdd,南郊大道(JM-33),,09:32:30,16.5,09:32:00,0,1.5,0.7724,,Dep3,0.1,1
+sby,世博园(JM-32),,09:34:50,16.5,09:34:20,0,2,0.7924,,Dep3,0.1,1
+xdxc,新大学城(JM-31),09:36:40,09:37:20,26,09:36:50,0,5,1.0724,,Dep4,0.1,1
+zwjd,紫薇街道(JM-30),,09:39:40,16.5,09:39:10,0,2,1.0624,,Dep3,0.1,1
+xzyz,新赵营子(JM-29),,09:43:20,16.5,09:42:50,0,3,1.1126,,Dep3,0.1,1
+wfh,王符河(JM-28),,09:46:45,16.5,,0,3,1.1474,,Dep3,0.1,1
+lfj3,李府井(JM-27|JF-01),09:49:20,t,16.5,,0,3,1.0322,,Dep3,0.1,1
