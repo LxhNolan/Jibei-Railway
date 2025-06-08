@@ -1,4 +1,4 @@
-# [Bve5 Addon Data] Jibei Railway Information
+# [Bve5 Addon Data] Jibei Railway
 
 <aside>
 ⚠️
